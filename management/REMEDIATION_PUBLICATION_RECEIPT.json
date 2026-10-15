@@ -1,0 +1,28 @@
+{
+  "created_jst": "2026-10-15T16:18:36.077893+09:00",
+  "archive": "/workspace/portal-b1-remediation/artifacts/P3_B1_CANDIDATE_v0.3.0_20261015_FREEZE1.zip",
+  "sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
+  "bytes": 5403706,
+  "payload_files": 398,
+  "entries": 399,
+  "archive_readback": "PASS",
+  "official_freeze": true,
+  "normal_freeze_number": 1,
+  "drive": {
+    "id": "1-R__3zV-6GBROgvb4Nv4nwaCqooAPtQJ",
+    "url": "https://drive.google.com/file/d/1-R__3zV-6GBROgvb4Nv4nwaCqooAPtQJ/view",
+    "raw_readback": "PASS",
+    "readback_sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
+    "verified_jst": "2026-10-15T16:20:14.988886+09:00"
+  },
+  "independent_F": {
+    "state": "IN_PROGRESS",
+    "task_id": "P3-B1-F-INDEPENDENT-20261015-01",
+    "session": "f_review_freeze1",
+    "started_after_freeze": true
+  },
+  "github": {
+    "pr": "https://github.com/hirata-y/portal-public/pull/1",
+    "sync": "PENDING"
+  }
+}

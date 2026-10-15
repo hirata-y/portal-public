@@ -1,0 +1,8 @@
+# A実験・不成功と是正の記録
+
+- 第一案：公開fragmentの分割語でquote照会を作ったが、通常クライアントが再分割し、奥多摩は詳細0のまま。丹沢のみ改善。対話中の実Chromium出力を確認。第一案そのものの独立JSONログは未保存のため、厳密再現証拠として数えない。
+- Worker第一試行：top-level await importの前に届いたmessageを受け取れず、30秒timeout。handlerを先に設定し、内部でmodule Promiseをawaitして是正。worker_prototype.jsonはその後の実測で、一部未引用照会を含む中間案。最終受入はremediation_checks.jsonを使う。
+- 10_remediation exit2：実験用JSONを入力契約envelopeと取り違え、XSS負例の初期化を待ってtimeout。remediation_checks_initial_failed.jsonを保持。
+- 12_remediation exit2：Playwright route callback第2引数Requestがdefault引数statusを上書き。fieldsetの状態検査もDOM disabled propertyへ是正。remediation_checks_harness_failed.jsonを保持。
+- 15_remediation exit0：正しい固定demo-dataのenvelopeでXSS文字列が受理され、textContentで表示。未実行／失敗をPASSへ書き換えていない。
+- Xorg最初のsandbox起動exit1：local socketを作れず。許可network実行でdummy display :99を起動し、同じChromium実画面をffmpeg x11grabで取得。OS/URLバーはLinux/Chromiumで、Windows/Edgeの証明ではない。

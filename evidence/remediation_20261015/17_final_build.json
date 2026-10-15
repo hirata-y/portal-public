@@ -1,0 +1,15 @@
+{
+  "name": "17_final_build",
+  "argv": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "/workspace/portal-b1-remediation/astro_candidate",
+  "start_utc": "2026-10-15T07:13:27.516079+00:00",
+  "end_utc": "2026-10-15T07:13:28.536642+00:00",
+  "duration_seconds": 1.0205699669986643,
+  "exit_code": 0,
+  "stdout": "\n> build\n> node ../tools/build_astro.mjs\n\n07:13:28 [types] Generated 34ms\n07:13:28 [build] output: \"static\"\n07:13:28 [build] mode: \"static\"\n07:13:28 [build] directory: /workspace/portal-b1-remediation/astro_candidate/dist/\n07:13:28 [build] Collecting build info...\n07:13:28 [build] ✓ Completed in 66ms.\n07:13:28 [build] Building static entrypoints...\n07:13:28 [vite] ✓ built in 126ms\n07:13:28 [vite] ✓ built in 14ms\n07:13:28 [build] Rearranging server assets...\n\n generating static routes \n07:13:28   ├─ /index.html (+10ms) \n07:13:28 ✓ Completed in 19ms.\n\n07:13:28 [build] ✓ Completed in 188ms.\n07:13:28 [build] 1 page(s) built in 256ms\n07:13:28 [build] Complete!\n",
+  "stderr": ""
+}

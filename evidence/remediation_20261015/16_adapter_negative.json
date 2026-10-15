@@ -1,0 +1,14 @@
+{
+  "name": "16_adapter_negative",
+  "argv": [
+    "python",
+    "tools/adapter_negative_probe.py"
+  ],
+  "cwd": "/workspace/portal-b1-remediation",
+  "start_utc": "2026-10-15T07:12:37.464631+00:00",
+  "end_utc": "2026-10-15T07:12:39.039459+00:00",
+  "duration_seconds": 1.5748349999994389,
+  "exit_code": 0,
+  "stdout": "{\n  \"checks\": [\n    {\n      \"id\": \"AMBIGUOUS_TOKENIZATIONS_BOUNDED\",\n      \"actual\": true,\n      \"expected\": true,\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"PRIVATE_FRAGMENT_GENERATOR_REJECT\",\n      \"actual\": true,\n      \"expected\": true,\n      \"status\": \"PASS\"\n    },\n    {\n      \"id\": \"ALL_26_VENDOR_FILES_UNMODIFIED\",\n      \"actual\": true,\n      \"expected\": true,\n      \"status\": \"PASS\"\n    }\n  ],\n  \"summary\": {\n    \"PASS\": 3,\n    \"FAIL\": 0\n  }\n}\n",
+  "stderr": ""
+}

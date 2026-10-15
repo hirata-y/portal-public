@@ -3,6 +3,7 @@
 No replacement for independent review. Standard Python library only.
 Usage: python tools/verify_vendor_dist.py --dist astro_candidate/dist [--require-index]
 """
+import os
 import argparse,json,hashlib,re,sys,zipfile
 from pathlib import Path
 ap=argparse.ArgumentParser();ap.add_argument('--dist',default='astro_candidate/dist');ap.add_argument('--require-index',action='store_true');args=ap.parse_args()
@@ -48,6 +49,6 @@ if args.require_index:
 injected=(DIST/'index.html').read_bytes()+canary
 test('MUTATION_CANARY_BYTE_SCAN_DETECTS_INJECTION',canary in injected)
 summary={'status':'COMPLETE' if all(x['status']=='PASS' for x in results) else 'FAIL','total':len(results),'PASS':sum(x['status']=='PASS' for x in results),'FAIL':sum(x['status']=='FAIL' for x in results),'required_pagefind':args.require_index,'pagefind_actual_status':'TO_BE_CHECKED_AFTER_VENDOR_BUILD' if not args.require_index else ('INDEX_FOUND' if (pagefind_dir/'pagefind.js').exists() else 'MISSING'),'dist':str(DIST),'dist_total_bytes':sum(p.stat().st_size for p in files),'pagefind_file_count':len(pf_files),'source_p3_a_sha256':pin.get('source_p3a_zip_sha256'),'notes':['This is a Producer check, not independent F verification.','Japanese query accuracy and native browser URL/Back require browser probe evidence.']}
-output=ROOT/'evidence/vendor_real_dist_checks.json';output.parent.mkdir(exist_ok=True)
+output=Path(os.environ.get('P3_B1_DIST_REPORT',str(ROOT/'evidence/vendor_real_dist_checks.json')));output.parent.mkdir(exist_ok=True)
 output.write_text(json.dumps({'summary':summary,'checks':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(summary,ensure_ascii=False,indent=2));sys.exit(0 if summary['FAIL']==0 else 2)

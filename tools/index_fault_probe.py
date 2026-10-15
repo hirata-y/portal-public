@@ -4,7 +4,7 @@ import os
 import json,tempfile,shutil,subprocess,threading,http.server,functools,sys,datetime
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-R=Path(__file__).resolve().parents[1];E=R/'evidence/vendor_actual';canary=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary']
+R=Path(__file__).resolve().parents[1];E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')));canary=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary']
 report={'role':'A Producer self-check','time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
 with tempfile.TemporaryDirectory(prefix='p3b1-index-fault-') as t:
  d=Path(t)/'public';shutil.copytree(R/'astro_candidate/dist',d);shutil.rmtree(d/'pagefind');shutil.rmtree(d/'tech-evidence')

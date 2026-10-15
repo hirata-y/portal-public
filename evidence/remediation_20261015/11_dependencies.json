@@ -1,0 +1,14 @@
+{
+  "name": "11_dependencies",
+  "argv": [
+    "python",
+    "tools/dependency_inventory.py"
+  ],
+  "cwd": "/workspace/portal-b1-remediation",
+  "start_utc": "2026-10-15T07:10:08.952350+00:00",
+  "end_utc": "2026-10-15T07:10:09.132451+00:00",
+  "duration_seconds": 0.1801080829991406,
+  "exit_code": 0,
+  "stdout": "{\n  \"tools\": {\n    \"node\": \"v24.19.0\",\n    \"npm\": \"11.9.0\",\n    \"python\": \"Python 3.12.14\",\n    \"browser\": \"Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)\"\n  },\n  \"lock_sha256\": \"dd957c01dc054952d911b48cff783e62c500d83d5d06898d730fba46faac5117\",\n  \"fixed_input_sha256\": \"a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9\",\n  \"fixed_zip_crc\": null,\n  \"license_counts\": {\n    \"MIT\": 199,\n    \"Apache-2.0\": 16,\n    \"LGPL-3.0-or-later\": 10,\n    \"Apache-2.0 AND LGPL-3.0-or-later AND MIT\": 1,\n    \"Apache-2.0 AND LGPL-3.0-or-later\": 3,\n    \"ISC\": 9,\n    \"BlueOak-1.0.0\": 3,\n    \"BSD-2-Clause\": 8,\n    \"CC0-1.0\": 2,\n    \"BSD-3-Clause\": 3,\n    \"MPL-2.0\": 12,\n    \"0BSD\": 1\n  },\n  \"missing_license_metadata\": []\n}\n",
+  "stderr": ""
+}

@@ -1,35 +1,16 @@
 【PROJECT_STATUS】
 
-- プロジェクト名：AI調査成果物共有ポータル
-- 報告日時（JST）：2026-10-15T15:46:29.823147+09:00
-- 現在のPhase／Subphase：P3-B1 ローカル技術PoC／実行成果の評価・進捗統合。製品是正・独立レビューは未開始。
-- 現在のTask ID：P3-B1-STATUS-INTEGRATION-20261015-01（今回Aが付番した報告・管理Task。新製品実装契約ではない）
-- Taskの実行状態：報告・6管理ファイル整備完了。保存／読戻し結果はmanagement/PUBLICATION_RECEIPT.json。今回管理資料も別Owner追加承認を受け、公開GitHub同期を実施。
-- 直近完了したTask：P3-B1-REAL-VENDOR-POC-20261016-01の実行・納品。実行終了と受入完了を分離：日本語検索Majorが残る。
-- 現在の正式Candidate：P3-B1は未Freeze（0回）。正式前段はP2 v1.1.6とP3-A v0.1.0。B1提出物は実行スナップショットSHA `1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9`。
-- 最新の独立レビューVerdict：B1未実施（0回）。P3-A F正式BLOCKEDを維持（87 PASS / 0 FAIL / 1 BLOCKED / 3 NOT EXECUTED）。
-- 直近のGate判定：P2 H G3＝GO WITH CONDITIONS、P1 QA02 K2＝狭義CLOSE。G4未承認／STOP。AはGateを再判定しない。
-- 現在の阻害事項：B1-M001「奥多摩」詳細0/期待2、M002〜M004の独立確証待ち、未収集受入Evidence、CT04独立実HTTPブラウザ。4入力は今回回収済みだが実行前未読の履歴は残る。管理資料の公開GitHub阻害は別Owner追加承認とpush成功で解消。
-- Owner判断待ち事項：Pagefind是正継続か、Vanilla維持に伴う受入範囲変更か。次Task範囲・追加工数・期限。DG012、52 N/A等の後続条件。管理資料の公開も追加承認済み（Drive私有保存・読戻し済み）。
-- 次に実施するTask：提案 P3-B1-DISPOSITION-01（結果受領・検索方針／是正枠の決定）。本報告では発注しない。
-- 次Taskの実施担当：Owner＋Coordinator。Aは資料提供。
-- 次Taskの開始条件：本報告・ADR・固定実行SHAの受領。
-- 次Taskの完了条件：検索方針、影響する受入条件、担当、期限、工数枠、Freeze／Fの開始条件を明示決定。未決ならHOLD。
+- 更新JST：2026-10-15T16:17:34.895869+09:00
+- Phase／Task：P3-B1／P3-B1-REMEDIATION-20261015-01、A是正・Evidence完備。
+- Owner決定：Pagefind限定是正を優先。A是正→Evidence完備→初回Freeze→別セッション独立F1回まで承認済み。
+- 実装／実ビルド：完了。Astro7.3.8・Pagefind1.5.2 Extended、公開索引由来の日本語分割補助。元vendor26ファイル／P3-A16ファイル／lock不変。
+- A検査：dist42 PASS、security25 PASS、実故障索引PASS、headfulブラウザ33 PASS、追加統合62 PASS、adapter負例3 PASS。各suiteの母数を分離し、重複する検索3照会を加算しない。
+- 検索：補助込みで谷川TGW001/002、奥多摩OKU001/002、丹沢TNZ001〜004。標準Pagefind単独は奥多摩0のまま。全20照会の期待ID一致。
+- 正式Candidate：初回Freeze1確定、2026-10-15 16:18:36 JST。ZIP SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。399entries実検算PASS。旧実行ZIP／MANIFESTは歴史資料のまま。
+- 独立F：初回1回を実行中。別セッション f_review_freeze1 に同一ZIP SHAで発注済み。AのPASSは独立closeでない。
+- Finding：M001〜M004はA_VERIFIED_FIXED/F_PENDING。E001は回収済み・原実行前未読履歴を保持。追加不足Evidence Q001はA実行済み／F確認待ち。
+- 未検証：Windows/Edge、Microsoft Office GUI、全WCAG/AT/native200%、本番JWT/配信、実原典／PII、DG012／52N/A判断。Linux実Chromium native URLバーは取得済み。
+- 正式判断：既存P2 H G3 GO WITH CONDITIONS／K2狭義CLOSEを維持。P3-A過去F BLOCKED不変。G4 STOP、B2未着手。
+- 次：同一SHAのFreezeを別セッションFで1回限定レビュー→Finding処置→OwnerのB1受入／技術採用判断。B2開始は別契約。
 
-## 結論
-
-Astro 7.3.8の実ビルドとPagefind 1.5.2 Extendedの日本語索引生成は成功。Pagefind「谷川」はTGW-001/002、「奥多摩」は詳細0件でFAIL、「穂高岳」は0件。既存Vanilla検索・フィルタは維持する。A検査は160 assertion中159 PASS／1 FAIL（独立Fではない）。日本語3照会2 PASS／1 FAILは内包されるため加算しない。
-
-管理受入表は22項目：12 PASS／1 FAIL／2 BLOCKED／7 NOT_EXECUTED。これは160 assertionとは異なる母数で、工程の進捗率には使わない。
-
-## 状態を読み違えないための順序
-
-1. この6ファイルが現在の統合管理ビュー。Task＝TASK_REGISTER、Finding＝FINDINGS_REGISTER、判断＝DECISION_LOG、Evidence＝EVIDENCE_INDEXを正本とし、PROJECT_STATUSとROADMAPはその要約。
-2. 原P2/P3-Aの正式Verdictは正式原文に従う。Google統合台帳の冒頭には古いP3未承認記述が残るが§68・§72・§76・§78を版／時点別に読む。過去Gateの上書き禁止。
-3. CODEX_EXECUTION_STATE.jsonは回収した実行前入力、EXECUTION_STATE_RESULT.jsonとdocs/P3_B1_A_EXECUTION_HANDOFF.mdは前回の実行時点記録。これらのGitHub BLOCKED／入力不在は当時の履歴。
-4. PUBLICATION_RECEIPT.jsonは追加Owner承認・push・Draft PR作成成功の後発証拠。GitHub禁止を再度未承認へ戻さない。
-5. 実行スナップショット・旧Manifest・原Finding JSONは不変。新しい管理スナップショットは別SHAで保存し、公式Freeze回数に算入しない。
-
-## 今回の変更範囲
-
-既存ログ・SHA・Drive正式資料の照合、4入力回収、6管理Markdown、AGENTS／START_HEREの継続運用入口、詳細報告、管理ZIPと保存receiptのみ。製品コード・dist・Pagefind期待値・独立Verdict・Gateは変更しない。新たな実装・レビュー・バックグラウンド監視は開始しない。
+今回の直接Evidenceは evidence/remediation_20261015/、ADR002、是正Handoff。旧 vendor_actual は前版159/160 PASSの履歴。テストPASS率を工程進捗率にしない。GitHub公開承認は継続有効、Draft PR #1へ成果物管理の範囲で同期し、merge／配備は行わない。

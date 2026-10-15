@@ -4,7 +4,7 @@ import os
 import json,re,time,datetime,threading,http.server,functools,statistics,sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-R=Path(__file__).resolve().parents[1]; E=R/'evidence/vendor_actual/browser';E.mkdir(parents=True,exist_ok=True)
+R=Path(__file__).resolve().parents[1]; E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')))/'browser';E.mkdir(parents=True,exist_ok=True)
 report={'role':'A Producer self-check','start_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':[],'navigation':[],'page_errors':[]}
 def ck(name,a,e):
  report['checks'].append({'id':name,'actual':a,'expected':e,'status':'PASS' if a==e else 'FAIL'})
@@ -15,11 +15,14 @@ def serve(folder,port):
 servers=[serve(R/'astro_candidate/dist',8766),serve(R/'outputs/public',8767)]
 try:
  with sync_playwright() as p:
-  b=p.chromium.launch(executable_path=os.environ.get('P3_B1_BROWSER','/usr/bin/chromium'),headless=True,args=['--no-sandbox']);report['browser']=b.version
+  b=p.chromium.launch(executable_path=os.environ.get('P3_B1_BROWSER','/usr/bin/chromium'),headless=os.environ.get('P3_B1_HEADFUL')!='1',args=['--no-sandbox','--window-position=0,0','--window-size=1440,1100','--no-first-run','--disable-session-crashed-bubble']);report['browser']=b.version
   c=b.new_context(viewport={'width':1440,'height':1000});page=c.new_page()
   page.on('pageerror',lambda e:report['page_errors'].append(str(e)))
   def snap(name):
    report['navigation'].append({'step':name,'url':page.url,'time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()});page.screenshot(path=str(E/(name+'.png')),full_page=True)
+   if os.environ.get('P3_B1_HEADFUL')=='1':
+    import subprocess
+    subprocess.run(['ffmpeg','-y','-f','x11grab','-video_size','1440x1100','-i',os.environ.get('DISPLAY',':99'),'-frames:v','1',str(E/(name+'_native.png'))],check=True,capture_output=True)
   page.goto('http://127.0.0.1:8766/');page.wait_for_function("document.querySelector('#count').textContent==='8'");snap('01_home')
   page.locator('a.theme-tanigawa').click();ck('HOME_THEME_URL',page.url,'http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html');snap('02_theme')
   page.locator('a[href="records/SYN-TGW-001.html"]').click();ck('THEME_DETAIL_URL',page.url,'http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html');snap('03_detail')

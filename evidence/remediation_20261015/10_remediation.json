@@ -1,0 +1,14 @@
+{
+  "name": "10_remediation",
+  "argv": [
+    "python",
+    "tools/remediation_checks.py"
+  ],
+  "cwd": "/workspace/portal-b1-remediation",
+  "start_utc": "2026-10-15T07:09:42.960349+00:00",
+  "end_utc": "2026-10-15T07:10:18.989551+00:00",
+  "duration_seconds": 36.02920806200018,
+  "exit_code": 2,
+  "stdout": "{\n  \"summary\": {\n    \"PASS\": 47,\n    \"FAIL\": 1\n  },\n  \"exception\": \"Page.wait_for_function: Timeout 30000ms exceeded.\",\n  \"failures\": [\n    {\n      \"id\": \"EXECUTION_COMPLETED\",\n      \"actual\": false,\n      \"expected\": true,\n      \"status\": \"FAIL\"\n    }\n  ]\n}\n",
+  "stderr": ""
+}

@@ -11,4 +11,4 @@
 
 CODEX_EXECUTION_STATE.jsonは回収した実行前の正本入力です。最新状態へ上書きしません。実行結果はEXECUTION_STATE_RESULT.json、公開承認後はPUBLICATION_RECEIPT.json、現在の統合状態は上記6ファイルで確認します。
 
-Pagefind「奥多摩」はMajor OPEN。P3-B1正式Freeze 0、独立F 0、G4 STOP。過去P3-A F BLOCKEDとCT04は維持。
+Pagefind「奥多摩」は補助込みでA是正実証済み／F待ち。正式Freezeと独立Fの最新状態・SHAはPROJECT_STATUS.mdとFREEZE1_MANIFEST.json。G4 STOP。過去P3-A F BLOCKEDとCT04は維持。

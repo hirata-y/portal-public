@@ -17,7 +17,20 @@
 
 参照した内部原台帳121,711文字・原Doc本文はローカル別領域で読取り。公開repoや管理ZIPにその全文や実Owner画像を複製しない。今回の根拠URL・版・要約・local export hashのみmanagement/SOURCE_REFERENCES.jsonで追跡する。
 
-## A実行成果と検査
+## 今回の是正Evidence
+
+- R01 `evidence/remediation_20261015/TASK_START.json`：Owner2回答・実開始・入力SHA。
+- R02 17_final_build / 18_final_index json/log：Astro／Pagefind exit0。公開13ページ・338語・26索引file＋219語辞書。
+- R03 `browser/`：headful33 PASS、実日本語3照会、8枚のnative URLバー画面、performance。A自己検査。
+- R04 `remediation_checks.json`：20照会・検索click・XSS・主要link・形式GET・Console/Network・不正asset等62 PASS。
+- R05 `adapter_negative.json`：32候補制限、private fragment拒否、vendor26file同一bytesの3 PASS。
+- R06 `security_formats.json`25 PASS、`index_fault_injection.json`実汚染index検出PASS。
+- R07 `dependency_inventory.json`全lock267件／欠落0、08_npm_audit exit0／既知脆弱性0、`comparison_metrics.json`。
+- R08 `EXPERIMENT_NOTES.md`、初期失敗JSON・10/12ログ：未成功を保持。最終PASSだけに履歴を塗り替えない。
+- R09 ADR002、是正Handoff。正式Freezeの正本ManifestはFREEZE1_MANIFEST.json。旧MANIFEST.jsonは前版時点の歴史資料。
+- R10 F原票／公開readback：Freeze後に発行。未発行の結果・SHAを創作しない。
+
+## 前回A実行成果と検査（版固定の履歴）
 
 | ID | 内容 | 実ファイル／結果 |
 |---|---|---|
@@ -48,8 +61,19 @@
 | M04 | 9節詳細報告／Coordinator引継ぎ | `management/P3_B1_PROGRESS_REPORT_20261015.md` |
 | M05 | 今回管理パック・Manifest・SHA・読戻し | `management/STATUS_MANIFEST.json`、`artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.2.zip`、SHA sidecar。Drive保存先・readback結果はmanagement/PUBLICATION_RECEIPT.json。旧E01や公式Freezeを置換しない |
 
-## 非実施の根拠
+## 前報告時点の非実施根拠（今回R系の後発実証を優先）
 
 該当するログ／コードのassertionがない項目はNOT_EXECUTED。ブラウザpageerror=[]は包括Console/Network検査やXSS負試験を意味しない。Fの旧版87PASSはB1の独立PASSではない。未実施GateとOwner受入は実行済みassertion件数へ混ぜない。
 
 今回管理資料の公開GitHub同期はB1-E004として一旦停止したが、別Owner明示追加承認後のpush成功で解消。PR #1に現在の管理資料も同期。v1.0.1は承認前履歴、v1.0.2が承認反映後。Driveの7Markdownと旧PROGRESSは所有者一致・非共有を確認して保存／raw読戻し済み。
+
+
+## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
+
+OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
+
+
+更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+
+
+2026-10-15 16:18:36 JST：初回Freeze1確定、SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。以後コード変更なし。別セッションF初回1回へ固定ZIPを発注。A判定をF PASSにしない。

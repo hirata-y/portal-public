@@ -10,6 +10,7 @@
 | D05 | Aの技術提案／未採用 | 10/15：Astroは実行可能候補、Pagefind検索置換は保留、Vanilla保持 | E01/ADR、M001 | Owner正式技術採用・受入・G4を代行しない |
 | D06 | 明示Owner承認＋実行済み | 10/15 12:53記録：「Ownerとして、公開GitHubへのpushとDraft PR作成を追加承認する」→push／Draft PR #1成功 | PUBLICATION_RECEIPT.json、現PR metadata | 公開先hirata-y/portal-public、合成コード・dist・test・ZIP。merge／サイト配備／Cloudflare／Access／実データ／B2／G4は含まない |
 | D07 | 今回Owner依頼／A実施 | 実態報告、6Markdown、Task開始・節目・問題・終了時の継続更新、適切なDrive保存とreadback | 今回添付依頼文 | 追加製品実装・独立レビューは開始せず、次Taskを正式化する材料を作る |
+| D10 | 明示Owner選択／今回実行 | Pagefind限定是正を優先。A是正・Evidence完備・初回Freeze後の別F1回まで進める | TASK_START.jsonのOwner回答原文 | 受入IDを変更しない。B1受入／本番／B2／G4は含まない |
 | D08 | A照合結果／独立評価待ち | 4入力をSHA一致キットから回収・読了。前実行時未読という履歴は維持 | management/evidence/input_recovery.json | 旧Handoff／Findingを書き換えず、現状態と受入不足を追記 |
 
 ## 今回管理資料の公開境界
@@ -20,9 +21,9 @@
 
 | Pending | 選択・決定が必要なこと | 判断材料／停止点 |
 |---|---|---|
-| O01 | Pagefind M001是正継続か、Vanilla維持の契約変更か | 実IDの0/2差、ADR。未決のまま採用PASSにしない |
-| O02 | 次Taskの担当・日時・予算上限・重大是正期限 | TASK_REGISTERの4.5〜9h相当案。既存16h残余未測定 |
-| O03 | B1公式Freeze／独立Fの具体Task、native環境、未収集Evidenceの対象 | Freeze前に受入不足を処置。Fは別セッション、CT04未免除 |
+| O01 | 解決済み：Pagefind限定是正を選択 | D10。正式技術採用は別Owner判断 |
+| O02 | A/F範囲と提示見積りを選択済み。追加超過・重大是正が必要なら再判断 | 期限の絶対値は未固定、既存16h残余未測定 |
+| O03 | 初回Freeze後F1回まで承認済み。A不足Evidenceを実行 | Fは同一SHA・別セッションで限定検証、CT04未免除 |
 | O04 | DG012、実個人情報・保持削除・招待等の正式境界 | 実PII初処理／G4の所定停止点。暫定日数を自動採用しない |
 | O05 | 52 N/Aと全AA／AT等の個別受入、Gate定義不足 | WCAG品質目標採用と実適合／N/A承認は別 |
 | O07 | 解決済み：今回管理パックの公開を別途明示承認 | 上記Owner原文とpush成功。製品採用／Gateとは別 |
@@ -39,3 +40,14 @@
 7. 履歴：固定P2/P3-A・入力ZIP・旧実行Manifest/ZIPを変更しない。新しい管理資料は別スナップショット。Gate原票や統合台帳の過去VerdictをAが再判定しない。
 8. 公開：Owner承認済みの公開GitHub範囲に限り管理資料を同期する。内部原台帳全文やOwnerブラウザ原画像・実PIIを公開リポジトリへコピーしない。Drive既存ファイルを無断で移動・上書きしない。
 9. 可視化：今後の対話Task中の節目で更新し、質問時はこの最新ファイルと実Evidenceを読む。別途未依頼の定期Automation、常時監視、バックグラウンド継続を作成・約束しない。
+
+
+## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
+
+OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
+
+
+更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+
+
+2026-10-15 16:18:36 JST：初回Freeze1確定、SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。以後コード変更なし。別セッションF初回1回へ固定ZIPを発注。A判定をF PASSにしない。

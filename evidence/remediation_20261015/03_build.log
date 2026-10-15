@@ -1,0 +1,26 @@
+
+> build
+> node ../tools/build_astro.mjs
+
+07:06:35 [types] Generated 42ms
+07:06:35 [build] output: "static"
+07:06:35 [build] mode: "static"
+07:06:35 [build] directory: /workspace/portal-b1-remediation/astro_candidate/dist/
+07:06:35 [build] Collecting build info...
+07:06:35 [build] ✓ Completed in 78ms.
+07:06:35 [build] Building static entrypoints...
+07:06:35 [vite] ✓ built in 201ms
+07:06:35 [vite] ✓ built in 18ms
+07:06:35 [build] Rearranging server assets...
+
+ generating static routes 
+07:06:35   ├─ /index.html (+13ms) 
+07:06:35 ✓ Completed in 22ms.
+
+07:06:35 [build] ✓ Completed in 281ms.
+07:06:35 [build] 1 page(s) built in 361ms
+07:06:35 [build] Complete!
+
+STDERR:
+
+EXIT: 0

@@ -1,0 +1,199 @@
+{
+  "role": "A",
+  "time_utc": "2026-10-15T07:18:08.508350+00:00",
+  "checks": [
+    {
+      "id": "AMBIGUOUS_TOKENIZATIONS_BOUNDED",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "PRIVATE_FRAGMENT_GENERATOR_REJECT",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "ALL_26_VENDOR_FILES_UNMODIFIED",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    }
+  ],
+  "vendor_byte_comparison": [
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_1fc9edd.pf_fragment",
+      "sha256": "fb3b42bea4df361c39c1658a09fc42b7ee84ebfe9ccc8e5a6895ee5e3e4d2a6e",
+      "old_sha256": "fb3b42bea4df361c39c1658a09fc42b7ee84ebfe9ccc8e5a6895ee5e3e4d2a6e",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_2a740c2.pf_fragment",
+      "sha256": "4aff63aded76839f55ea84f08bba20cbc56e77ac0c0669d02907504e571f21e9",
+      "old_sha256": "4aff63aded76839f55ea84f08bba20cbc56e77ac0c0669d02907504e571f21e9",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_2ba5ab4.pf_fragment",
+      "sha256": "5bc71d974e1e6bfe8c83cb2b3930eebc01f18c1df3345c6494665124683528bc",
+      "old_sha256": "5bc71d974e1e6bfe8c83cb2b3930eebc01f18c1df3345c6494665124683528bc",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_33f818d.pf_fragment",
+      "sha256": "f352eef2caf08a16bd51049537b8792f696724b057678312c7f190f38c46886b",
+      "old_sha256": "f352eef2caf08a16bd51049537b8792f696724b057678312c7f190f38c46886b",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_5d1d224.pf_fragment",
+      "sha256": "84d8d5cde243ce30faa9ff3f436f6c6eec4bae554624ced66517f4796b4d6f2f",
+      "old_sha256": "84d8d5cde243ce30faa9ff3f436f6c6eec4bae554624ced66517f4796b4d6f2f",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_75e64ef.pf_fragment",
+      "sha256": "a5f93a07945d196c824cb487250f9a43699db178deeae99c6dbdbb35d1d384ba",
+      "old_sha256": "a5f93a07945d196c824cb487250f9a43699db178deeae99c6dbdbb35d1d384ba",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_79d2efa.pf_fragment",
+      "sha256": "03132cc077ef6278565d8b18b4d3ae81888e02ce34ae94bb974f5a044384485c",
+      "old_sha256": "03132cc077ef6278565d8b18b4d3ae81888e02ce34ae94bb974f5a044384485c",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_93a1916.pf_fragment",
+      "sha256": "482738fd3fda03b7b6143747c4b1cb31c98e7d8953d810f6d77658a32e1bc21d",
+      "old_sha256": "482738fd3fda03b7b6143747c4b1cb31c98e7d8953d810f6d77658a32e1bc21d",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_9cb17c4.pf_fragment",
+      "sha256": "6476fdc2511fb5f24b8e67257b36f8dcad78d89aac6ea26615b9f947292b972c",
+      "old_sha256": "6476fdc2511fb5f24b8e67257b36f8dcad78d89aac6ea26615b9f947292b972c",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_ac238cd.pf_fragment",
+      "sha256": "d9e2e50ba5af8c096c520e36fb3d98d456eb8e4f068aba2a4f7795a35706ffb8",
+      "old_sha256": "d9e2e50ba5af8c096c520e36fb3d98d456eb8e4f068aba2a4f7795a35706ffb8",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_b29c3ee.pf_fragment",
+      "sha256": "df600520b1819c076bbaa1c1d6468737e2637b6980f4ba2e6f40f8f7910b2189",
+      "old_sha256": "df600520b1819c076bbaa1c1d6468737e2637b6980f4ba2e6f40f8f7910b2189",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_c391372.pf_fragment",
+      "sha256": "8bc4bba009ef21851d740e0a028af89c1d41685b8ac08c81b747b40105cea4dd",
+      "old_sha256": "8bc4bba009ef21851d740e0a028af89c1d41685b8ac08c81b747b40105cea4dd",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/fragment/ja_fd82349.pf_fragment",
+      "sha256": "9bde89ed19a2ff35cb7d007ce6332f41c8ebd904a87f51abe69a46fc73619072",
+      "old_sha256": "9bde89ed19a2ff35cb7d007ce6332f41c8ebd904a87f51abe69a46fc73619072",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/index/ja_d94f453.pf_index",
+      "sha256": "3d7bea26e505d69c9745916c9f0595e8e92b13c47b5168e92c4c74e3167e4c3e",
+      "old_sha256": "3d7bea26e505d69c9745916c9f0595e8e92b13c47b5168e92c4c74e3167e4c3e",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-component-ui.css",
+      "sha256": "de389c7e5d87d6e2b10d65fb1e36e8989a12a2ad8dd6239b7e070d81fb5d8b0d",
+      "old_sha256": "de389c7e5d87d6e2b10d65fb1e36e8989a12a2ad8dd6239b7e070d81fb5d8b0d",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-component-ui.js",
+      "sha256": "958620129dd14bd851805daeb12ce708bd63b9287325d1d5ae6f73a04d1723f8",
+      "old_sha256": "958620129dd14bd851805daeb12ce708bd63b9287325d1d5ae6f73a04d1723f8",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-entry.json",
+      "sha256": "2d56fa7f6c0fc57480aeaa009b8dfdb4f3664850f7ca6217d8610706bff5b401",
+      "old_sha256": "2d56fa7f6c0fc57480aeaa009b8dfdb4f3664850f7ca6217d8610706bff5b401",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-highlight.js",
+      "sha256": "04741266a86911636cefc41c8b407e380dda99b7d208724f700f94cdf57e37b5",
+      "old_sha256": "04741266a86911636cefc41c8b407e380dda99b7d208724f700f94cdf57e37b5",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-modular-ui.css",
+      "sha256": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788",
+      "old_sha256": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-modular-ui.js",
+      "sha256": "f3efa0f74b305ccab0bc9edc7c09ab69867180b4c43093d84bb9b508ac4ec32c",
+      "old_sha256": "f3efa0f74b305ccab0bc9edc7c09ab69867180b4c43093d84bb9b508ac4ec32c",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-ui.css",
+      "sha256": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084",
+      "old_sha256": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-ui.js",
+      "sha256": "2efa93f2e80a199ca742a69bd4cfffabc5c591ebe7763f64f7c655fd00d2209f",
+      "old_sha256": "2efa93f2e80a199ca742a69bd4cfffabc5c591ebe7763f64f7c655fd00d2209f",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind-worker.js",
+      "sha256": "4ca50d25bcab9e1c3afbc00ab5f7761114e83c8fc1b83d38655af1558b650c2a",
+      "old_sha256": "4ca50d25bcab9e1c3afbc00ab5f7761114e83c8fc1b83d38655af1558b650c2a",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind.ja_9a968aba9d.pf_meta",
+      "sha256": "fbb29d1270c24010bb4dd5966757a43b9df09739a97f9162700f71a12bdad9ab",
+      "old_sha256": "fbb29d1270c24010bb4dd5966757a43b9df09739a97f9162700f71a12bdad9ab",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/pagefind.js",
+      "sha256": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009",
+      "old_sha256": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009",
+      "equal": true
+    },
+    {
+      "path": "astro_candidate/dist/pagefind/wasm.unknown.pagefind",
+      "sha256": "3a74cefceacd066e8d3bc8c52e7bc1c869544ca3d9031b44a9b7136356d5d7f4",
+      "old_sha256": "3a74cefceacd066e8d3bc8c52e7bc1c869544ca3d9031b44a9b7136356d5d7f4",
+      "equal": true
+    }
+  ],
+  "generator_rejection": {
+    "argv": [
+      "node",
+      "--input-type=module",
+      "-e",
+      "import {createLexicon} from './tools/create_ja_lexicon.mjs';createLexicon(process.argv[1]);",
+      "/tmp/tmp77j_jrby/dist"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "file:///workspace/portal-b1-remediation/tools/create_ja_lexicon.mjs:14\n    if(!fragment.url?.startsWith('/')||fragment.url.includes('/members/'))throw new Error('Non-public index source');\n                                                                                ^\n\nError: Non-public index source\n    at createLexicon (file:///workspace/portal-b1-remediation/tools/create_ja_lexicon.mjs:14:81)\n    at file:///workspace/portal-b1-remediation/[eval1]:1:61\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:224:26\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:221:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  "ambiguous_query_error": "Error: 検索語の分割候補が多いため、短い語に分けて検索してください。",
+  "summary": {
+    "PASS": 3,
+    "FAIL": 0
+  }
+}

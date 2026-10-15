@@ -2,6 +2,12 @@
 
 現在位置はPROJECT_STATUS.md。Task IDは既存正式IDを保持。今回の報告IDと末尾の提案IDはAの管理付番で、Owner発注・内部サービスUUIDではない。表の「実行完了」は受入／レビュー／Gate合格を意味しない。
 
+## 現行契約
+
+Ownerの後発回答により、当初提案の検索方針決定・限定是正・不足Evidence・Freeze後F1回の順に進行を承認。作業推計はA2〜4h＋A1〜2h＋F1〜2h相当。実人時／料金／16h残余を意味せず、追加範囲・超過見込みが生じれば再見積りする。期限は新たに固定されていない。
+
+Aの対象・expected IDsは当初案を維持。独立Fは未Freezeでは開始せず、別セッションへ実ZIP SHAを固定して1回発注する。Coordinator／OwnerのB1受入とB2開始は未承認。
+
 ## 履歴と現在
 
 | Task ID | Phase／担当 | 実開始／終了（JST） | 状態・結果 | 依存／次の条件 |
@@ -11,11 +17,12 @@
 | P3-F-LOCAL-HYBRID-ONE-REVIEW-20261015-01 | P3-A／独立F | 台帳上の完了2026-10-15 10:29:10.971927 | BLOCKED、87 PASS/0 FAIL/1 BLOCKED/3 NOT_EXECUTED | 独立native HTTPの不足をCT04へ移管。今回再実行なし |
 | P3-OWNER-UAT-FIXED-V010-20261015-01 | P3-A／Owner | Owner申告2026-10-15 11:07:48 | Owner UAT reported PASS、local/synthetic受入の根拠。F PASSではない | 独立性・native200%等の残条件を維持 |
 | P3-B1-REAL-VENDOR-POC-20261016-01 | P3-B1／Codex A | 記録開始10/15 12:37:34.201228、最終vendor検査終了12:46:42.640330、公開receipt12:54:08.863799 | EXECUTION_COMPLETED_WITH_FAIL。Astro build／ja index成功。M001 OPEN。公式Freeze0/F0 | 本実測を受けたOwner方針決定、残Evidence、正式Candidate後のF |
+| P3-B1-REMEDIATION-20261015-01 | P3-B1／A | 10/15 15:59:17.859823〜継続 | Ownerが限定是正・不足Evidence・初回Freeze後別F1回を選択。A全suite PASS、Freeze準備 | 同一Candidate SHA→別F→Owner受入。G4 STOP |
 | P3-B1-STATUS-INTEGRATION-20261015-01 | P3-B1／Codex A | 10/15報告作業。本Task全体開始時刻は未計測、管理資料の時刻は個別記録 | 6資料整備・既存ログ照合・4入力回収。保存結果は管理receipt。製品実装／レビューなし。新管理資料も別Owner追加承認後に公開GitHub同期済み | Coordinatorへ受領・統合依頼。次の実装は未発注 |
 
 前Taskの管理計画は10/16〜18 JST・合算16h相当（A/F/統合の目標）。実際には10/15に実行した。記録開始から最終vendor検査終了548.439102秒＝機械・操作のwall clockであり、人の実工数ではない。準備開始時刻、人時、16h枠の使用量／残余は未測定。待機・会話間の経過を作業時間としない。
 
-## 次Taskの優先順位と契約案 — 未発注
+## 当初の次Task契約案 — Owner選択前の履歴
 
 既に成功したインストール・build/index・既存テスト全体を新規Taskとして重複発注しない。差分がないPASSは固定Evidenceを再利用し、変更で影響する部分を再検証する。
 
@@ -92,3 +99,14 @@
 ## 新見積りの扱い
 
 上記5Taskをすべて採る場合は合計4.5〜9h相当の管理推計。これは新たな作業範囲の提案であり、既存16h枠の「残り」や追加発注済み工数ではない。Vanilla維持の契約変更を選ぶ場合、優先2は未発注のまま不要となり、影響を再見積りする。予定日・正式期限はOwner確定までTBD。48h・2失敗サイクルは提案値のまま。
+
+
+## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
+
+OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
+
+
+更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+
+
+2026-10-15 16:18:36 JST：初回Freeze1確定、SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。以後コード変更なし。別セッションF初回1回へ固定ZIPを発注。A判定をF PASSにしない。

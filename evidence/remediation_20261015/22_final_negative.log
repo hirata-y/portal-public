@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "id": "AMBIGUOUS_TOKENIZATIONS_BOUNDED",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "PRIVATE_FRAGMENT_GENERATOR_REJECT",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "ALL_26_VENDOR_FILES_UNMODIFIED",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "PASS": 3,
+    "FAIL": 0
+  }
+}
+
+STDERR:
+
+EXIT: 0

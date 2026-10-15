@@ -8,7 +8,7 @@
 | P1 標準適用・統制設計 | 標準・Role・Router・Gate | Role分離・PROC02/03/04・GOV12運用参照、v1.1.6へのQA02 K2狭義CLOSE | P1全体完了原票・初期Gate全定義未照合 | 統制適用／部分的正式証拠 | Owner判断A（条件付き支持）とP1完了保留の既存履歴を保持。後発K2狭義CLOSE範囲を超えない | S08 P1_COMPLETION/OWNER_DECISION＋S03 §68、S01/S02 | K2の限定判断維持。P1全体やG1/G2と同一視しない |
 | P2 要件・コンテンツ・UX設計 | 要件・schema・受入契約・G3 | v1.1.6固定、レビュー工程終了、H G3 GO WITH CONDITIONS | CT01〜07後続実証、DG012・52 N/A等 | 設計レビュー完結／条件付き | 条件の担当・Evidence・停止Gateを後続に移管 | S03 §68/69/72、Full SHA pin | 既存G3とOwner CP3決定を維持。再レビュー自動起動なし |
 | P3-A ローカルUI | 8件・3テーマ・検索・HTTP UI | v0.1.0公式Freeze1、F1回、Owner local/synthetic条件付き受入 | F BLOCKEDの独立native HTTP、CT04、全AA/AT | Owner条件付き受入／F履歴BLOCKED | CT04独立ブラウザと後続AX証拠を指定Gateまでに充足 | S03 §72〜76、P3-A SHA pin／F原票リンク | Owner受入をF PASSへ転記しない。CT04はG4 STOP |
-| P3-B1 ローカル技術PoC | Astro・日本語検索・分離・4形式・ADR | 実build/index、A検査159/160 PASS、実行ZIP、GitHub Draft PR、今回6管理資料 | 奥多摩FAIL、未収集チェック、正式Freeze0/F0/Owner B1受入 | 実行済み／受入未完 | M001是正または正式契約変更、必要Evidence→Freeze→別F→Owner判断 | E01〜E14、PR #1、今回管理Evidence | 検索方針と次Task／工数枠決定待ち。G4未承認 |
+| P3-B1 ローカル技術PoC | Astro・日本語検索・分離・4形式・ADR | 補助付き日本語20照会・A各suite PASS、native URL画面、XSS/HTTP/依存確認 | 正式Freeze準備／F0／Owner受入未決。標準vendor単独は奥多摩FAIL | A是正実証／独立検証待ち | 同一SHA Freeze→別F1回→Owner判断 | evidence/remediation_20261015、ADR002、現行6資料 | 是正・Fまで選択済み。B1受入・採用・B2は別判断、G4 STOP |
 | P3-B2 認証・実配信PoC | Workers・Access・JWT・実HTTP | 範囲分離とCT01/02停止条件を定義 | 実装・実環境・権限・認可・Range/cache等すべて | 未着手／別契約 | Ownerの明示Task／環境認可と実正負試験、専門レビュー | S01/S02/S03、SECURITY_AND_G4_STOPS | B1完了だけで開始しない。別Owner承認とGate条件 |
 | P4 MVP実装・品質 | 本体・CI/CD・統合試験 | 今回参照資料で本体完成Evidenceなし | MVP実装、統合・CI/CD、品質判定 | 未着手として管理／着手Evidenceなし | 採用方式・要件・認証境界・テスト／Gate契約を満たす | 将来Evidence未作成 | 先行技術／Gate判断とP4正式Task |
 | P5 既存成果物移行 | HTML/PDF/Slides/Sheets実資料移行 | B1の合成4形式のみ | 実原典53、権利・意味・忠実性・移行試験 | 未着手／合成と区別 | CT05、権利・承認・provenanceと形式別受入 | S03の後続条件、B1合成形式は参考のみ | 実資料取込・権利確認をOwnerが別承認 |
@@ -32,6 +32,17 @@
 
 ## CT01〜07継承
 
-CT01実issuer/JWT/Access：未実施。CT02 GET/HEAD/Range/304/cache：公開loopback GETのみ、実protected delivery未実施。CT03依存：lockとnpm ciは実証、ライセンス・安全性監査は未実証。CT04：A headless HTTPは実施、独立Fとnative GUI/全AA/ATは未完。CT05実原典・権利：合成のみ。CT06 DG012：未承認の実PII処理禁止。CT07 Task責任／日付／Evidence：本6資料で追跡し、提案と承認済みTaskを分離。
+CT01実issuer/JWT/Access：未実施。CT02 GET/HEAD/Range/304/cache：公開loopback GETのみ、実protected delivery未実施。CT03依存：lockとnpm ci、license metadata267件・実license確認、npm audit既知0を実施。法的／全バイナリ権利証明は未実施。CT04：A headful実HTTP＋native URLバー実施、独立Fと全AA/ATは未完。CT05実原典・権利：合成のみ。CT06 DG012：未承認の実PII処理禁止。CT07 Task責任／日付／Evidence：本6資料で追跡し、提案と承認済みTaskを分離。
 
 S01〜S03／E01〜の所在はEVIDENCE_INDEX.md。統合台帳原文は読み取りのみとし、今回の追加資料で古い見出しと最新節の混在を解消する。正式原台帳を勝手に再判定・全文書換えしない。
+
+
+## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
+
+OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
+
+
+更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+
+
+2026-10-15 16:18:36 JST：初回Freeze1確定、SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。以後コード変更なし。別セッションF初回1回へ固定ZIPを発注。A判定をF PASSにしない。

@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Scan real build, repeat the same scanner on fault-injected temporary copies."""
+import os
 import gzip
 import json,hashlib,tempfile,shutil,subprocess,sys,zipfile
 from pathlib import Path
 import fitz
 from pptx import Presentation
 from openpyxl import load_workbook
-R=Path(__file__).resolve().parents[1];D=R/'astro_candidate/dist';E=R/'evidence/vendor_actual';C=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary'].encode();checks=[]
+R=Path(__file__).resolve().parents[1];D=R/'astro_candidate/dist';E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')));C=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary'].encode();checks=[]
 def ck(id,ok,actual):checks.append({'id':id,'status':'PASS' if ok else 'FAIL','actual':actual})
 from privacy_scan import scan as scan_root
 scan=lambda root:scan_root(root,C)
