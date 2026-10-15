@@ -1,16 +1,16 @@
 【PROJECT_STATUS】
 
 - プロジェクト名：AI調査成果物共有ポータル
-- 報告日時（JST）：2026-10-15T15:36:31.955167+09:00
+- 報告日時（JST）：2026-10-15T15:46:29.823147+09:00
 - 現在のPhase／Subphase：P3-B1 ローカル技術PoC／実行成果の評価・進捗統合。製品是正・独立レビューは未開始。
 - 現在のTask ID：P3-B1-STATUS-INTEGRATION-20261015-01（今回Aが付番した報告・管理Task。新製品実装契約ではない）
-- Taskの実行状態：報告・6管理ファイル整備完了。保存／読戻し結果はmanagement/PUBLICATION_RECEIPT.json。今回管理差分の公開GitHub同期は追加承認待ち。
+- Taskの実行状態：報告・6管理ファイル整備完了。保存／読戻し結果はmanagement/PUBLICATION_RECEIPT.json。今回管理資料も別Owner追加承認を受け、公開GitHub同期を実施。
 - 直近完了したTask：P3-B1-REAL-VENDOR-POC-20261016-01の実行・納品。実行終了と受入完了を分離：日本語検索Majorが残る。
 - 現在の正式Candidate：P3-B1は未Freeze（0回）。正式前段はP2 v1.1.6とP3-A v0.1.0。B1提出物は実行スナップショットSHA `1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9`。
 - 最新の独立レビューVerdict：B1未実施（0回）。P3-A F正式BLOCKEDを維持（87 PASS / 0 FAIL / 1 BLOCKED / 3 NOT EXECUTED）。
 - 直近のGate判定：P2 H G3＝GO WITH CONDITIONS、P1 QA02 K2＝狭義CLOSE。G4未承認／STOP。AはGateを再判定しない。
-- 現在の阻害事項：B1-M001「奥多摩」詳細0/期待2、M002〜M004の独立確証待ち、未収集受入Evidence、CT04独立実HTTPブラウザ。4入力は今回回収済みだが実行前未読の履歴は残る。管理資料の公開GitHub同期は自動承認レビューでBLOCKED（製品検査とは別）。
-- Owner判断待ち事項：Pagefind是正継続か、Vanilla維持に伴う受入範囲変更か。次Task範囲・追加工数・期限。DG012、52 N/A等の後続条件。今回管理資料を公開repoへ送る追加承認（Drive私有保存は完了）。
+- 現在の阻害事項：B1-M001「奥多摩」詳細0/期待2、M002〜M004の独立確証待ち、未収集受入Evidence、CT04独立実HTTPブラウザ。4入力は今回回収済みだが実行前未読の履歴は残る。管理資料の公開GitHub阻害は別Owner追加承認とpush成功で解消。
+- Owner判断待ち事項：Pagefind是正継続か、Vanilla維持に伴う受入範囲変更か。次Task範囲・追加工数・期限。DG012、52 N/A等の後続条件。管理資料の公開も追加承認済み（Drive私有保存・読戻し済み）。
 - 次に実施するTask：提案 P3-B1-DISPOSITION-01（結果受領・検索方針／是正枠の決定）。本報告では発注しない。
 - 次Taskの実施担当：Owner＋Coordinator。Aは資料提供。
 - 次Taskの開始条件：本報告・ADR・固定実行SHAの受領。

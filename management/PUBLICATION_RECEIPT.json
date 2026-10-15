@@ -5,8 +5,8 @@
       "success": true,
       "id": "1PBLYLOUqV1Of1_F4gUWoRRenkHaYMn1w",
       "url": "https://drive.google.com/file/d/1PBLYLOUqV1Of1_F4gUWoRRenkHaYMn1w/view",
-      "readback_path": "/workspace/attachments/5e9302d8-d527-4fb0-94e5-739a8bc988cf/PROJECT_STATUS.md",
-      "sha256": "6e3bbfedd2b5672e3363730d8c817f3e2995a0c38b603b281832756400a707b3",
+      "readback_path": "/workspace/attachments/9b589a85-6dd9-4517-98df-c891bdf4fa23/PROJECT_STATUS.md",
+      "sha256": "0331172d81eeba6446b90a02954ed7dfc1677c079b08d8ff5a086a37a2e27363",
       "raw_readback": "PASS",
       "bytes": 4286
     },
@@ -15,7 +15,7 @@
       "success": true,
       "id": "1mj9wg6tbpUIgV5ddiLQSBxAQdKvD9k5W",
       "url": "https://drive.google.com/file/d/1mj9wg6tbpUIgV5ddiLQSBxAQdKvD9k5W/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/2c58585d-3268-4399-9aa1-00cc62544d77/ROADMAP_STATUS.md",
+      "readback_path": "/workspace/attachments/d2452116-7d70-418d-b1d6-06050586782c/ROADMAP_STATUS.md",
       "sha256": "5522aacd0ed6dda08d6bf4784dfe2674eaaa30ad90195b606a5fb6add725e1f8",
       "raw_readback": "PASS",
       "bytes": 6699
@@ -25,61 +25,61 @@
       "success": true,
       "id": "1wMRZThnpefxMrJi4luVeTCc4UgQOtD8g",
       "url": "https://drive.google.com/file/d/1wMRZThnpefxMrJi4luVeTCc4UgQOtD8g/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/9127a1a2-bbae-4aed-9d9f-8acc97e78fdc/TASK_REGISTER.md",
-      "sha256": "f242b3f30818d2f365313d63b19f576e214000ddbdd7291dd02532bc11a5aa92",
+      "readback_path": "/workspace/attachments/4f25ad82-5252-4c38-b900-1d769986e9ec/TASK_REGISTER.md",
+      "sha256": "31badb7bc2aae72c8dd34e60a2af677773771f81598b6eba2b5e0cca2e4e9b8c",
       "raw_readback": "PASS",
-      "bytes": 10957
+      "bytes": 10965
     },
     {
       "path": "FINDINGS_REGISTER.md",
       "success": true,
       "id": "1HZPKbgIo5qnXmFWCVBZUoSvrAcmeowjL",
       "url": "https://drive.google.com/file/d/1HZPKbgIo5qnXmFWCVBZUoSvrAcmeowjL/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/97fec18e-0a9a-4145-93c0-76c1a7108e4a/FINDINGS_REGISTER.md",
-      "sha256": "05d59d5fa04f117a92d4707ea820f99e748eaac6a669eb5f988ce42d21b4a5d4",
+      "readback_path": "/workspace/attachments/65b75a74-aa85-4562-8474-5365e696279d/FINDINGS_REGISTER.md",
+      "sha256": "131aed95175dc65e8173699ceca6d6bdec900992c9db883245a3a02c338baeb0",
       "raw_readback": "PASS",
-      "bytes": 4789
+      "bytes": 4804
     },
     {
       "path": "DECISION_LOG.md",
       "success": true,
       "id": "1hX9J_jAfbhRUJNolJICI53Mm50QcXpm9",
       "url": "https://drive.google.com/file/d/1hX9J_jAfbhRUJNolJICI53Mm50QcXpm9/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/2155f1da-6479-4b6e-beec-36e87297c673/DECISION_LOG.md",
-      "sha256": "bf40798982e1d19324bd32262d033eb34494bca5e53f514ddd88ec2eb13f96e1",
+      "readback_path": "/workspace/attachments/1f52729b-8437-49ce-b0a4-565d853b228b/DECISION_LOG.md",
+      "sha256": "c2c956d370b6104a4bd37aadea4b56dd7200f7e638a08775a428b1a49ca8bab8",
       "raw_readback": "PASS",
-      "bytes": 6235
+      "bytes": 6265
     },
     {
       "path": "EVIDENCE_INDEX.md",
       "success": true,
       "id": "1AOyaThgJ7DILW2HCKj3SEH39-8QgzZ29",
       "url": "https://drive.google.com/file/d/1AOyaThgJ7DILW2HCKj3SEH39-8QgzZ29/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/7523eeba-c18b-4ca3-95b9-7ce0f7e75aa0/EVIDENCE_INDEX.md",
-      "sha256": "d06677084e921e82e0603780cdf0a5437fb1f71c795457a70aba9dede88f23c7",
+      "readback_path": "/workspace/attachments/a398cefe-494e-49cf-964d-85b80574111c/EVIDENCE_INDEX.md",
+      "sha256": "0229d42424e37f47db00c606f63848be3c09d34e9a581da11f343d0e3bc91a1d",
       "raw_readback": "PASS",
-      "bytes": 7356
+      "bytes": 7388
     },
     {
       "path": "management/P3_B1_PROGRESS_REPORT_20261015.md",
       "success": true,
       "id": "10wTeyEtdHjFn_an4oaUKs2XxIBavO0bG",
       "url": "https://drive.google.com/file/d/10wTeyEtdHjFn_an4oaUKs2XxIBavO0bG/view?usp=drivesdk",
-      "readback_path": "/workspace/attachments/94a91643-4601-4ec6-ae5d-876e1030159c/P3_B1_PROGRESS_REPORT_20261015.md",
-      "sha256": "3f1e6535fb9982c1c33107b9a5af3df4a923ac8de9e3af054dc46a1e5ad4829f",
+      "readback_path": "/workspace/attachments/0d63b286-e30b-4b04-ba14-d0f47d7929bb/P3_B1_PROGRESS_REPORT_20261015.md",
+      "sha256": "bcff18ec423c56dbcc2884ad7cde45eed08b89b77c3820ab8e18a1a922bcfc95",
       "raw_readback": "PASS",
-      "bytes": 16157
+      "bytes": 16289
     }
   ],
   "archive": {
-    "id": "1yjNnXHeXKbaPJZG-VuJLBX1zxwcPrSZi",
-    "url": "https://drive.google.com/file/d/1yjNnXHeXKbaPJZG-VuJLBX1zxwcPrSZi/view",
-    "path": "artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.1.zip",
-    "sha256": "ee516664b894ef1514c4b56810329d7eee24a97a71d4533e53ede37446a47c55",
-    "readback_sha256": "ee516664b894ef1514c4b56810329d7eee24a97a71d4533e53ede37446a47c55",
-    "bytes": 56046,
-    "raw_readback": "PASS",
-    "version": "1.0.1"
+    "url": "https://drive.google.com/file/d/1tXXwGtqAzkjnGiDH62D5kDzd5erBkyVu/view?usp=drivesdk",
+    "id": "1tXXwGtqAzkjnGiDH62D5kDzd5erBkyVu",
+    "readback_path": "/workspace/attachments/414478d6-ff7c-421b-907d-5ad5ff4a5ddc/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.2.zip",
+    "version": "1.0.2",
+    "path": "artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.2.zip",
+    "sha256": "fe4bc555a5ee5b8fb2edc68f31e12b2f39166449ce61f875bcc0a44f6f58980c",
+    "bytes": 56138,
+    "raw_readback": "PASS"
   },
   "management_destination": {
     "folder_id": "12NJk3Xl2wjkGCKmj7bItxD8v4WqBJLDg",
@@ -92,24 +92,44 @@
     "shared": false,
     "connected_account_matches_folder_owner": true
   },
-  "documents_raw_readback": "7/7 CURRENT_BYTE_EXACT_PASS",
+  "documents_raw_readback": "7/7 CURRENT_POST_APPROVAL_BYTE_EXACT_PASS",
   "legacy_progress": {
     "file_id": "1xRtm1KjJYwpnzXlKsYlFKYP_2Z08NTRI",
     "same_id_updated": true,
     "original_body_preserved": true,
     "raw_readback": "PASS"
   },
-  "github": "BLOCKED_NEW_MANAGEMENT_PAYLOAD_NOT_PUSHED",
-  "reason": "Prior explicit approval covered synthetic PoC publication; public disclosure of these broader internal management/work-order/state/evidence files requires new explicit approval.",
-  "time_jst": "2026-10-15T15:44:32.618689+09:00",
+  "github": "OWNER_APPROVED_MANAGEMENT_SYNC_PASS",
+  "time_jst": "2026-10-15T15:49:13.731861+09:00",
   "official_freeze": false,
-  "previous_management_snapshot": {
-    "id": "1Ah-fSWskbTCxzkBlI7LHS6T8HloCpmlx",
-    "url": "https://drive.google.com/file/d/1Ah-fSWskbTCxzkBlI7LHS6T8HloCpmlx/view?usp=drivesdk",
-    "readback_path": "/workspace/attachments/24235cee-3da9-4215-aa82-3a50bff5ca2a/P3_B1_STATUS_MANAGEMENT_20261015.zip",
-    "sha256": "b0fd1b257708327aae6e4969dc1e2c17d8fbc2a38deb5c433d606eef56bf8606",
-    "bytes": 55272,
-    "raw_readback": "PASS"
+  "owner_publication_approval_requested_scope": "New six management Markdown files, recovered instructions/work-order/state, reporting evidence and status ZIP; public hirata-y/portal-public branch only. Original PoC approval remains valid for original published payload.",
+  "owner_additional_approval": {
+    "quote": "Ownerとして今回の管理資料の公開GitHub同期を追加承認する",
+    "recorded_jst": "2026-10-15T15:46:29.823147+09:00",
+    "scope": "Management six Markdown, recovered Work Order/state, reporting evidence and management ZIP in public hirata-y/portal-public existing PR branch"
   },
-  "owner_publication_approval_requested_scope": "New six management Markdown files, recovered instructions/work-order/state, reporting evidence and status ZIP; public hirata-y/portal-public branch only. Original PoC approval remains valid for original published payload."
+  "github_first_management_pushed_commit": "c904b5c",
+  "github_pr": "https://github.com/hirata-y/portal-public/pull/1",
+  "historical_block": "Earlier automatic review blocked broader management disclosure; explicit additional Owner approval then resolved it.",
+  "previous_management_snapshots": [
+    {
+      "id": "1Ah-fSWskbTCxzkBlI7LHS6T8HloCpmlx",
+      "url": "https://drive.google.com/file/d/1Ah-fSWskbTCxzkBlI7LHS6T8HloCpmlx/view?usp=drivesdk",
+      "readback_path": "/workspace/attachments/24235cee-3da9-4215-aa82-3a50bff5ca2a/P3_B1_STATUS_MANAGEMENT_20261015.zip",
+      "sha256": "b0fd1b257708327aae6e4969dc1e2c17d8fbc2a38deb5c433d606eef56bf8606",
+      "bytes": 55272,
+      "raw_readback": "PASS"
+    },
+    {
+      "id": "1yjNnXHeXKbaPJZG-VuJLBX1zxwcPrSZi",
+      "url": "https://drive.google.com/file/d/1yjNnXHeXKbaPJZG-VuJLBX1zxwcPrSZi/view",
+      "path": "artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.1.zip",
+      "sha256": "ee516664b894ef1514c4b56810329d7eee24a97a71d4533e53ede37446a47c55",
+      "readback_sha256": "ee516664b894ef1514c4b56810329d7eee24a97a71d4533e53ede37446a47c55",
+      "bytes": 56046,
+      "raw_readback": "PASS",
+      "version": "1.0.1"
+    }
+  ],
+  "previous_rejection_reason": "Prior explicit approval covered synthetic PoC publication; public disclosure of these broader internal management/work-order/state/evidence files requires new explicit approval."
 }

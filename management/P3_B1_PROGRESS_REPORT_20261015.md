@@ -131,7 +131,7 @@ GitHub公開はOwnerの明示承認で実行済み。旧スナップショット
 
 PROJECT_STATUS.md、ROADMAP_STATUS.md、TASK_REGISTER.md、FINDINGS_REGISTER.md、DECISION_LOG.md、EVIDENCE_INDEX.mdをルートへ作成。AGENTS.mdとSTART_HERE.mdへ開始・節目・問題・終了時の更新手順を導入。回収原文4点とsource参照／照合Evidenceをmanagement下へ保存。旧Doc／Gate／実行ZIPを変更せず現状へ統合する。
 
-前回の製品PoCはGitHub Draft PR #1へ保存済み。今回の管理差分の公開同期は自動承認レビューで拒否され、追加Owner承認待ち。迂回書込みは行わず、ローカルと非共有Driveで納品する。Driveはプロジェクト00_Managementに6Markdownと詳細報告を新規保存し、05_Codex_Handoffへ別の管理ZIPを保存。保存実行・readback・URLはmanagement/PUBLICATION_RECEIPT.jsonを最終正本とする。既存の統合台帳原本は本報告で上書きせず、Coordinatorが新進捗を統合するための別パックとした。
+前回の製品PoCはGitHub Draft PR #1へ保存済み。今回の管理差分の公開同期はいったん自動承認レビューで拒否されたが、その後「Ownerとして今回の管理資料の公開GitHub同期を追加承認する」を受領しpush成功。迂回せず追加承認を得て、GitHub・非共有Drive・ローカルに保存した。Driveはプロジェクト00_Managementに6Markdownと詳細報告を新規保存し、05_Codex_Handoffへ別の管理ZIPを保存。保存実行・readback・URLはmanagement/PUBLICATION_RECEIPT.jsonを最終正本とする。既存の統合台帳原本は本報告で上書きせず、Coordinatorが新進捗を統合するための別パックとした。
 
 今後は対話Task内の開始・節目・問題・終了に6ファイルを更新する。依頼されていない常時監視／定期Automationは起動しない。
 
@@ -141,7 +141,7 @@ PROJECT_STATUS.md、ROADMAP_STATUS.md、TASK_REGISTER.md、FINDINGS_REGISTER.md�
 
 A実行は完了、受入は未完。Astro build／Pagefind ja index成功。160自己assertion＝159PASS/1FAIL。奥多摩の詳細0/期待2がM001 OPEN。公式B1 Freeze0、独立F0、Owner B1受入未実施、G4 STOP。
 
-前回不足の4入力は今回kit SHA一致で回収・読了。元実行前に読んだとはせず、未収集受入Evidenceを明示。原source16と実行スナップショット268payloadの不変性を照合。前回PoCのGitHub追加承認・push／Draft PR成功はPUBLICATION_RECEIPTで現在状態へ反映。今回管理資料のpublic同期は別の追加承認待ちとしてmanagement/PUBLICATION_RECEIPTへ記録。
+前回不足の4入力は今回kit SHA一致で回収・読了。元実行前に読んだとはせず、未収集受入Evidenceを明示。原source16と実行スナップショット268payloadの不変性を照合。前回PoCのGitHub追加承認・push／Draft PR成功はPUBLICATION_RECEIPTで現在状態へ反映。今回管理資料も別のOwner追加承認後にpublic同期成功としてmanagement/PUBLICATION_RECEIPTへ記録。
 
 提出済み実行ZIP SHA：`1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9`。Drive <https://drive.google.com/file/d/1PAOABAdyxf7gmdv8ORjoD1GLNor6tlHE/view>。今回管理ZIPは別SHA・別receipt。Code/lock/dist/logs/JSON/PNG/Manifest/ADRは元ZIPとPR #1に保存済み。
 

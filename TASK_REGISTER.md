@@ -11,7 +11,7 @@
 | P3-F-LOCAL-HYBRID-ONE-REVIEW-20261015-01 | P3-A／独立F | 台帳上の完了2026-10-15 10:29:10.971927 | BLOCKED、87 PASS/0 FAIL/1 BLOCKED/3 NOT_EXECUTED | 独立native HTTPの不足をCT04へ移管。今回再実行なし |
 | P3-OWNER-UAT-FIXED-V010-20261015-01 | P3-A／Owner | Owner申告2026-10-15 11:07:48 | Owner UAT reported PASS、local/synthetic受入の根拠。F PASSではない | 独立性・native200%等の残条件を維持 |
 | P3-B1-REAL-VENDOR-POC-20261016-01 | P3-B1／Codex A | 記録開始10/15 12:37:34.201228、最終vendor検査終了12:46:42.640330、公開receipt12:54:08.863799 | EXECUTION_COMPLETED_WITH_FAIL。Astro build／ja index成功。M001 OPEN。公式Freeze0/F0 | 本実測を受けたOwner方針決定、残Evidence、正式Candidate後のF |
-| P3-B1-STATUS-INTEGRATION-20261015-01 | P3-B1／Codex A | 10/15報告作業。本Task全体開始時刻は未計測、管理資料の時刻は個別記録 | 6資料整備・既存ログ照合・4入力回収。保存結果は管理receipt。製品実装／レビューなし。新管理資料の公開GitHub同期のみ追加承認待ち | Coordinatorへ受領・統合依頼。次の実装は未発注 |
+| P3-B1-STATUS-INTEGRATION-20261015-01 | P3-B1／Codex A | 10/15報告作業。本Task全体開始時刻は未計測、管理資料の時刻は個別記録 | 6資料整備・既存ログ照合・4入力回収。保存結果は管理receipt。製品実装／レビューなし。新管理資料も別Owner追加承認後に公開GitHub同期済み | Coordinatorへ受領・統合依頼。次の実装は未発注 |
 
 前Taskの管理計画は10/16〜18 JST・合算16h相当（A/F/統合の目標）。実際には10/15に実行した。記録開始から最終vendor検査終了548.439102秒＝機械・操作のwall clockであり、人の実工数ではない。準備開始時刻、人時、16h枠の使用量／残余は未測定。待機・会話間の経過を作業時間としない。
 

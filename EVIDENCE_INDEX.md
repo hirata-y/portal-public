@@ -46,10 +46,10 @@
 | M02 | 実行ログ集計と未実施の照合 | `management/evidence/reconciliation.json`。160assertion=159/1、22受入管理項目=12PASS/1FAIL/2BLOCKED/7NOT_EXECUTED。二つの母数を加算しない |
 | M03 | 現PR readback／source参照 | `management/evidence/github_pr_readback.json`、management/SOURCE_REFERENCES.json |
 | M04 | 9節詳細報告／Coordinator引継ぎ | `management/P3_B1_PROGRESS_REPORT_20261015.md` |
-| M05 | 今回管理パック・Manifest・SHA・読戻し | `management/STATUS_MANIFEST.json`、`artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.1.zip`、SHA sidecar。Drive保存先・readback結果はmanagement/PUBLICATION_RECEIPT.json。旧E01や公式Freezeを置換しない |
+| M05 | 今回管理パック・Manifest・SHA・読戻し | `management/STATUS_MANIFEST.json`、`artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.2.zip`、SHA sidecar。Drive保存先・readback結果はmanagement/PUBLICATION_RECEIPT.json。旧E01や公式Freezeを置換しない |
 
 ## 非実施の根拠
 
 該当するログ／コードのassertionがない項目はNOT_EXECUTED。ブラウザpageerror=[]は包括Console/Network検査やXSS負試験を意味しない。Fの旧版87PASSはB1の独立PASSではない。未実施GateとOwner受入は実行済みassertion件数へ混ぜない。
 
-今回管理資料の公開GitHub同期はB1-E004として追加承認待ち。PR #1は前回の製品PoC成果物を指し、未公開の管理6ファイルがそこに保存済みとはしない。Driveの7Markdownと旧PROGRESSは所有者一致・非共有を確認して保存／raw読戻し済み。
+今回管理資料の公開GitHub同期はB1-E004として一旦停止したが、別Owner明示追加承認後のpush成功で解消。PR #1に現在の管理資料も同期。v1.0.1は承認前履歴、v1.0.2が承認反映後。Driveの7Markdownと旧PROGRESSは所有者一致・非共有を確認して保存／raw読戻し済み。

@@ -1,14 +1,14 @@
 {
   "kind": "MANAGEMENT_STATUS_SNAPSHOT_NOT_PRODUCT_FREEZE",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "task": "P3-B1-STATUS-INTEGRATION-20261015-01",
-  "created_jst": "2026-10-15T15:43:56.001613+09:00",
+  "created_jst": "2026-10-15T15:48:34.964931+09:00",
   "original_execution_zip_sha256": "1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9",
   "formal_b1_freeze_count": 0,
   "independent_b1_review_count": 0,
-  "github_management_publication": "BLOCKED_PENDING_EXPLICIT_OWNER_APPROVAL",
+  "github_management_publication": "EXPLICIT_OWNER_APPROVAL_AND_C904B5C_PUSH_VERIFIED; final delivery receipt tracks latest sync",
   "exclusions": [
-    "management/PUBLICATION_RECEIPT.json: post-packaging delivery receipt",
+    "management/PUBLICATION_RECEIPT.json: post-packaging receipt",
     "artifact ZIP/checksum/bundle sidecars",
     "internal full source documents and Owner screenshots"
   ],
@@ -25,18 +25,18 @@
     },
     {
       "path": "DECISION_LOG.md",
-      "bytes": 6235,
-      "sha256": "bf40798982e1d19324bd32262d033eb34494bca5e53f514ddd88ec2eb13f96e1"
+      "bytes": 6265,
+      "sha256": "c2c956d370b6104a4bd37aadea4b56dd7200f7e638a08775a428b1a49ca8bab8"
     },
     {
       "path": "EVIDENCE_INDEX.md",
-      "bytes": 7356,
-      "sha256": "d06677084e921e82e0603780cdf0a5437fb1f71c795457a70aba9dede88f23c7"
+      "bytes": 7388,
+      "sha256": "0229d42424e37f47db00c606f63848be3c09d34e9a581da11f343d0e3bc91a1d"
     },
     {
       "path": "FINDINGS_REGISTER.md",
-      "bytes": 4789,
-      "sha256": "05d59d5fa04f117a92d4707ea820f99e748eaac6a669eb5f988ce42d21b4a5d4"
+      "bytes": 4804,
+      "sha256": "131aed95175dc65e8173699ceca6d6bdec900992c9db883245a3a02c338baeb0"
     },
     {
       "path": "P3_B1_CODEX_A_WORKORDER.md",
@@ -46,7 +46,7 @@
     {
       "path": "PROJECT_STATUS.md",
       "bytes": 4286,
-      "sha256": "6e3bbfedd2b5672e3363730d8c817f3e2995a0c38b603b281832756400a707b3"
+      "sha256": "0331172d81eeba6446b90a02954ed7dfc1677c079b08d8ff5a086a37a2e27363"
     },
     {
       "path": "ROADMAP_STATUS.md",
@@ -60,8 +60,8 @@
     },
     {
       "path": "TASK_REGISTER.md",
-      "bytes": 10957,
-      "sha256": "f242b3f30818d2f365313d63b19f576e214000ddbdd7291dd02532bc11a5aa92"
+      "bytes": 10965,
+      "sha256": "31badb7bc2aae72c8dd34e60a2af677773771f81598b6eba2b5e0cca2e4e9b8c"
     },
     {
       "path": "management/LEGACY_MANAGEMENT_REFERENCES.json",
@@ -70,8 +70,8 @@
     },
     {
       "path": "management/P3_B1_PROGRESS_REPORT_20261015.md",
-      "bytes": 16157,
-      "sha256": "3f1e6535fb9982c1c33107b9a5af3df4a923ac8de9e3af054dc46a1e5ad4829f"
+      "bytes": 16289,
+      "sha256": "bcff18ec423c56dbcc2884ad7cde45eed08b89b77c3820ab8e18a1a922bcfc95"
     },
     {
       "path": "management/SOURCE_REFERENCES.json",
@@ -86,7 +86,7 @@
     {
       "path": "management/evidence/drive_markdown_readbacks.json",
       "bytes": 3311,
-      "sha256": "9f528909302f6fa851ce852e109eab8bc22c6bbdeadad9eaf82e75cbed444db6"
+      "sha256": "1b7123855761cfd884d7d78b1f9c90bddcb2ea65f617cf5ed10be5b6163eb2f7"
     },
     {
       "path": "management/evidence/drive_upload_attempt.json",
