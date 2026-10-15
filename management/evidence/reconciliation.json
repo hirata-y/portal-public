@@ -1,0 +1,183 @@
+{
+  "checked_jst": "2026-10-15T15:28:40.109479+09:00",
+  "method": "Read existing final logs and archived payload hashes; no product tests re-executed in this reporting task.",
+  "immutable_execution_payload_files": 268,
+  "mismatches": [],
+  "suites": [
+    {
+      "suite": "BASELINE",
+      "evidence": "evidence/test_expected_actual.json",
+      "total": 59,
+      "counts": {
+        "PASS": 59
+      }
+    },
+    {
+      "suite": "DIST",
+      "evidence": "evidence/vendor_real_dist_checks.json",
+      "total": 42,
+      "counts": {
+        "PASS": 42
+      }
+    },
+    {
+      "suite": "SECURITY_FORMATS",
+      "evidence": "evidence/vendor_actual/security_formats.json",
+      "total": 25,
+      "counts": {
+        "PASS": 25
+      }
+    },
+    {
+      "suite": "BROWSER",
+      "evidence": "evidence/vendor_actual/browser/browser_report.json",
+      "total": 33,
+      "counts": {
+        "PASS": 32,
+        "FAIL": 1
+      }
+    },
+    {
+      "suite": "REAL_INDEX_FAULT",
+      "evidence": "evidence/vendor_actual/index_fault_injection.json",
+      "total": 1,
+      "counts": {
+        "PASS": 1
+      }
+    }
+  ],
+  "assertion_total": 160,
+  "assertion_counts": {
+    "PASS": 159,
+    "FAIL": 1
+  },
+  "nested_japanese_query_counts_not_added": {
+    "PASS": 2,
+    "FAIL": 1
+  },
+  "acceptance_control_rows": [
+    {
+      "id": "AC01",
+      "scope": "固定入力ZIPのSHA/88 entries",
+      "status": "PASS"
+    },
+    {
+      "id": "AC02",
+      "scope": "P3-A source16バイト一致",
+      "status": "PASS"
+    },
+    {
+      "id": "AC03",
+      "scope": "npm導入・固定lock・npm ci",
+      "status": "PASS"
+    },
+    {
+      "id": "AC04",
+      "scope": "Astro実ビルド",
+      "status": "PASS"
+    },
+    {
+      "id": "AC05",
+      "scope": "Pagefind実ja索引",
+      "status": "PASS"
+    },
+    {
+      "id": "AC06",
+      "scope": "谷川の詳細ID2件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC07",
+      "scope": "奥多摩の詳細ID2件",
+      "status": "FAIL"
+    },
+    {
+      "id": "AC08",
+      "scope": "穂高岳0件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC09",
+      "scope": "8件/3テーマ/構造化フィルタ11条件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC10",
+      "scope": "public/member合成分離とraw/gzip/実索引故障",
+      "status": "PASS"
+    },
+    {
+      "id": "AC11",
+      "scope": "合成4形式構造・内容解析",
+      "status": "PASS"
+    },
+    {
+      "id": "AC12",
+      "scope": "PPTX/XLSXのLibreOfficeレンダリング",
+      "status": "PASS"
+    },
+    {
+      "id": "AC13",
+      "scope": "Chromium HTTP Home→theme→detail→Back/Forward",
+      "status": "PASS"
+    },
+    {
+      "id": "AC14",
+      "scope": "検索結果リンクから詳細へのクリック単独受入",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC15",
+      "scope": "B1対象の明示XSS文字列非実行負試験",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC16",
+      "scope": "Console/Networkの包括監査",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC17",
+      "scope": "ライセンス・依存安全性の明示確認",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC18",
+      "scope": "Windows/Edge GUI・ネイティブURLバーEvidence",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC19",
+      "scope": "B1独立F限定レビュー",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC20",
+      "scope": "B1公式Candidate Freeze",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "AC21",
+      "scope": "B1のOwner受入",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC22",
+      "scope": "G4正式承認",
+      "status": "BLOCKED"
+    }
+  ],
+  "acceptance_control_counts": {
+    "PASS": 12,
+    "FAIL": 1,
+    "NOT_EXECUTED": 7,
+    "BLOCKED": 2
+  },
+  "notes": [
+    "The acceptance matrix includes manual/independent/management gates. It is not another automated test suite.",
+    "Console pageerror list was empty; comprehensive Console/Network verification is not thereby PASS.",
+    "B1 four format files existed in the fixed input; Astro copied them. This execution parsed/rendered actual files, not a newly authored four-format generator.",
+    "License information may exist in packages but no logged license/supply-chain review was evidenced.",
+    "Search result links were rendered/ID-checked; standalone click→detail test not evidenced."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "time_jst": "2026-10-15T15:37:21.510504+09:00",
+  "action": "google_drive_upload_file PROJECT_STATUS.md to verified project 00_Management folder",
+  "status": "AUTO_REVIEW_REJECTED_NO_WRITE",
+  "reason": "Potentially sensitive internal project-status content; trusted evidence of user-owned destination and exact egress authorization not established.",
+  "next": "Read owner metadata and verify destination against user-specified project. No alternate connector/path will be used to evade rejection. If still blocked, include files in handoff ZIP and request explicit Owner approval."
+}

@@ -1,0 +1,29 @@
+{
+  "time_jst": "2026-10-15T15:26:19.534322+09:00",
+  "kit_sha256": "698431cd189234fb5ea7dd0424b6543ef21c15091b71b31a843afcb41ebea666",
+  "standalone_work_order_sha256": "c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5",
+  "nested_input_exact_equal": true,
+  "status": "RECOVERED_AND_READ_NOW_NOT_BEFORE_ORIGINAL_EXECUTION",
+  "files": [
+    {
+      "path": "management/input-recovery/AGENTS.md",
+      "sha256": "2fd455a167f5988336cdda5ef21d087871ce254871a5e9474303eab09bbaf659",
+      "bytes": 2797
+    },
+    {
+      "path": "management/input-recovery/START_HERE.md",
+      "sha256": "868566a23474357beefce92c362128b6591bed6ba3ee69af6d26ba9a50e946c2",
+      "bytes": 3644
+    },
+    {
+      "path": "management/input-recovery/P3_B1_CODEX_A_WORKORDER.md",
+      "sha256": "c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5",
+      "bytes": 5795
+    },
+    {
+      "path": "management/input-recovery/CODEX_EXECUTION_STATE.json",
+      "sha256": "f083672842b23ecab98744df015d781f1e203d4704bc0d5e7a2801cd86022efa",
+      "bytes": 1101
+    }
+  ]
+}
