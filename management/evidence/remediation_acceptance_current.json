@@ -1,5 +1,5 @@
 {
-  "checked_jst": "2026-10-15T16:29:30.416041+09:00",
+  "checked_jst": "2026-10-15T16:39:30.339470+09:00",
   "task_id": "P3-B1-REMEDIATION-20261015-01",
   "method": "Current A/F actual evidence, unaffected carried previous format renders, explicit Owner/Gate non-execution. Control rows are not assertion counts.",
   "rows": [
@@ -110,7 +110,8 @@
     {
       "id": "AC21",
       "scope": "B1のOwner受入",
-      "status": "NOT_EXECUTED"
+      "status": "ACCEPTED_WITH_CONDITIONS",
+      "basis": "Owner explicitly conditionally received local/synthetic B1; B1-F001 remains unfixed backlog."
     },
     {
       "id": "AC22",
@@ -133,12 +134,14 @@
     "minor": 1,
     "scope": "local/synthetic integration only"
   },
-  "owner_acceptance": "PENDING",
+  "owner_acceptance": "CONDITIONALLY_ACCEPTED",
   "G4": "STOP",
   "control_counts": {
+    "ACCEPTED_WITH_CONDITIONS": 1,
     "BLOCKED": 1,
-    "NOT_EXECUTED": 2,
+    "NOT_EXECUTED": 1,
     "PASS": 18,
     "PASS_WITH_MINOR": 1
-  }
+  },
+  "owner_decision_record": "management/OWNER_ACCEPTANCE_PUBLICATION_20261015.json"
 }

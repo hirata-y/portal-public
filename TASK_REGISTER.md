@@ -4,6 +4,9 @@
 
 ## 現行契約
 
+Owner後発回答によりB1条件付き受領・F001 backlog・今回57f5f20の公開同期を承認。実push成功、次工程は別契約。記録：management/OWNER_ACCEPTANCE_PUBLICATION_20261015.json。
+
+
 Ownerの後発回答により、当初提案の検索方針決定・限定是正・不足Evidence・Freeze後F1回の順に進行を承認。作業推計はA2〜4h＋A1〜2h＋F1〜2h相当。実人時／料金／16h残余を意味せず、追加範囲・超過見込みが生じれば再見積りする。期限は新たに固定されていない。
 
 Aの対象・expected IDsは当初案を維持。独立Fは未Freezeでは開始せず、別セッションへ実ZIP SHAを固定して1回発注する。Coordinator／OwnerのB1受入とB2開始は未承認。
@@ -18,7 +21,7 @@ Aの対象・expected IDsは当初案を維持。独立Fは未Freezeでは開始
 | P3-OWNER-UAT-FIXED-V010-20261015-01 | P3-A／Owner | Owner申告2026-10-15 11:07:48 | Owner UAT reported PASS、local/synthetic受入の根拠。F PASSではない | 独立性・native200%等の残条件を維持 |
 | P3-B1-REAL-VENDOR-POC-20261016-01 | P3-B1／Codex A | 記録開始10/15 12:37:34.201228、最終vendor検査終了12:46:42.640330、公開receipt12:54:08.863799 | EXECUTION_COMPLETED_WITH_FAIL。Astro build／ja index成功。M001 OPEN。公式Freeze0/F0 | 本実測を受けたOwner方針決定、残Evidence、正式Candidate後のF |
 | P3-B1-F-INDEPENDENT-01 | P3-B1／別セッションF | 10/15開始07:19頃UTC、最終原票07:26:11.780358UTC（JST+9） | 初回1回、PASS_WITH_MINOR、110PASS/1FAIL、C0/M0/Minor1。コード未変更 | Owner B1受入とMinor処置。全CT04／G4は未承認 |
-| P3-B1-REMEDIATION-20261015-01 | P3-B1／A | 10/15 15:59:17.859823〜継続 | Ownerが限定是正・不足Evidence・初回Freeze後別F1回を選択。A全suite PASS、Freeze1＋別F1完了、F PASS_WITH_MINOR、公開同期のみE005 | 同一SHAのF原票完了→Owner受入／Minor処置／公開承認。G4 STOP |
+| P3-B1-REMEDIATION-20261015-01 | P3-B1／A | 10/15 15:59:17.859823開始、F原票16:26:11.780358終了。公開・受領は後発記録 | A実証・Freeze1＋F1 PASS_WITH_MINOR、Owner条件付き受領、F001 backlog、57f5f20公開push成功 | MVP採用・次工程は別Owner契約。G4 STOP |
 | P3-B1-STATUS-INTEGRATION-20261015-01 | P3-B1／Codex A | 10/15報告作業。本Task全体開始時刻は未計測、管理資料の時刻は個別記録 | 6資料整備・既存ログ照合・4入力回収。保存結果は管理receipt。製品実装／レビューなし。新管理資料も別Owner追加承認後に公開GitHub同期済み | Coordinatorへ受領・統合依頼。次の実装は未発注 |
 
 前Taskの管理計画は10/16〜18 JST・合算16h相当（A/F/統合の目標）。実際には10/15に実行した。記録開始から最終vendor検査終了548.439102秒＝機械・操作のwall clockであり、人の実工数ではない。準備開始時刻、人時、16h枠の使用量／残余は未測定。待機・会話間の経過を作業時間としない。
@@ -117,3 +120,6 @@ OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッ�
 
 
 2026-10-15T16:29:30.416041+09:00 最終：今回の優先1〜4相当はOwner選択に基づき実行済み。優先5のOwner受入／B2契約は未承認。公開同期のみE005。F原票のTask IDはP3-B1-F-INDEPENDENT-01、発注管理別名P3-B1-F-INDEPENDENT-20261015-01。
+
+
+2026-10-15T16:39:30.339470+09:00：P3-B1-OWNER-DISPOSITION-20261015-01（Owner判断をAが記録）開始・受領原文記録と57f5f20公開push完了。残る作業はPR説明・管理資料／Driveの後発同期。製品コード変更・新Freeze・再Fなし。

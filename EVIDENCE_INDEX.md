@@ -86,3 +86,10 @@ OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッ�
 
 
 2026-10-15T16:29:30.416041+09:00 最終：F原票・CandidateとF ZIPのDrive raw検算成立。今回GitHub同期のみE005で追加承認待ち。旧PRリンクの製品状態を現行と取り違えない。
+
+
+## Owner受領・今回公開成功（後発）
+
+- R14 management/OWNER_ACCEPTANCE_PUBLICATION_20261015.json：Owner2回答原文、B1条件付き受領／Minor backlog、公開対象commit57f5f20。
+- R15 evidence/remediation_20261015/23_owner_approved_push.json/.log：git push exit0、9465776→57f5f20。今回E005の公開阻害を解消。
+- 既存Freeze1・F原票・ZIP／過去管理ZIPは不変。以後の管理スナップショットはOwner処置を反映する追補で、新Candidate Freezeではない。

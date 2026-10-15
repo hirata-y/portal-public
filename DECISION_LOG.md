@@ -62,3 +62,10 @@ OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッ�
 - D12／A技術提案：Vanilla構造化検索を保持しAstro＋補助PagefindをPoC候補として維持。OwnerのMVP正式採用は未決。
 - D13／公開手続：今回新payloadのpushはauto-review拒否。以前のOwner公開承認は旧版で有効だが、今回版の具体承認を納品後に求める。Drive非共有保存／再取得照合は完了。
 - 次のOwner判断：B1 local/synthetic成果受領とMinor backlog／条件付き処置、今回コード・Freeze1・F原票・管理資料の公開GitHub同期。B2／実サービス／G4は含めない。
+
+
+## Owner後発決定 2026-10-15T16:39:30.339470+09:00
+
+- D14／Owner：原文「条件付き受領し、Minorはbacklogで管理する（推奨）」。B1 local/synthetic Freeze1＋F1を条件付き受領。B1-F001は未修正のbacklogで、独立PASSへの書換えではない。
+- D15／Owner：原文「Ownerとして今回の固定payloadの公開GitHub同期を追加承認する」。57f5f20（7a48080含む）のコード・dist・Freeze1・A/F Evidence・合成故障・管理v1.1.0を既存PR #1へpush／説明更新する承認。実push exit0。今回の決定を反映する管理receiptも同じ成果物管理として同期する。
+- 未承認：MVP正式技術採用・B2実装・G4 GO・merge・配備・実データ等。今回回答の範囲を超えない。

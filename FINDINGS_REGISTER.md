@@ -12,9 +12,12 @@
 | B1-E002 | 原Minor／環境 | npm/cache・telemetry・capture制約をローカル許可範囲で解消 | A/F実行環境RESOLVED | Linux headful URLバーあり。Windows/Edgeは未実施で代替PASSにしない |
 | B1-E003 | 過去公開権限 | 元合成PoCの公開push拒否後、別Owner明示承認で成功 | AUTHORIZATION_RESOLVED（旧版） | PUBLICATION_RECEIPT.json。今回E005とは別 |
 | B1-E004 | 過去管理公開権限 | 元管理資料の公開は別Owner承認後成功 | AUTHORIZATION_RESOLVED（旧版） | management/PUBLICATION_RECEIPT.json。以前の公開成功を取消さない |
-| B1-E005 | 今回公開権限 | 新是正コード・Freeze・status・追加Evidenceの公開pushをauto-reviewが承認不足と判定、実行前拒否 | BLOCKED_AUTO_REVIEW／Owner具体承認待ち | local commitと非共有Drive保存／raw照合まで完了。今回固定payloadの追加公開承認後のみ同期。製品品質FAILではない |
+| B1-E005 | 今回公開権限 | 新是正コード・Freeze・status・追加Evidenceの公開pushをauto-reviewが承認不足と判定、実行前拒否 | AUTHORIZATION_RESOLVED／57f5f20 push成功 | local commitと非共有Drive保存／raw照合まで完了。今回Owner追加承認を受領し、23_owner_approved_push exit0。旧拒否は履歴として維持。製品品質FAILではない |
 | B1-Q001 | 受入Evidence不足 | 検索click・XSS・Console/Network・依存・native画面をA/Fで収集 | F VERIFIED_WITH_MINOR_CONSOLE_EXCEPTION | 不足は今回埋まり、favicon例外をF001として未解決のまま分離。Windows/Office GUI・全AAを実行済みにしない |
-| B1-F001 | F Minor OPEN | favicon.ico未配置→自動取得404→Console error1件。主要操作・分離への影響なし | OPEN／Owner処置待ち | F browser72PASS/1FAIL。P4 backlog／条件付き受入を提案し今Candidateは修正しない。将来修正時はicon応答・新context Console・検索／遷移smokeだけ確認 |
+| B1-F001 | F Minor OPEN | favicon.ico未配置→自動取得404→Console error1件。主要操作・分離への影響なし | OPEN_BACKLOG／Owner条件付き受領済み | F browser72PASS/1FAIL。Ownerが条件付き受領・backlog管理を選択。今Candidateは修正しない。将来修正時はicon応答・新context Console・検索／遷移smokeだけ確認 |
 | P3-F-BLK-001／CT04 | 歴史的独立BLOCKED | 原P3-A Fのnative localhost制約 | 原票BLOCKED維持／B1実HTTP部分のみF VERIFIED | B1の独立headful HTTP/履歴/click/URL証拠は後発補足。全CT04・全AA/AT/native200%・G4はcloseしない |
 
 B1-M001〜M004の独立是正確認は今回のlocal/synthetic統合限定。一般検索品質や本番認証の保証へ広げない。初回Freeze1・F1で区切り、Minor処置／Owner受入へ回す。Critical/Majorが新たに出た場合は原因と限定影響・追加見積りを示してOwnerに判断を求める。48h・2サイクルは未承認の提案値。期限・人時・追加枠は創作しない。
+
+
+2026-10-15T16:39:30.339470+09:00：OwnerがB1-F001のbacklog管理と条件付き受領を明示。E005は今回版の具体承認と57f5f20 push成功で解消。独立F原票／未修正Minor／旧拒否履歴は保持。

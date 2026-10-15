@@ -43,21 +43,37 @@
   },
   "github": {
     "pr": "https://github.com/hirata-y/portal-public/pull/1",
-    "sync": "BLOCKED_AUTO_REVIEW",
+    "sync": "PUSHED_OWNER_APPROVED_PAYLOAD",
     "local_commit": "7a48080",
     "attempted_command": "git push origin HEAD:p3-b1/real-vendor-poc-20261015",
-    "executed": false,
-    "exit_code": null,
+    "executed": true,
+    "exit_code": 0,
     "reason": "Auto-review rejected public egress of the new remediation code, Freeze1 archive, internal status and added evidence; prior permissions deemed version-bound to earlier payloads. No workaround attempted.",
-    "owner_specific_payload_approval": "PENDING_AFTER_DELIVERY"
+    "owner_specific_payload_approval": "Ownerとして今回の固定payloadの公開GitHub同期を追加承認する",
+    "previous_rejection": {
+      "attempted_command": "git push origin HEAD:p3-b1/real-vendor-poc-20261015",
+      "executed": false,
+      "exit_code": null,
+      "reason": "Auto-review rejected public egress of the new remediation code, Freeze1 archive, internal status and added evidence; prior permissions deemed version-bound to earlier payloads. No workaround attempted."
+    },
+    "published_commit": "57f5f203bd514460c4f067304ca28d0e1c894e5c",
+    "successful_command": [
+      "git",
+      "push",
+      "origin",
+      "57f5f20:refs/heads/p3-b1/real-vendor-poc-20261015"
+    ],
+    "successful_push_log": "evidence/remediation_20261015/23_owner_approved_push.json",
+    "pr_description_update": "VERIFIED_UPDATED_DRAFT",
+    "metadata_followup": "Owner acceptance and successful publication records will be committed and fast-forwarded on the same approved PR branch; see Git commit history."
   },
-  "task_result": "A_COMPLETED_F_PASS_WITH_MINOR_PUBLIC_SYNC_BLOCKED",
-  "owner_acceptance": "PENDING",
+  "task_result": "A_COMPLETED_F_PASS_WITH_MINOR_OWNER_CONDITIONALLY_ACCEPTED_PUBLIC_SYNC_SUCCEEDED",
+  "owner_acceptance": "CONDITIONALLY_ACCEPTED",
   "G4": "STOP",
   "status_markdown_readbacks": {
-    "count": 7,
+    "count": 9,
     "status": "PASS",
-    "evidence": "management/evidence/current_markdown_readbacks.json"
+    "evidence": "management/evidence/owner_disposition_readbacks.json"
   },
   "report": {
     "drive_id": "1E3EkkIxTAaO09VipYuVTCtXnL75mx9r0",
@@ -67,9 +83,23 @@
   "legacy_progress": {
     "id": "1xRtm1KjJYwpnzXlKsYlFKYP_2Z08NTRI",
     "readback": "PASS",
-    "original_body_byte_preserved": true
+    "original_body_byte_preserved": true,
+    "latest_readback_evidence": "management/evidence/progress_owner_acceptance.json"
   },
-  "management_snapshot": {
+  "final_handoff": {
+    "drive_id": "1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5",
+    "drive_url": "https://drive.google.com/file/d/1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5/view",
+    "raw_readback": "PASS",
+    "sha256": "1dc2c38309677b5e80a401176f917b7aadff2d6ea947d63d749c5b60a91a3bf3"
+  },
+  "finalized_jst": "2026-10-15T16:44:32.955519+09:00",
+  "next_owner_decisions": [
+    "MVP technical adoption and a separately authorized next-phase task; B2/G4 remain unapproved"
+  ],
+  "minor_disposition": "B1-F001 BACKLOG, not fixed",
+  "owner_decision_record": "management/OWNER_ACCEPTANCE_PUBLICATION_20261015.json",
+  "owner_decision_recorded_jst": "2026-10-15T16:43:02.794103+09:00",
+  "previous_management_snapshot": {
     "archive": "/workspace/portal-b1-remediation/artifacts/P3_B1_REMEDIATION_STATUS_20261015_v1.1.0.zip",
     "sha256": "455660e0c3e4e62db7b8e64720cf05356ee83c83f3a639a52c29d23094afc4bc",
     "bytes": 70111,
@@ -82,15 +112,17 @@
     "readback_sha256": "455660e0c3e4e62db7b8e64720cf05356ee83c83f3a639a52c29d23094afc4bc",
     "shared": false
   },
-  "final_handoff": {
-    "drive_id": "1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5",
-    "drive_url": "https://drive.google.com/file/d/1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5/view",
-    "raw_readback": "PASS",
-    "sha256": "dd1e86a6ec2fe59e094988f66955ea1ba4032ed4fdfffe36ea0ed3bfff53babd"
-  },
-  "finalized_jst": "2026-10-15T16:34:46.298150+09:00",
-  "next_owner_decisions": [
-    "B1 local/synthetic acceptance and Minor backlog disposition",
-    "Specific approval to publish this remediation/Freeze1/F/evidence/status payload to existing public GitHub PR #1"
-  ]
+  "management_snapshot": {
+    "archive": "artifacts/P3_B1_REMEDIATION_STATUS_20261015_v1.1.1.zip",
+    "sha256": "f77a1cad1cb9115a0300c5a34ea1573827b27e55145927bb1f99858a9d2c85d6",
+    "bytes": 71534,
+    "entries": 22,
+    "payload_files": 21,
+    "archive_readback": "PASS",
+    "raw_drive_readback": "PASS",
+    "drive_id": "1gOBwe0STreRlmcdVi5sJzIR60jSQkVKo",
+    "drive_url": "https://drive.google.com/file/d/1gOBwe0STreRlmcdVi5sJzIR60jSQkVKo/view",
+    "readback_sha256": "f77a1cad1cb9115a0300c5a34ea1573827b27e55145927bb1f99858a9d2c85d6",
+    "shared": false
+  }
 }
