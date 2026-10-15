@@ -1,0 +1,35 @@
+{
+  "role": "A Producer self-check",
+  "time_utc": "2026-10-15T03:41:17.712937+00:00",
+  "index_build": {
+    "argv": [
+      "/workspace/portal-public/astro_candidate/node_modules/.bin/pagefind",
+      "--site",
+      "/tmp/p3b1-index-fault-10hrj7i7/public",
+      "--force-language",
+      "ja"
+    ],
+    "exit_code": 0,
+    "stdout": "\nRunning Pagefind v1.5.2 (Extended)\nRunning from: \"/workspace/portal-public\"\nSource:       \"/tmp/p3b1-index-fault-10hrj7i7/public\"\nOutput:       \"/tmp/p3b1-index-fault-10hrj7i7/public/pagefind\"\n\n[Walking source directory]\nFound 14 files matching **/*.{html}\n\n[Parsing files]\nDid not find a data-pagefind-body element on the site.\n↳ Indexing all <body> elements on the site.\n\n[Reading languages]\nDiscovered 1 language: ja\n\n[Building search indexes]\nTotal: \n  Indexed 1 language\n  Indexed 14 pages\n  Indexed 350 words\n  Indexed 0 filters\n  Indexed 0 sorts\n\nFinished in 1.350 seconds\n",
+    "stderr": "Note: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\nNote: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\n"
+  },
+  "actual": {
+    "count": 9,
+    "urls": [
+      "/fixtures/synthetic_format.html",
+      "/members/canary.html",
+      "/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "/"
+    ]
+  },
+  "status": "PASS"
+}
+
+STDERR:
+
+EXIT: 0

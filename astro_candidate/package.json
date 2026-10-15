@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "p3-b1-astro-candidate",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "node ../tools/build_astro.mjs",
+    "index:pagefind": "node ../tools/index_pagefind.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.8"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
+  }
+}

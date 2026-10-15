@@ -1,0 +1,15 @@
+{
+  "name": "13_build",
+  "argv": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "/workspace/portal-public/astro_candidate",
+  "start_utc": "2026-10-15T03:42:40.613636+00:00",
+  "end_utc": "2026-10-15T03:42:41.689026+00:00",
+  "duration_seconds": 1.0753941570000052,
+  "exit_code": 0,
+  "stdout": "\n> build\n> astro build\n\n03:42:41 [types] Generated 58ms\n03:42:41 [build] output: \"static\"\n03:42:41 [build] mode: \"static\"\n03:42:41 [build] directory: /workspace/portal-public/astro_candidate/dist/\n03:42:41 [build] Collecting build info...\n03:42:41 [build] ✓ Completed in 68ms.\n03:42:41 [build] Building static entrypoints...\n03:42:41 [vite] ✓ built in 154ms\n03:42:41 [vite] ✓ built in 17ms\n03:42:41 [build] Rearranging server assets...\n\n generating static routes \n03:42:41   ├─ /index.html (+14ms) \n03:42:41 ✓ Completed in 25ms.\n\n03:42:41 [build] ✓ Completed in 227ms.\n03:42:41 [build] 1 page(s) built in 297ms\n03:42:41 [build] Complete!\n",
+  "stderr": "npm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+}

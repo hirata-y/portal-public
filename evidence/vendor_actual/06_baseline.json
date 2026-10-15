@@ -1,0 +1,14 @@
+{
+  "name": "06_baseline",
+  "argv": [
+    "python",
+    "tools/verify_b1.py"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:39:35.322015+00:00",
+  "end_utc": "2026-10-15T03:39:36.436431+00:00",
+  "duration_seconds": 1.1144210319999956,
+  "exit_code": 0,
+  "stdout": "{\n  \"total\": 59,\n  \"PASS\": 59,\n  \"FAIL\": 0,\n  \"NOT_EXECUTED\": [\n    \"ASTRO_REAL_BUILD\",\n    \"PAGEFIND_EXTENDED_JAPANESE_INDEX\",\n    \"PAGEFIND_SEARCH_QUERY\",\n    \"CHROMIUM_NATIVE_HTTP_NAVIGATION\",\n    \"CLOUDFLARE_ACCESS_JWT\",\n    \"WORKERS_RANGE_304_REAL_DELIVERY\",\n    \"FULL_WCAG_AND_AT\",\n    \"PRODUCTION_DEPENDENCY_AUDIT\"\n  ],\n  \"benchmark\": {\n    \"name\": \"Python baseline title substring only\",\n    \"iterations\": 10000,\n    \"total_seconds\": 0.01648713000000157,\n    \"avg_milliseconds\": 0.001648713000000157,\n    \"NOT_A_PAGEFIND_BENCHMARK\": true\n  },\n  \"bytes\": {\n    \"p3a_original_site\": 60102,\n    \"b1_public_including_synthetic_formats\": 99245,\n    \"b1_members_synthetic_canary\": 553,\n    \"astro_candidate_source_only\": 254654959\n  }\n}\n",
+  "stderr": ""
+}

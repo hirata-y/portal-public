@@ -1,0 +1,31 @@
+
+> build
+> astro build
+
+03:42:41 [types] Generated 58ms
+03:42:41 [build] output: "static"
+03:42:41 [build] mode: "static"
+03:42:41 [build] directory: /workspace/portal-public/astro_candidate/dist/
+03:42:41 [build] Collecting build info...
+03:42:41 [build] ✓ Completed in 68ms.
+03:42:41 [build] Building static entrypoints...
+03:42:41 [vite] ✓ built in 154ms
+03:42:41 [vite] ✓ built in 17ms
+03:42:41 [build] Rearranging server assets...
+
+ generating static routes 
+03:42:41   ├─ /index.html (+14ms) 
+03:42:41 ✓ Completed in 25ms.
+
+03:42:41 [build] ✓ Completed in 227ms.
+03:42:41 [build] 1 page(s) built in 297ms
+03:42:41 [build] Complete!
+
+STDERR:
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+EXIT: 0

@@ -1,0 +1,17 @@
+{
+  "source_p2_full_sha256": "c1969c801dc47cb15636ce1a74da13433d13ddccf03f308895828ef3d8632f6f",
+  "source_p3a_zip_sha256": "bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23",
+  "source_p3a_record_ids": [
+    "SYN-OKU-001",
+    "SYN-OKU-002",
+    "SYN-TGW-001",
+    "SYN-TGW-002",
+    "SYN-TNZ-001",
+    "SYN-TNZ-002",
+    "SYN-TNZ-003",
+    "SYN-TNZ-004"
+  ],
+  "original_A_source_unchanged": true,
+  "membership": "synthetic-only",
+  "canary": "SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1"
+}

@@ -1,0 +1,4 @@
+playwright==1.62.0
+PyMuPDF==1.26.6
+python-pptx==1.0.2
+openpyxl==3.1.5

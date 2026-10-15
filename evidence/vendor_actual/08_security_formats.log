@@ -1,0 +1,180 @@
+{
+  "role": "A Producer self-check",
+  "checks": [
+    {
+      "id": "REAL_DIST_SAME_SCANNER_CLEAN",
+      "status": "FAIL",
+      "actual": [
+        "canary:tech-evidence/pagefind_japanese_browser_probe.html"
+      ]
+    },
+    {
+      "id": "MUTATION_html_canary",
+      "status": "PASS",
+      "actual": [
+        "canary:index.html",
+        "canary:tech-evidence/pagefind_japanese_browser_probe.html"
+      ]
+    },
+    {
+      "id": "MUTATION_index_canary",
+      "status": "PASS",
+      "actual": [
+        "canary:tech-evidence/pagefind_japanese_browser_probe.html",
+        "canary:pagefind/injected.pf_fragment"
+      ]
+    },
+    {
+      "id": "MUTATION_private_index",
+      "status": "PASS",
+      "actual": [
+        "private_path:members-index.json",
+        "canary:tech-evidence/pagefind_japanese_browser_probe.html"
+      ]
+    },
+    {
+      "id": "MUTATION_private_route",
+      "status": "PASS",
+      "actual": [
+        "private_path:members/canary.html",
+        "canary:tech-evidence/pagefind_japanese_browser_probe.html"
+      ]
+    },
+    {
+      "id": "FIXED_SOURCE_app.js",
+      "status": "PASS",
+      "actual": "d3ae81a71cefb4002960c67577e151f8f5a8a79a580f50cc225fa11a8916f6c5"
+    },
+    {
+      "id": "FIXED_SOURCE_data-validation.js",
+      "status": "PASS",
+      "actual": "2c34fa847cfbe4ce7c04a3b65b6afd3452e0bb42e361d6af8225420654a38d2f"
+    },
+    {
+      "id": "FIXED_SOURCE_demo-data.js",
+      "status": "PASS",
+      "actual": "cbc9c0b3df4c99286630b52778cb6456b748742f566ea2256330b03c2e1666ad"
+    },
+    {
+      "id": "FIXED_SOURCE_index.html",
+      "status": "PASS",
+      "actual": "27d5ce9f2f4d185ce836e7b28b28460f4f02fb647ac311f1af81796cafbc51e2"
+    },
+    {
+      "id": "FIXED_SOURCE_styles.css",
+      "status": "PASS",
+      "actual": "b48f0507d63f2ac3ec513cb8a1467385dda19dd6e9c09f70162264e60faa9681"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/okutama-sawa-db/index.html",
+      "status": "PASS",
+      "actual": "960b8c80f0f748bc3a1cdd58526c5ebf699bb30df9f88fd66329f47212d8171c"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": "PASS",
+      "actual": "5293d58fd5f5bfd75bdc3c27faae454830b89b5d9e0437157c50c23777611220"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "status": "PASS",
+      "actual": "e68ccbaa1156bcb95e71c9a687bc98a8e72b233ee9a70e3e0cfdfb60351b4565"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanigawa-sawa-db/index.html",
+      "status": "PASS",
+      "actual": "49049d3f4c22e29309d796f4de8a5913f719f2aafaf56362f0648fc6929bd6dd"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS",
+      "actual": "9501a912d88ff35d289b207d09233935564c40ec4a1283d825cf16d6f520e058"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "status": "PASS",
+      "actual": "c7ff3cda5a672855609ae10f6940cf42e9c8dda65fdcf1f8078019e8c56a19a3"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanzawa-sawa-db/index.html",
+      "status": "PASS",
+      "actual": "01bc6f21142ad855aa22c621102395f9628dde8a3a4f20db31345a4668e589ba"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "status": "PASS",
+      "actual": "0873a9cae1ad51de4c305d31675bafc38a634195ba05ca5098c56097b0decf45"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "status": "PASS",
+      "actual": "ef9d376ea444270d29b71d240079615b1d3b1c2ee28342fa7b2bb446d7893bde"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "status": "PASS",
+      "actual": "86b8053af4b0befcadc84b6a7d77b96f2b54dc17ef990deade44be54589bd51d"
+    },
+    {
+      "id": "FIXED_SOURCE_themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "status": "PASS",
+      "actual": "c65b96face97edaf22f03967519a5119fdebafc37a193f348472cbfdaba9b38c"
+    },
+    {
+      "id": "PDF_PARSE_CONTENT",
+      "status": "PASS",
+      "actual": {
+        "pages": 1,
+        "text": "合成データ・形式比較PDF\n架空ID：SYN-TGW-001／点数7\n公開権利・原本精度を示すものではありません。\n"
+      }
+    },
+    {
+      "id": "PPTX_PARSE_CONTENT",
+      "status": "PASS",
+      "actual": [
+        "合成データ・スライドPoC",
+        "架空ID：SYN-TGW-001\n点数：7（試験専用・架空）\n実原本・ライセンスや閲覧互換性を証明しません。"
+      ]
+    },
+    {
+      "id": "XLSX_PARSE_CONTENT",
+      "status": "PASS",
+      "actual": {
+        "Synthetic": [
+          [
+            "架空ID",
+            "点数",
+            "注記"
+          ],
+          [
+            "SYN-TGW-001",
+            7,
+            "合成データ"
+          ],
+          [
+            "SYN-TGW-002",
+            5,
+            "合成データ"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "HTML_ACTUAL_CONTENT",
+      "status": "PASS",
+      "actual": "<!doctype html><html lang=\"ja\"><meta charset=\"utf-8\"><title>合成・形式比較HTML</title><body><h1>合成ルートの形式比較</h1><p>実在情報ではありません／PUBLIC SYNTHETIC ONLY</p><table><tr><th>架空ID</th><th>点数</th></tr><tr><td>SYN-TGW-001</td><td>7</td></tr></table></body></html>"
+    }
+  ],
+  "summary": {
+    "PASS": 24,
+    "FAIL": 1
+  },
+  "limits": [
+    "Synthetic public/member output segregation only; not real authorization",
+    "PDF rendered; PPTX/XLSX parsed with native-format libraries; Office desktop visual fidelity unverified"
+  ]
+}
+
+STDERR:
+
+EXIT: 2

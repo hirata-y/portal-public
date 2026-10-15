@@ -1,0 +1,454 @@
+{
+  "kind": "P3-B1 real-vendor test readiness NOT FORMAL FREEZE",
+  "version": "0.2.1",
+  "supersedes": "P3_B1_VENDOR_READINESS_v0.2.0_20261015.zip",
+  "date_jst": "2026-10-15",
+  "static_baseline_checks": {
+    "PASS": 41,
+    "FAIL": 0
+  },
+  "vendor_astro_pagefind_actual": "NOT_EXECUTED",
+  "expected_negative_probes": {
+    "missing_pagefind_index": "FAIL EXIT2",
+    "missing_astro_dist": "BLOCKED EXIT3"
+  },
+  "review_policy": "one initial independent review, critical/major scoped corrections and re-reviews under remediation grace; owner escalation beyond agreed scope/cap",
+  "member_count": 87,
+  "members": [
+    {
+      "path": "P3_B1_INTERIM_SNAPSHOT_MANIFEST.json",
+      "size": 12486,
+      "sha256": "d01394d9842246d999fcfc95683619bfea0a7522d8c748387f5e209d1f677a0a"
+    },
+    {
+      "path": "README.md",
+      "size": 3529,
+      "sha256": "cd0422fd1fc739b88463e45eac742f2fbb98f9e1545c21a6e685e29b2146d645"
+    },
+    {
+      "path": "README_VENDOR_READY.md",
+      "size": 1961,
+      "sha256": "1fcfbcdc8cdd034315bcda0ef62d5bc43d7615c7441554f6645dc6c26b6d73fc"
+    },
+    {
+      "path": "astro_candidate/README.md",
+      "size": 1114,
+      "sha256": "58bdddf26e59ff6e62c392489c3b0169c7fbc995b56c8d0e09e64f8bfc3c9d68"
+    },
+    {
+      "path": "astro_candidate/astro.config.mjs",
+      "size": 96,
+      "sha256": "8cc874cd790133ccf619f50ada404d3b52839f306661f1eae15207355f0af2e8"
+    },
+    {
+      "path": "astro_candidate/package.json",
+      "size": 321,
+      "sha256": "f3ad54b020afcd9ec4111eb803f6b99dd3d2b36691d8b6ab6174dfe256b99149"
+    },
+    {
+      "path": "astro_candidate/public/app.js",
+      "size": 11679,
+      "sha256": "d3ae81a71cefb4002960c67577e151f8f5a8a79a580f50cc225fa11a8916f6c5"
+    },
+    {
+      "path": "astro_candidate/public/data-validation.js",
+      "size": 3795,
+      "sha256": "2c34fa847cfbe4ce7c04a3b65b6afd3452e0bb42e361d6af8225420654a38d2f"
+    },
+    {
+      "path": "astro_candidate/public/demo-data.js",
+      "size": 4211,
+      "sha256": "cbc9c0b3df4c99286630b52778cb6456b748742f566ea2256330b03c2e1666ad"
+    },
+    {
+      "path": "astro_candidate/public/experimental_offline_search_index.json",
+      "size": 4041,
+      "sha256": "fe38c013cf037ba613960617810d4115a77d71d1702e97985d4cec4407885322"
+    },
+    {
+      "path": "astro_candidate/public/fixtures/synthetic_format.html",
+      "size": 311,
+      "sha256": "ec3d53b12bc1653752c14350edbd606712b82bc043f4d1a97f120ee8f6948ce5"
+    },
+    {
+      "path": "astro_candidate/public/fixtures/synthetic_format.pdf",
+      "size": 2547,
+      "sha256": "c3858fd1df1d6003e3567a854f62abbce6d91d59cbbe4f444a204ea9f3e01d32"
+    },
+    {
+      "path": "astro_candidate/public/fixtures/synthetic_format.pptx",
+      "size": 28523,
+      "sha256": "aa120675f6c1d2818ad617217e07b4c54438ae9887c8bf97c3e28ef31fb378c1"
+    },
+    {
+      "path": "astro_candidate/public/fixtures/synthetic_format.xlsx",
+      "size": 3721,
+      "sha256": "4cf268969a7eddc70c41e4db5118c254b0dd80c6c0c13b8a9325b93dd27b63d1"
+    },
+    {
+      "path": "astro_candidate/public/styles.css",
+      "size": 11100,
+      "sha256": "b48f0507d63f2ac3ec513cb8a1467385dda19dd6e9c09f70162264e60faa9681"
+    },
+    {
+      "path": "astro_candidate/public/themes/okutama-sawa-db/index.html",
+      "size": 1213,
+      "sha256": "960b8c80f0f748bc3a1cdd58526c5ebf699bb30df9f88fd66329f47212d8171c"
+    },
+    {
+      "path": "astro_candidate/public/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "size": 2025,
+      "sha256": "5293d58fd5f5bfd75bdc3c27faae454830b89b5d9e0437157c50c23777611220"
+    },
+    {
+      "path": "astro_candidate/public/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "size": 2067,
+      "sha256": "e68ccbaa1156bcb95e71c9a687bc98a8e72b233ee9a70e3e0cfdfb60351b4565"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanigawa-sawa-db/index.html",
+      "size": 1209,
+      "sha256": "49049d3f4c22e29309d796f4de8a5913f719f2aafaf56362f0648fc6929bd6dd"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "size": 2085,
+      "sha256": "9501a912d88ff35d289b207d09233935564c40ec4a1283d825cf16d6f520e058"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "size": 1918,
+      "sha256": "c7ff3cda5a672855609ae10f6940cf42e9c8dda65fdcf1f8078019e8c56a19a3"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanzawa-sawa-db/index.html",
+      "size": 1363,
+      "sha256": "01bc6f21142ad855aa22c621102395f9628dde8a3a4f20db31345a4668e589ba"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "size": 2067,
+      "sha256": "0873a9cae1ad51de4c305d31675bafc38a634195ba05ca5098c56097b0decf45"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "size": 1955,
+      "sha256": "ef9d376ea444270d29b71d240079615b1d3b1c2ee28342fa7b2bb446d7893bde"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "size": 2021,
+      "sha256": "86b8053af4b0befcadc84b6a7d77b96f2b54dc17ef990deade44be54589bd51d"
+    },
+    {
+      "path": "astro_candidate/public/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "size": 1962,
+      "sha256": "c65b96face97edaf22f03967519a5119fdebafc37a193f348472cbfdaba9b38c"
+    },
+    {
+      "path": "astro_candidate/src/pages/index.astro",
+      "size": 9432,
+      "sha256": "27d5ce9f2f4d185ce836e7b28b28460f4f02fb647ac311f1af81796cafbc51e2"
+    },
+    {
+      "path": "docs/B2_HANDOFF_AND_OPEN_ISSUES.md",
+      "size": 1668,
+      "sha256": "2563f878674989603be72ebae30706d364b3218545726994a815215cd6af55bf"
+    },
+    {
+      "path": "docs/P3_B1_REMEDIATION_REVIEW_PROTOCOL.md",
+      "size": 2780,
+      "sha256": "988861766c8bfa59503b8ce7d82557ad67c03da0895aceb099c46e3991afea68"
+    },
+    {
+      "path": "docs/SECURITY_AND_G4_STOPS.md",
+      "size": 2341,
+      "sha256": "9133decd3055734e5ddbe862971b82382fc9d54c6198d6ce23346fead09483d7"
+    },
+    {
+      "path": "docs/SOURCE_PIN.json",
+      "size": 528,
+      "sha256": "8d499226ed2336f0b37ec5723514d4f348b4b49c2dc044789ba13f767b226a22"
+    },
+    {
+      "path": "docs/TECH_EVALUATION.md",
+      "size": 3497,
+      "sha256": "af7bedaa980c5fa46c32632ba0e3265204664a3d2c0e7e5d6f621f07d63230c0"
+    },
+    {
+      "path": "evidence/README_VENDOR_PROBE_NOT_EXECUTED.txt",
+      "size": 198,
+      "sha256": "3989bb90e289cce50ca22cb6cb523d70dda492a9d5e1b8e56d53bff2c6d40d13"
+    },
+    {
+      "path": "evidence/baseline_control_expected_actual.json",
+      "size": 6969,
+      "sha256": "8452031903b3c6e8dd8eafe29e7a76e6e9d754c839a0e55ef539a57e7d0e60bb"
+    },
+    {
+      "path": "evidence/baseline_control_expected_actual.log",
+      "size": 2185,
+      "sha256": "92a8b8bc3ef11df08b4dfa12a28c6400f9fd35fce6fbc0d3b7f572e0b9d1dfe3"
+    },
+    {
+      "path": "evidence/missing_astro_dist_negative_probe.log",
+      "size": 199,
+      "sha256": "3d877f9f9105b0b9f44558f5cfc3b80e10a05906cff34d7c6fbbec6459294ed5"
+    },
+    {
+      "path": "evidence/npm_resolution.txt",
+      "size": 403,
+      "sha256": "f1e996dde20015e45544b1fcd6da35d631154109d5608dc26060f8bf1cbdc5ee"
+    },
+    {
+      "path": "evidence/p3a_source_members.json",
+      "size": 1721,
+      "sha256": "94eb5d45364e74ff0a6038a1e4a77b122bd3ab18a634f22c1ec47b944f1d0885"
+    },
+    {
+      "path": "evidence/pagefind_required_negative_probe.log",
+      "size": 2189,
+      "sha256": "41c24ccb76f4647c47c44dad7368c0bf856946ca774ad33cbef104d4f37ae86a"
+    },
+    {
+      "path": "evidence/runtime.json",
+      "size": 271,
+      "sha256": "64957ca651e85248c10a5d069b9b7b0b4aa9711d722eaeef8c2b2159cec586a2"
+    },
+    {
+      "path": "evidence/test_expected_actual.json",
+      "size": 10842,
+      "sha256": "3a67c9cfdd68776a2f83b6b790355b55673a1974807ded0a90c281ffb0a55ebd"
+    },
+    {
+      "path": "evidence/vendor_real_dist_checks.json",
+      "size": 6969,
+      "sha256": "8452031903b3c6e8dd8eafe29e7a76e6e9d754c839a0e55ef539a57e7d0e60bb"
+    },
+    {
+      "path": "format_sources/FORMAT_FIXTURE_MANIFEST.json",
+      "size": 728,
+      "sha256": "5dc4d84dc29e312bb23973624d7da2e9eea31653baa3ecc91244cad9f52ef0b0"
+    },
+    {
+      "path": "outputs/members/canary.html",
+      "size": 258,
+      "sha256": "b0ea21e1cb4a4a945e9bb727878c1085f5f9c3f353c393992a6f417d30552a40"
+    },
+    {
+      "path": "outputs/members/members-index.json",
+      "size": 295,
+      "sha256": "c583aa192058e29eb33005ecbe78ffc9cccdcc1c06a657113fe69f91ea49c82f"
+    },
+    {
+      "path": "outputs/public/app.js",
+      "size": 11679,
+      "sha256": "d3ae81a71cefb4002960c67577e151f8f5a8a79a580f50cc225fa11a8916f6c5"
+    },
+    {
+      "path": "outputs/public/data-validation.js",
+      "size": 3795,
+      "sha256": "2c34fa847cfbe4ce7c04a3b65b6afd3452e0bb42e361d6af8225420654a38d2f"
+    },
+    {
+      "path": "outputs/public/demo-data.js",
+      "size": 4211,
+      "sha256": "cbc9c0b3df4c99286630b52778cb6456b748742f566ea2256330b03c2e1666ad"
+    },
+    {
+      "path": "outputs/public/experimental_offline_search_index.json",
+      "size": 4041,
+      "sha256": "fe38c013cf037ba613960617810d4115a77d71d1702e97985d4cec4407885322"
+    },
+    {
+      "path": "outputs/public/fixtures/synthetic_format.html",
+      "size": 311,
+      "sha256": "ec3d53b12bc1653752c14350edbd606712b82bc043f4d1a97f120ee8f6948ce5"
+    },
+    {
+      "path": "outputs/public/fixtures/synthetic_format.pdf",
+      "size": 2547,
+      "sha256": "c3858fd1df1d6003e3567a854f62abbce6d91d59cbbe4f444a204ea9f3e01d32"
+    },
+    {
+      "path": "outputs/public/fixtures/synthetic_format.pptx",
+      "size": 28523,
+      "sha256": "aa120675f6c1d2818ad617217e07b4c54438ae9887c8bf97c3e28ef31fb378c1"
+    },
+    {
+      "path": "outputs/public/fixtures/synthetic_format.xlsx",
+      "size": 3721,
+      "sha256": "4cf268969a7eddc70c41e4db5118c254b0dd80c6c0c13b8a9325b93dd27b63d1"
+    },
+    {
+      "path": "outputs/public/index.html",
+      "size": 9432,
+      "sha256": "27d5ce9f2f4d185ce836e7b28b28460f4f02fb647ac311f1af81796cafbc51e2"
+    },
+    {
+      "path": "outputs/public/styles.css",
+      "size": 11100,
+      "sha256": "b48f0507d63f2ac3ec513cb8a1467385dda19dd6e9c09f70162264e60faa9681"
+    },
+    {
+      "path": "outputs/public/themes/okutama-sawa-db/index.html",
+      "size": 1213,
+      "sha256": "960b8c80f0f748bc3a1cdd58526c5ebf699bb30df9f88fd66329f47212d8171c"
+    },
+    {
+      "path": "outputs/public/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "size": 2025,
+      "sha256": "5293d58fd5f5bfd75bdc3c27faae454830b89b5d9e0437157c50c23777611220"
+    },
+    {
+      "path": "outputs/public/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "size": 2067,
+      "sha256": "e68ccbaa1156bcb95e71c9a687bc98a8e72b233ee9a70e3e0cfdfb60351b4565"
+    },
+    {
+      "path": "outputs/public/themes/tanigawa-sawa-db/index.html",
+      "size": 1209,
+      "sha256": "49049d3f4c22e29309d796f4de8a5913f719f2aafaf56362f0648fc6929bd6dd"
+    },
+    {
+      "path": "outputs/public/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "size": 2085,
+      "sha256": "9501a912d88ff35d289b207d09233935564c40ec4a1283d825cf16d6f520e058"
+    },
+    {
+      "path": "outputs/public/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "size": 1918,
+      "sha256": "c7ff3cda5a672855609ae10f6940cf42e9c8dda65fdcf1f8078019e8c56a19a3"
+    },
+    {
+      "path": "outputs/public/themes/tanzawa-sawa-db/index.html",
+      "size": 1363,
+      "sha256": "01bc6f21142ad855aa22c621102395f9628dde8a3a4f20db31345a4668e589ba"
+    },
+    {
+      "path": "outputs/public/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "size": 2067,
+      "sha256": "0873a9cae1ad51de4c305d31675bafc38a634195ba05ca5098c56097b0decf45"
+    },
+    {
+      "path": "outputs/public/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "size": 1955,
+      "sha256": "ef9d376ea444270d29b71d240079615b1d3b1c2ee28342fa7b2bb446d7893bde"
+    },
+    {
+      "path": "outputs/public/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "size": 2021,
+      "sha256": "86b8053af4b0befcadc84b6a7d77b96f2b54dc17ef990deade44be54589bd51d"
+    },
+    {
+      "path": "outputs/public/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "size": 1962,
+      "sha256": "c65b96face97edaf22f03967519a5119fdebafc37a193f348472cbfdaba9b38c"
+    },
+    {
+      "path": "source/p3_a_site/app.js",
+      "size": 11679,
+      "sha256": "d3ae81a71cefb4002960c67577e151f8f5a8a79a580f50cc225fa11a8916f6c5"
+    },
+    {
+      "path": "source/p3_a_site/data-validation.js",
+      "size": 3795,
+      "sha256": "2c34fa847cfbe4ce7c04a3b65b6afd3452e0bb42e361d6af8225420654a38d2f"
+    },
+    {
+      "path": "source/p3_a_site/demo-data.js",
+      "size": 4211,
+      "sha256": "cbc9c0b3df4c99286630b52778cb6456b748742f566ea2256330b03c2e1666ad"
+    },
+    {
+      "path": "source/p3_a_site/index.html",
+      "size": 9432,
+      "sha256": "27d5ce9f2f4d185ce836e7b28b28460f4f02fb647ac311f1af81796cafbc51e2"
+    },
+    {
+      "path": "source/p3_a_site/styles.css",
+      "size": 11100,
+      "sha256": "b48f0507d63f2ac3ec513cb8a1467385dda19dd6e9c09f70162264e60faa9681"
+    },
+    {
+      "path": "source/p3_a_site/themes/okutama-sawa-db/index.html",
+      "size": 1213,
+      "sha256": "960b8c80f0f748bc3a1cdd58526c5ebf699bb30df9f88fd66329f47212d8171c"
+    },
+    {
+      "path": "source/p3_a_site/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "size": 2025,
+      "sha256": "5293d58fd5f5bfd75bdc3c27faae454830b89b5d9e0437157c50c23777611220"
+    },
+    {
+      "path": "source/p3_a_site/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "size": 2067,
+      "sha256": "e68ccbaa1156bcb95e71c9a687bc98a8e72b233ee9a70e3e0cfdfb60351b4565"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanigawa-sawa-db/index.html",
+      "size": 1209,
+      "sha256": "49049d3f4c22e29309d796f4de8a5913f719f2aafaf56362f0648fc6929bd6dd"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "size": 2085,
+      "sha256": "9501a912d88ff35d289b207d09233935564c40ec4a1283d825cf16d6f520e058"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "size": 1918,
+      "sha256": "c7ff3cda5a672855609ae10f6940cf42e9c8dda65fdcf1f8078019e8c56a19a3"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanzawa-sawa-db/index.html",
+      "size": 1363,
+      "sha256": "01bc6f21142ad855aa22c621102395f9628dde8a3a4f20db31345a4668e589ba"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "size": 2067,
+      "sha256": "0873a9cae1ad51de4c305d31675bafc38a634195ba05ca5098c56097b0decf45"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "size": 1955,
+      "sha256": "ef9d376ea444270d29b71d240079615b1d3b1c2ee28342fa7b2bb446d7893bde"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "size": 2021,
+      "sha256": "86b8053af4b0befcadc84b6a7d77b96f2b54dc17ef990deade44be54589bd51d"
+    },
+    {
+      "path": "source/p3_a_site/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "size": 1962,
+      "sha256": "c65b96face97edaf22f03967519a5119fdebafc37a193f348472cbfdaba9b38c"
+    },
+    {
+      "path": "tools/pagefind_japanese_browser_probe.html",
+      "size": 3343,
+      "sha256": "2a65958f0a85490a8878ac045695d4553be61dd80acb46e5b80bbda1d82e4625"
+    },
+    {
+      "path": "tools/run_real_vendor_probe_windows.ps1",
+      "size": 2957,
+      "sha256": "e55585e704fdbd31caa50260e06d65f9469a19a9780b5476b40ca09f6d162c09"
+    },
+    {
+      "path": "tools/run_vendor_probe_windows.ps1",
+      "size": 1975,
+      "sha256": "c3fa4a010aa0bf0debd26a4c91fdf97a67f7b98279782c87e604c022c8c8eef1"
+    },
+    {
+      "path": "tools/verify_b1.py",
+      "size": 7617,
+      "sha256": "1a5841de4e7f590dbdd0ad7f2f4d6c78fc3a6afc59e32c81a4b58b80fd227acf"
+    },
+    {
+      "path": "tools/verify_vendor_dist.py",
+      "size": 4626,
+      "sha256": "e3daccd5d8fb4ba55e2c996ed27e9ca4166762cbc0b656267f8568b86f2cd7b9"
+    }
+  ]
+}

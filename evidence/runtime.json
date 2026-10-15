@@ -1,0 +1,10 @@
+{
+  "os": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "node": "v22.16.0",
+  "npm": "10.9.2",
+  "astro_installed": false,
+  "pagefind_installed": false,
+  "npm_registry_connected": false,
+  "measured_execution_jst": "2026-10-15T11:46:48.129218+09:00"
+}

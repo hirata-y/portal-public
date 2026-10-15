@@ -1,0 +1,2402 @@
+[
+  {
+    "query": "奥多摩",
+    "result": {
+      "results": [
+        {
+          "id": "ja_79d2efa",
+          "score": 2.543412685394287,
+          "words": [
+            217
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 1,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 69,
+          "search": 4,
+          "total": 73
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 217
+          }
+        ],
+        "locations": [
+          217
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを見る ↗03 /",
+        "plain_excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 /",
+        "sub_results": [
+          {
+            "title": "テーマから探す",
+            "url": "/#themes-title",
+            "anchor": {
+              "element": "h2",
+              "id": "themes-title",
+              "text": "テーマから探す",
+              "location": 163
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 217
+              }
+            ],
+            "locations": [
+              217
+            ],
+            "excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを見る ↗03 /",
+            "plain_excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 /"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "架空奥多摩",
+    "result": {
+      "results": [
+        {
+          "id": "ja_79d2efa",
+          "score": 2.6442036628723145,
+          "words": [
+            103,
+            198,
+            217,
+            218,
+            238,
+            447
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 1,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 3,
+          "search": 1,
+          "total": 4
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 103
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 198
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 217
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 218
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 238
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 447
+          }
+        ],
+        "locations": [
+          103,
+          198,
+          217,
+          218,
+          238,
+          447
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "MOUNTAIN / VALLEY谷川連峰<mark>架空</mark>ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark><mark>架空</mark>ルート2件・",
+        "plain_excerpt": "MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・",
+        "sub_results": [
+          {
+            "title": "調査成果を、ひとつのライブラリに。",
+            "url": "/#hero-title",
+            "anchor": {
+              "element": "h1",
+              "id": "hero-title",
+              "text": "調査成果を、ひとつのライブラリに。",
+              "location": 24
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 103
+              }
+            ],
+            "locations": [
+              103
+            ],
+            "excerpt": "せず使用. 3テーマ公開認証は未実装. 検証専用・<mark>架空</mark>データです。 実在の沢の難易度・適期・山行助言",
+            "plain_excerpt": "せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言"
+          },
+          {
+            "title": "テーマから探す",
+            "url": "/#themes-title",
+            "anchor": {
+              "element": "h2",
+              "id": "themes-title",
+              "text": "テーマから探す",
+              "location": 163
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 198
+              },
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 217
+              },
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 218
+              },
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 238
+              }
+            ],
+            "locations": [
+              198,
+              217,
+              218,
+              238
+            ],
+            "excerpt": "MOUNTAIN / VALLEY谷川連峰<mark>架空</mark>ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark><mark>架空</mark>ルート2件・",
+            "plain_excerpt": "MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・"
+          },
+          {
+            "title": "情報の意味を、変えずに見せる。",
+            "url": "/#about-title",
+            "anchor": {
+              "element": "h2",
+              "id": "about-title",
+              "text": "情報の意味を、変えずに見せる。",
+              "location": 386
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 447
+              }
+            ],
+            "locations": [
+              447
+            ],
+            "excerpt": "。難度の異なる体系間換算、nullをゼロにする処理、<mark>架空</mark>の実出典は行いません。 P2 v1.1.6",
+            "plain_excerpt": "。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "\"奥多摩\"",
+    "result": {
+      "results": [
+        {
+          "id": "ja_79d2efa",
+          "score": 1,
+          "words": [
+            217
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 1,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 4,
+          "search": 0,
+          "total": 4
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 0.041666666666666664,
+            "balanced_score": 1,
+            "location": 217
+          }
+        ],
+        "locations": [
+          217
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを見る ↗03 /",
+        "plain_excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 /",
+        "sub_results": [
+          {
+            "title": "テーマから探す",
+            "url": "/#themes-title",
+            "anchor": {
+              "element": "h2",
+              "id": "themes-title",
+              "text": "テーマから探す",
+              "location": 163
+            },
+            "weighted_locations": [
+              {
+                "weight": 0.041666666666666664,
+                "balanced_score": 1,
+                "location": 217
+              }
+            ],
+            "locations": [
+              217
+            ],
+            "excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを見る ↗03 /",
+            "plain_excerpt": "・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 /"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "奥 多摩",
+    "result": {
+      "results": [
+        {
+          "id": "ja_33f818d",
+          "score": 3.1760408878326416,
+          "words": [
+            4
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_2ba5ab4",
+          "score": 3.151765823364258,
+          "words": [
+            4
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_75e64ef",
+          "score": 2.434868812561035,
+          "words": [
+            64,
+            75
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_79d2efa",
+          "score": 1.3445143699645996,
+          "words": [
+            212,
+            217
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 4,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 0,
+          "search": 0,
+          "total": 0
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+        "content": "本文へ移動 架空奥多摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマokutama-sawa-db 山域okutama レコードIDSYN-OKU-001 原典グレード（合成）syn-scale-x・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-002（架空出典URL・外部リンクなし） 適期・推奨月（合成）5・6・9月（合成の根拠例 SYN-REC-SYN-OKU-001） 実績のある月（合成）6月（架空の実績例 SYN-OBS-SYN-OKU-001、適期とは別） 行程日数（合成）1日 独自総合評価 source_score（合成）未評価（null） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 286,
+        "filters": {},
+        "meta": {
+          "title": "架空奥多摩A：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 7,
+            "balanced_score": 11887.744140625,
+            "location": 4
+          }
+        ],
+        "locations": [
+          4
+        ],
+        "raw_content": "本文​へ​移動 ​架空​奥多​摩​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​002​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​5​・​6​・​9​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​001​） ​実績​の​ある​月​（​合成​）​6​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+        "excerpt": "本文へ移動 架空<mark>奥多</mark>摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+        "plain_excerpt": "本文へ移動 架空奥多摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+        "sub_results": [
+          {
+            "title": "架空奥多摩A：ルート詳細",
+            "url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+            "weighted_locations": [
+              {
+                "weight": 7,
+                "balanced_score": 11887.744140625,
+                "location": 4
+              }
+            ],
+            "locations": [
+              4
+            ],
+            "excerpt": "本文へ移動 架空<mark>奥多</mark>摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+            "plain_excerpt": "本文へ移動 架空奥多摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。"
+          }
+        ]
+      },
+      {
+        "url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "content": "本文へ移動 架空奥多摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマokutama-sawa-db 山域okutama レコードIDSYN-OKU-002 原典グレード（合成）syn-scale-x・X3 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-003（架空出典URL・外部リンクなし） 適期・推奨月（合成）7・8月（合成の根拠例 SYN-REC-SYN-OKU-002） 実績のある月（合成）7月（架空の実績例 SYN-OBS-SYN-OKU-002、適期とは別） 行程日数（合成）2〜3日 独自総合評価 source_score（合成）0（評価済みの合成例、技術グレードとは別） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 294,
+        "filters": {},
+        "meta": {
+          "title": "架空奥多摩B：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 7,
+            "balanced_score": 11887.744140625,
+            "location": 4
+          }
+        ],
+        "locations": [
+          4
+        ],
+        "raw_content": "本文​へ​移動 ​架空​奥多​摩​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​002 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X3 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​003​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​002​） ​実績​の​ある​月​（​合成​）​7​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​〜​3​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "excerpt": "本文へ移動 架空<mark>奥多</mark>摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+        "plain_excerpt": "本文へ移動 架空奥多摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+        "sub_results": [
+          {
+            "title": "架空奥多摩B：ルート詳細",
+            "url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+            "weighted_locations": [
+              {
+                "weight": 7,
+                "balanced_score": 11887.744140625,
+                "location": 4
+              }
+            ],
+            "locations": [
+              4
+            ],
+            "excerpt": "本文へ移動 架空<mark>奥多</mark>摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。",
+            "plain_excerpt": "本文へ移動 架空奥多摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。"
+          }
+        ]
+      },
+      {
+        "url": "/themes/okutama-sawa-db/",
+        "content": "本文へ移動 okutama-sawa-db：合成テーマ一覧. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 このテーマの内部ルート. 架空奥多摩A — SYN-OKU-001. 架空奥多摩B — SYN-OKU-002. 山域ごとに独立した合成テーマです。全山域検索はレコードへのリンクを持ち、テーマの内容を併合しません。",
+        "word_count": 115,
+        "filters": {},
+        "meta": {
+          "title": "okutama-sawa-db：合成テーマ一覧"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "theme-heading",
+            "text": "このテーマの内部ルート",
+            "location": 57
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 242.60702514648438,
+            "location": 64
+          },
+          {
+            "weight": 1,
+            "balanced_score": 242.60702514648438,
+            "location": 75
+          }
+        ],
+        "locations": [
+          64,
+          75
+        ],
+        "raw_content": "本文​へ​移動 ​okutama​-​sawa​-​db​：​合成​テーマ​一覧​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​この​テーマ​の​内部​ルート​. ​架空​奥多​摩​A ​— ​SYN​-​OKU​-​001​. ​架空​奥多​摩​B ​— ​SYN​-​OKU​-​002​. ​山域​ごと​に​独立​し​た​合成​テーマ​です​。​全​山域​検索​は​レコード​へ​の​リンク​を​持ち​、​テーマ​の​内容​を​併合​し​ませ​ん​。",
+        "raw_url": "/themes/okutama-sawa-db/",
+        "excerpt": "未承認。 このテーマの内部ルート. 架空<mark>奥多</mark>摩A — SYN-OKU-001. 架空<mark>奥多</mark>摩B — SYN-OKU-002",
+        "plain_excerpt": "未承認。 このテーマの内部ルート. 架空奥多摩A — SYN-OKU-001. 架空奥多摩B — SYN-OKU-002",
+        "sub_results": [
+          {
+            "title": "このテーマの内部ルート",
+            "url": "/themes/okutama-sawa-db/#theme-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "theme-heading",
+              "text": "このテーマの内部ルート",
+              "location": 57
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 242.60702514648438,
+                "location": 64
+              },
+              {
+                "weight": 1,
+                "balanced_score": 242.60702514648438,
+                "location": 75
+              }
+            ],
+            "locations": [
+              64,
+              75
+            ],
+            "excerpt": "このテーマの内部ルート. 架空<mark>奥多</mark>摩A — SYN-OKU-001. 架空<mark>奥多</mark>摩B — SYN-OKU-002. 山域ごと",
+            "plain_excerpt": "このテーマの内部ルート. 架空奥多摩A — SYN-OKU-001. 架空奥多摩B — SYN-OKU-002. 山域ごと"
+          }
+        ]
+      },
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 242.60702514648438,
+            "location": 212
+          },
+          {
+            "weight": 1,
+            "balanced_score": 212.3625946044922,
+            "location": 217
+          }
+        ],
+        "locations": [
+          212,
+          217
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "ルート2件・原典体系の比較テーマを見る ↗02 / <mark>奥多</mark>摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを",
+        "plain_excerpt": "ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを",
+        "sub_results": [
+          {
+            "title": "テーマから探す",
+            "url": "/#themes-title",
+            "anchor": {
+              "element": "h2",
+              "id": "themes-title",
+              "text": "テーマから探す",
+              "location": 163
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 242.60702514648438,
+                "location": 212
+              },
+              {
+                "weight": 1,
+                "balanced_score": 212.3625946044922,
+                "location": 217
+              }
+            ],
+            "locations": [
+              212,
+              217
+            ],
+            "excerpt": "ルート2件・原典体系の比較テーマを見る ↗02 / <mark>奥多</mark>摩MOUNTAIN / VALLEY<mark>奥多摩</mark>架空ルート2件・行程日数の例テーマを",
+            "plain_excerpt": "ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "谷川",
+    "result": {
+      "results": [
+        {
+          "id": "ja_1fc9edd",
+          "score": 3.9835498332977295,
+          "words": [
+            4
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_ac238cd",
+          "score": 3.8749403953552246,
+          "words": [
+            4
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_c391372",
+          "score": 3.3235268592834473,
+          "words": [
+            64,
+            74
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_79d2efa",
+          "score": 1.292412519454956,
+          "words": [
+            196
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 4,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 1,
+          "search": 1,
+          "total": 2
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+        "content": "本文へ移動 架空谷川B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanigawa-sawa-db 山域tanigawa レコードIDSYN-TGW-002 原典グレード（合成）未確認 難易度の合成根拠未確認 適期・推奨月（合成）未確認（実績月から自動生成しない） 実績のある月（合成）8月（架空の実績例 SYN-OBS-SYN-TGW-002、適期とは別） 行程日数（合成）1日 独自総合評価 source_score（合成）未評価（null） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 248,
+        "filters": {},
+        "meta": {
+          "title": "架空谷川B：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 54
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 7,
+            "balanced_score": 25095.0234375,
+            "location": 4
+          }
+        ],
+        "locations": [
+          4
+        ],
+        "raw_content": "本文​へ​移動 ​架空​谷川​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanigawa​-​sawa​-​db ​山域​tanigawa ​レコード​IDSYN​-​TGW​-​002 ​原典​グレード​（​合成​）​未​確​認 ​難易​度​の​合成​根拠​未​確認 ​適期​・​推奨​月​（​合成​）​未​確​認​（​実績​月​から​自動​生成​し​ない​） ​実績​の​ある​月​（​合成​）​8​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TGW​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+        "excerpt": "本文へ移動 架空<mark>谷川</mark>B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+        "plain_excerpt": "本文へ移動 架空谷川B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+        "sub_results": [
+          {
+            "title": "架空谷川B：ルート詳細",
+            "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+            "weighted_locations": [
+              {
+                "weight": 7,
+                "balanced_score": 25095.0234375,
+                "location": 4
+              }
+            ],
+            "locations": [
+              4
+            ],
+            "excerpt": "本文へ移動 架空<mark>谷川</mark>B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+            "plain_excerpt": "本文へ移動 架空谷川B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "content": "本文へ移動 架空谷川A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanigawa-sawa-db 山域tanigawa レコードIDSYN-TGW-001 原典グレード（合成）syn-scale-x・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-001（架空出典URL・外部リンクなし） 適期・推奨月（合成）6・7・8月（合成の根拠例 SYN-REC-SYN-TGW-001） 実績のある月（合成）10月（架空の実績例 SYN-OBS-SYN-TGW-001、適期とは別） 行程日数（合成）2日 独自総合評価 source_score（合成）0（評価済みの合成例、技術グレードとは別） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2020-01-01（古い出典表示の架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 297,
+        "filters": {},
+        "meta": {
+          "title": "架空谷川A：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 54
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 7,
+            "balanced_score": 25095.0234375,
+            "location": 4
+          }
+        ],
+        "locations": [
+          4
+        ],
+        "raw_content": "本文​へ​移動 ​架空​谷川​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanigawa​-​sawa​-​db ​山域​tanigawa ​レコード​IDSYN​-​TGW​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​001​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​6​・​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TGW​-​001​） ​実績​の​ある​月​（​合成​）​10​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TGW​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2020​-​01​-​01​（​古い​出典​表示​の​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "excerpt": "本文へ移動 架空<mark>谷川</mark>A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+        "plain_excerpt": "本文へ移動 架空谷川A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+        "sub_results": [
+          {
+            "title": "架空谷川A：ルート詳細",
+            "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+            "weighted_locations": [
+              {
+                "weight": 7,
+                "balanced_score": 25095.0234375,
+                "location": 4
+              }
+            ],
+            "locations": [
+              4
+            ],
+            "excerpt": "本文へ移動 架空<mark>谷川</mark>A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3",
+            "plain_excerpt": "本文へ移動 架空谷川A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanigawa-sawa-db/",
+        "content": "本文へ移動 tanigawa-sawa-db：合成テーマ一覧. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 このテーマの内部ルート. 架空谷川A — SYN-TGW-001. 架空谷川B — SYN-TGW-002. 山域ごとに独立した合成テーマです。全山域検索はレコードへのリンクを持ち、テーマの内容を併合しません。",
+        "word_count": 113,
+        "filters": {},
+        "meta": {
+          "title": "tanigawa-sawa-db：合成テーマ一覧"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "theme-heading",
+            "text": "このテーマの内部ルート",
+            "location": 57
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 64
+          },
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 74
+          }
+        ],
+        "locations": [
+          64,
+          74
+        ],
+        "raw_content": "本文​へ​移動 ​tanigawa​-​sawa​-​db​：​合成​テーマ​一覧​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​この​テーマ​の​内部​ルート​. ​架空​谷川​A ​— ​SYN​-​TGW​-​001​. ​架空​谷川​B ​— ​SYN​-​TGW​-​002​. ​山域​ごと​に​独立​し​た​合成​テーマ​です​。​全​山域​検索​は​レコード​へ​の​リンク​を​持ち​、​テーマ​の​内容​を​併合​し​ませ​ん​。",
+        "raw_url": "/themes/tanigawa-sawa-db/",
+        "excerpt": "未承認。 このテーマの内部ルート. 架空<mark>谷川</mark>A — SYN-TGW-001. 架空<mark>谷川</mark>B — SYN-TGW-002. 山域",
+        "plain_excerpt": "未承認。 このテーマの内部ルート. 架空谷川A — SYN-TGW-001. 架空谷川B — SYN-TGW-002. 山域",
+        "sub_results": [
+          {
+            "title": "このテーマの内部ルート",
+            "url": "/themes/tanigawa-sawa-db/#theme-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "theme-heading",
+              "text": "このテーマの内部ルート",
+              "location": 57
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 64
+              },
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 74
+              }
+            ],
+            "locations": [
+              64,
+              74
+            ],
+            "excerpt": "このテーマの内部ルート. 架空<mark>谷川</mark>A — SYN-TGW-001. 架空<mark>谷川</mark>B — SYN-TGW-002. 山域ごとに独立",
+            "plain_excerpt": "このテーマの内部ルート. 架空谷川A — SYN-TGW-001. 架空谷川B — SYN-TGW-002. 山域ごとに独立"
+          }
+        ]
+      },
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 512.143310546875,
+            "location": 196
+          }
+        ],
+        "locations": [
+          196
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "たどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY<mark>谷川</mark>連峰架空ルート2件・原典体系の比較テーマを見る ↗02",
+        "plain_excerpt": "たどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02",
+        "sub_results": [
+          {
+            "title": "テーマから探す",
+            "url": "/#themes-title",
+            "anchor": {
+              "element": "h2",
+              "id": "themes-title",
+              "text": "テーマから探す",
+              "location": 163
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 512.143310546875,
+                "location": 196
+              }
+            ],
+            "locations": [
+              196
+            ],
+            "excerpt": "たどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY<mark>谷川</mark>連峰架空ルート2件・原典体系の比較テーマを見る ↗02",
+            "plain_excerpt": "たどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1",
+    "result": {
+      "results": [
+        {
+          "id": "ja_2a740c2",
+          "score": 0.9148061871528625,
+          "words": [
+            20
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_93a1916",
+          "score": 0.42800432443618774,
+          "words": [
+            100
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_5d1d224",
+          "score": 0.40231403708457947,
+          "words": [
+            100
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_33f818d",
+          "score": 0.40231403708457947,
+          "words": [
+            100
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_2ba5ab4",
+          "score": 0.3952840268611908,
+          "words": [
+            100
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_ac238cd",
+          "score": 0.39271068572998047,
+          "words": [
+            99
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_b29c3ee",
+          "score": 0.39271068572998047,
+          "words": [
+            100
+          ],
+          "data": null
+        },
+        {
+          "id": "ja_79d2efa",
+          "score": 0.2780636250972748,
+          "words": [
+            11
+          ],
+          "data": null
+        }
+      ],
+      "unfilteredResultCount": 8,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 0,
+          "search": 0,
+          "total": 0
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": [
+      {
+        "url": "/fixtures/synthetic_format.html",
+        "content": "合成・形式比較HTML 合成ルートの形式比較. 実在情報ではありません／PUBLIC SYNTHETIC ONLY. 架空ID点数 SYN-TGW-001. 7.",
+        "word_count": 34,
+        "filters": {},
+        "meta": {
+          "title": "合成ルートの形式比較"
+        },
+        "anchors": [],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 20
+          }
+        ],
+        "locations": [
+          20
+        ],
+        "raw_content": "合成​・​形式​比較​HTML ​合成​ルート​の​形式​比較​. ​実在​情報​で​は​あり​ませ​ん​／​PUBLIC ​SYNTHETIC ​ONLY​. ​架空​ID​点数 ​SYN​-​TGW​-​001​. ​7​.",
+        "raw_url": "/fixtures/synthetic_format.html",
+        "excerpt": "合成・形式比較HTML 合成ルートの形式比較. 実在情報ではありません／PUBLIC <mark>SYNTHETIC </mark>ONLY. 架空ID点数 SYN-TGW-",
+        "plain_excerpt": "合成・形式比較HTML 合成ルートの形式比較. 実在情報ではありません／PUBLIC SYNTHETIC ONLY. 架空ID点数 SYN-TGW-",
+        "sub_results": [
+          {
+            "title": "合成ルートの形式比較",
+            "url": "/fixtures/synthetic_format.html",
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 20
+              }
+            ],
+            "locations": [
+              20
+            ],
+            "excerpt": "合成・形式比較HTML 合成ルートの形式比較. 実在情報ではありません／PUBLIC <mark>SYNTHETIC </mark>ONLY. 架空ID点数 SYN-TGW-",
+            "plain_excerpt": "合成・形式比較HTML 合成ルートの形式比較. 実在情報ではありません／PUBLIC SYNTHETIC ONLY. 架空ID点数 SYN-TGW-"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+        "content": "本文へ移動 架空丹沢D：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanzawa-sawa-db 山域tanzawa レコードIDSYN-TNZ-004 原典グレード（合成）syn-scale-x・X4 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-006（架空出典URL・外部リンクなし） 適期・推奨月（合成）未確認（実績月から自動生成しない） 実績のある月（合成）未確認 行程日数（合成）未確認 独自総合評価 source_score（合成）未評価（null） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 259,
+        "filters": {},
+        "meta": {
+          "title": "架空丹沢D：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 100
+          }
+        ],
+        "locations": [
+          100
+        ],
+        "raw_content": "本文​へ​移動 ​架空​丹​沢​D​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​004 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X4 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​006​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​未​確​認​（​実績​月​から​自動​生成​し​ない​） ​実績​の​ある​月​（​合成​）​未​確​認 ​行程​日数​（​合成​）​未​確​認 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+        "excerpt": "・X4 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-006（架空出典URL・外部",
+        "plain_excerpt": "・X4 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-006（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 55
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 100
+              }
+            ],
+            "locations": [
+              100
+            ],
+            "excerpt": "・X4 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-006（架空出典URL・外部",
+            "plain_excerpt": "・X4 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-006（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+        "content": "本文へ移動 架空丹沢C：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanzawa-sawa-db 山域tanzawa レコードIDSYN-TNZ-003 原典グレード（合成）syn-scale-x・X1 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-005（架空出典URL・外部リンクなし） 適期・推奨月（合成）12・1・2月（合成の根拠例 SYN-REC-SYN-TNZ-003） 実績のある月（合成）12月（架空の実績例 SYN-OBS-SYN-TNZ-003、適期とは別） 行程日数（合成）1日 独自総合評価 source_score（合成）未評価（null） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 286,
+        "filters": {},
+        "meta": {
+          "title": "架空丹沢C：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 100
+          }
+        ],
+        "locations": [
+          100
+        ],
+        "raw_content": "本文​へ​移動 ​架空​丹​沢​C​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​003 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X1 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​005​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​12​・​1​・​2​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TNZ​-​003​） ​実績​の​ある​月​（​合成​）​12​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TNZ​-​003​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+        "excerpt": "・X1 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-005（架空出典URL・外部",
+        "plain_excerpt": "・X1 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-005（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 55
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 100
+              }
+            ],
+            "locations": [
+              100
+            ],
+            "excerpt": "・X1 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-005（架空出典URL・外部",
+            "plain_excerpt": "・X1 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-005（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+        "content": "本文へ移動 架空奥多摩A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマokutama-sawa-db 山域okutama レコードIDSYN-OKU-001 原典グレード（合成）syn-scale-x・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-002（架空出典URL・外部リンクなし） 適期・推奨月（合成）5・6・9月（合成の根拠例 SYN-REC-SYN-OKU-001） 実績のある月（合成）6月（架空の実績例 SYN-OBS-SYN-OKU-001、適期とは別） 行程日数（合成）1日 独自総合評価 source_score（合成）未評価（null） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 286,
+        "filters": {},
+        "meta": {
+          "title": "架空奥多摩A：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 100
+          }
+        ],
+        "locations": [
+          100
+        ],
+        "raw_content": "本文​へ​移動 ​架空​奥多​摩​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​002​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​5​・​6​・​9​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​001​） ​実績​の​ある​月​（​合成​）​6​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+        "excerpt": "・X2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-002（架空出典URL・外部",
+        "plain_excerpt": "・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-002（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 55
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 100
+              }
+            ],
+            "locations": [
+              100
+            ],
+            "excerpt": "・X2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-002（架空出典URL・外部",
+            "plain_excerpt": "・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-002（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "content": "本文へ移動 架空奥多摩B：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマokutama-sawa-db 山域okutama レコードIDSYN-OKU-002 原典グレード（合成）syn-scale-x・X3 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-003（架空出典URL・外部リンクなし） 適期・推奨月（合成）7・8月（合成の根拠例 SYN-REC-SYN-OKU-002） 実績のある月（合成）7月（架空の実績例 SYN-OBS-SYN-OKU-002、適期とは別） 行程日数（合成）2〜3日 独自総合評価 source_score（合成）0（評価済みの合成例、技術グレードとは別） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 294,
+        "filters": {},
+        "meta": {
+          "title": "架空奥多摩B：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 100
+          }
+        ],
+        "locations": [
+          100
+        ],
+        "raw_content": "本文​へ​移動 ​架空​奥多​摩​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​002 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X3 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​003​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​002​） ​実績​の​ある​月​（​合成​）​7​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​〜​3​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "excerpt": "・X3 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-003（架空出典URL・外部",
+        "plain_excerpt": "・X3 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-003（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 55
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 100
+              }
+            ],
+            "locations": [
+              100
+            ],
+            "excerpt": "・X3 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-003（架空出典URL・外部",
+            "plain_excerpt": "・X3 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-003（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "content": "本文へ移動 架空谷川A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanigawa-sawa-db 山域tanigawa レコードIDSYN-TGW-001 原典グレード（合成）syn-scale-x・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-001（架空出典URL・外部リンクなし） 適期・推奨月（合成）6・7・8月（合成の根拠例 SYN-REC-SYN-TGW-001） 実績のある月（合成）10月（架空の実績例 SYN-OBS-SYN-TGW-001、適期とは別） 行程日数（合成）2日 独自総合評価 source_score（合成）0（評価済みの合成例、技術グレードとは別） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2020-01-01（古い出典表示の架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 297,
+        "filters": {},
+        "meta": {
+          "title": "架空谷川A：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 54
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 99
+          }
+        ],
+        "locations": [
+          99
+        ],
+        "raw_content": "本文​へ​移動 ​架空​谷川​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanigawa​-​sawa​-​db ​山域​tanigawa ​レコード​IDSYN​-​TGW​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​001​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​6​・​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TGW​-​001​） ​実績​の​ある​月​（​合成​）​10​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TGW​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2020​-​01​-​01​（​古い​出典​表示​の​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "excerpt": "・X2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-001（架空出典URL・外部",
+        "plain_excerpt": "・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-001（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 54
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 99
+              }
+            ],
+            "locations": [
+              99
+            ],
+            "excerpt": "・X2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-001（架空出典URL・外部",
+            "plain_excerpt": "・X2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-001（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+        "content": "本文へ移動 架空丹沢A：ルート詳細. 合成専用・実運用不可。 実原典・実山行情報ではありません。P3-AローカルUI検証専用。P2 G3は条件付きGO、G4・本番公開は未承認。 合成レコードの詳細. 元テーマtanzawa-sawa-db 山域tanzawa レコードIDSYN-TNZ-001 原典グレード（合成）syn-scale-y・Y2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-004（架空出典URL・外部リンクなし） 適期・推奨月（合成）4・5・10・11月（合成の根拠例 SYN-REC-SYN-TNZ-001） 実績のある月（合成）9月（架空の実績例 SYN-OBS-SYN-TNZ-001、適期とは別） 行程日数（合成）2日 独自総合評価 source_score（合成）3（評価済みの合成例、技術グレードとは別） 実原典の確認日未確認：合成fixtureのため実原典未調査。example.invalidは架空出典専用。 情報基準日（合成）2026-10-13（架空例） 原典ラベルの厳密一致のみ。体系間換算、序列、独自評価の難易度代用、実績月の適期代用は行いません。この詳細には実山行ルートや安全助言を含みません。",
+        "word_count": 297,
+        "filters": {},
+        "meta": {
+          "title": "架空丹沢A：ルート詳細"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "record-content",
+            "text": "",
+            "location": 3
+          },
+          {
+            "element": "h2",
+            "id": "detail-heading",
+            "text": "合成レコードの詳細",
+            "location": 55
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 100
+          }
+        ],
+        "locations": [
+          100
+        ],
+        "raw_content": "本文​へ​移動 ​架空​丹​沢​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​y​・​Y2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​004​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​4​・​5​・​10​・​1​1​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TNZ​-​001​） ​実績​の​ある​月​（​合成​）​9​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TNZ​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​3​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+        "raw_url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+        "excerpt": "・Y2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-004（架空出典URL・外部",
+        "plain_excerpt": "・Y2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-004（架空出典URL・外部",
+        "sub_results": [
+          {
+            "title": "合成レコードの詳細",
+            "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html#detail-heading",
+            "anchor": {
+              "element": "h2",
+              "id": "detail-heading",
+              "text": "合成レコードの詳細",
+              "location": 55
+            },
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 100
+              }
+            ],
+            "locations": [
+              100
+            ],
+            "excerpt": "・Y2 難易度の合成根拠https://example.invalid/<mark>synthetic</mark>/evidence/SYN-EVID-004（架空出典URL・外部",
+            "plain_excerpt": "・Y2 難易度の合成根拠https://example.invalid/synthetic/evidence/SYN-EVID-004（架空出典URL・外部"
+          }
+        ]
+      },
+      {
+        "url": "/",
+        "content": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつのライブラリに。 テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。 成果物を検索する ↗テーマを見てみる. PREVIEW SNAPSHOT. 08件. 元のP2合成レコードを改変せず使用. 3テーマ公開認証は未実装. 検証専用・架空データです。 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。 BROWSE BY THEME. テーマから探す. まず関心のある分野を選んで、資料とその根拠をたどれます。 合成テーマ 3件. 01 / 上越MOUNTAIN / VALLEY谷川連峰架空ルート2件・原典体系の比較テーマを見る ↗02 / 奥多摩MOUNTAIN / VALLEY奥多摩架空ルート2件・行程日数の例テーマを見る ↗03 / 丹沢MOUNTAIN / VALLEY丹沢架空ルート4件・未評価データの例テーマを見る ↗ EXPLORE COLLECTION. 成果物を探す. キーワード・山域・難度体系・月・行程日数で絞り込めます。 検索対象：合成8件. 検索条件. 検索条件を閉じる. 同じ項目の複数選択はOR、項目間はANDです。 検索結果. テーマをまたぐ合成データの一覧. カード リスト. 検索データを確認中です。 ページを再読み込み 検索トップへ戻る. 該当 — / 全 — 件。難度未確認： — 件。 該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。 ABOUT THIS BUILD. 情報の意味を、変えずに見せる。 「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。 P2 v1.1.6固定仕様を参照. P3-AローカルUI実証. G4 未承認実配信・本番認証は対象外.",
+        "word_count": 487,
+        "filters": {},
+        "meta": {
+          "title": "調査成果を、 ひとつのライブラリに。"
+        },
+        "anchors": [
+          {
+            "element": "main",
+            "id": "main-content",
+            "text": "",
+            "location": 13
+          },
+          {
+            "element": "h1",
+            "id": "hero-title",
+            "text": "調査成果を、ひとつのライブラリに。",
+            "location": 24
+          },
+          {
+            "element": "section",
+            "id": "themes",
+            "text": "",
+            "location": 159
+          },
+          {
+            "element": "h2",
+            "id": "themes-title",
+            "text": "テーマから探す",
+            "location": 163
+          },
+          {
+            "element": "section",
+            "id": "explore",
+            "text": "",
+            "location": 252
+          },
+          {
+            "element": "h2",
+            "id": "explore-title",
+            "text": "成果物を探す",
+            "location": 255
+          },
+          {
+            "element": "h3",
+            "id": "filters-heading",
+            "text": "検索条件",
+            "location": 285
+          },
+          {
+            "element": "button",
+            "id": "filter-toggle",
+            "text": "検索条件を閉じる",
+            "location": 289
+          },
+          {
+            "element": "div",
+            "id": "filter-content",
+            "text": "",
+            "location": 294
+          },
+          {
+            "element": "p",
+            "id": "input-error",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "form",
+            "id": "filters",
+            "text": "",
+            "location": 308
+          },
+          {
+            "element": "h3",
+            "id": "results-heading",
+            "text": "検索結果",
+            "location": 308
+          },
+          {
+            "element": "button",
+            "id": "card-view",
+            "text": "カード",
+            "location": 321
+          },
+          {
+            "element": "button",
+            "id": "list-view",
+            "text": "リスト",
+            "location": 322
+          },
+          {
+            "element": "p",
+            "id": "loading-state",
+            "text": "検索データを確認中です。",
+            "location": 324
+          },
+          {
+            "element": "p",
+            "id": "data-error",
+            "text": "",
+            "location": 331
+          },
+          {
+            "element": "div",
+            "id": "recovery-actions",
+            "text": "ページを再読み込み 検索トップへ戻る",
+            "location": 331
+          },
+          {
+            "element": "button",
+            "id": "retry-data",
+            "text": "ページを再読み込み",
+            "location": 331
+          },
+          {
+            "element": "p",
+            "id": "result-stats",
+            "text": "該当 — / 全 — 件。難度未確認：— 件。",
+            "location": 340
+          },
+          {
+            "element": "strong",
+            "id": "count",
+            "text": "—",
+            "location": 342
+          },
+          {
+            "element": "strong",
+            "id": "total-count",
+            "text": "—",
+            "location": 345
+          },
+          {
+            "element": "strong",
+            "id": "ungraded-count",
+            "text": "—",
+            "location": 354
+          },
+          {
+            "element": "p",
+            "id": "empty-state",
+            "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+            "location": 357
+          },
+          {
+            "element": "ul",
+            "id": "results",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "section",
+            "id": "about",
+            "text": "",
+            "location": 382
+          },
+          {
+            "element": "h2",
+            "id": "about-title",
+            "text": "情報の意味を、変えずに見せる。",
+            "location": 386
+          }
+        ],
+        "weighted_locations": [
+          {
+            "weight": 1,
+            "balanced_score": 211.8985595703125,
+            "location": 11
+          }
+        ],
+        "locations": [
+          11
+        ],
+        "raw_content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+        "raw_url": "/",
+        "excerpt": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / <mark>SYNTHETIC</mark>. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつ",
+        "plain_excerpt": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。 調査成果を、 ひとつ",
+        "sub_results": [
+          {
+            "title": "調査成果を、 ひとつのライブラリに。",
+            "url": "/",
+            "weighted_locations": [
+              {
+                "weight": 1,
+                "balanced_score": 211.8985595703125,
+                "location": 11
+              }
+            ],
+            "locations": [
+              11
+            ],
+            "excerpt": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / <mark>SYNTHETIC</mark>. 自分の調査を、見つけやすく。使いやすく。",
+            "plain_excerpt": "本文へスキップ AArtifact AtlasResearch Library · P3-ALOCAL / SYNTHETIC. 自分の調査を、見つけやすく。使いやすく。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "query": "\"SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1\"",
+    "result": {
+      "results": [],
+      "unfilteredResultCount": 0,
+      "filters": {},
+      "totalFilters": {},
+      "timings": [
+        {
+          "preload": 0,
+          "search": 1,
+          "total": 1
+        }
+      ],
+      "search_environment": "webworker"
+    },
+    "data": []
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "name": "02_install_pagefind",
+  "argv": [
+    "npm",
+    "install",
+    "pagefind@latest",
+    "--save-dev",
+    "--save-exact",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "/tmp/p3-b1-npm",
+    "--fetch-retries=0",
+    "--fetch-timeout=30000"
+  ],
+  "cwd": "/workspace/portal-public/astro_candidate",
+  "start_utc": "2026-10-15T03:38:23.990193+00:00",
+  "end_utc": "2026-10-15T03:38:24.454209+00:00",
+  "duration_seconds": 0.46402177999999594,
+  "exit_code": 0,
+  "stdout": "\nup to date in 411ms\n",
+  "stderr": ""
+}

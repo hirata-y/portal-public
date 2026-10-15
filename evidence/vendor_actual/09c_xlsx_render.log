@@ -1,0 +1,8 @@
+convert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.xlsx as a Calc document -> /workspace/portal-public/evidence/vendor_actual/formats/xlsx/synthetic_format.pdf using filter : calc_pdf_Export
+
+STDERR:
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+
+EXIT: 0

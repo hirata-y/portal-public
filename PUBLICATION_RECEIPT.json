@@ -1,0 +1,12 @@
+{
+  "time_utc": "2026-10-15T03:52:13.060586+00:00",
+  "drive_file_id": "1PAOABAdyxf7gmdv8ORjoD1GLNor6tlHE",
+  "drive_url": "https://drive.google.com/file/d/1PAOABAdyxf7gmdv8ORjoD1GLNor6tlHE/view",
+  "local_sha256": "1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9",
+  "drive_raw_readback_sha256": "1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9",
+  "bytes": 2477711,
+  "raw_readback": "PASS",
+  "github_push": "BLOCKED_BY_AUTO_APPROVAL_REVIEW",
+  "github_pr": "NOT_CREATED",
+  "official_freeze": false
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "P3-B1-REAL-VENDOR-POC-20261016-01",
+  "role": "A Producer",
+  "generated_jst": "2026-10-15T12:50:40.794745+09:00",
+  "recorded_execution_start_jst": "2026-10-15T12:37:34.201228+09:00",
+  "vendor_test_end_jst": "2026-10-15T12:46:42.640330+09:00",
+  "recorded_execution_elapsed_seconds_to_test_end": 548.439102,
+  "actual_human_effort_hours": null,
+  "input_zip_sha256": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+  "input_zip_bytes": 184006,
+  "input_zip_entries": 88,
+  "package_lock_sha256": "dd957c01dc054952d911b48cff783e62c500d83d5d06898d730fba46faac5117",
+  "versions": {
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "python": "3.12.14",
+    "astro": "7.3.8",
+    "pagefind": "1.5.2 Extended",
+    "chromium": "154.0.8037.57"
+  },
+  "results": {
+    "npm_ci": "PASS",
+    "astro_build": "PASS",
+    "pagefind_ja_index": "PASS",
+    "dist_checks": {
+      "status": "COMPLETE",
+      "total": 42,
+      "PASS": 42,
+      "FAIL": 0,
+      "required_pagefind": true,
+      "pagefind_actual_status": "INDEX_FOUND",
+      "dist": "/workspace/portal-public/astro_candidate/dist",
+      "dist_total_bytes": 694892,
+      "pagefind_file_count": 26,
+      "source_p3_a_sha256": "bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23",
+      "notes": [
+        "This is a Producer check, not independent F verification.",
+        "Japanese query accuracy and native browser URL/Back require browser probe evidence."
+      ]
+    },
+    "baseline_checks": {
+      "total": 59,
+      "PASS": 59,
+      "FAIL": 0,
+      "NOT_COVERED_BY_THIS_BASELINE_SUITE": [
+        "ASTRO_REAL_BUILD",
+        "PAGEFIND_EXTENDED_JAPANESE_INDEX",
+        "PAGEFIND_SEARCH_QUERY",
+        "CHROMIUM_NATIVE_HTTP_NAVIGATION",
+        "CLOUDFLARE_ACCESS_JWT",
+        "WORKERS_RANGE_304_REAL_DELIVERY",
+        "FULL_WCAG_AND_AT",
+        "PRODUCTION_DEPENDENCY_AUDIT"
+      ],
+      "benchmark": {
+        "name": "Python baseline title substring only",
+        "iterations": 10000,
+        "total_seconds": 0.013846667000052548,
+        "avg_milliseconds": 0.0013846667000052548,
+        "NOT_A_PAGEFIND_BENCHMARK": true
+      },
+      "bytes": {
+        "p3a_original_site": 60102,
+        "b1_public_including_synthetic_formats": 99245,
+        "b1_members_synthetic_canary": 553,
+        "astro_candidate_source_only": 233786
+      }
+    },
+    "security_formats": {
+      "PASS": 25,
+      "FAIL": 0
+    },
+    "browser": {
+      "PASS": 32,
+      "FAIL": 1
+    },
+    "japanese_search": {
+      "PASS": 2,
+      "FAIL": 1
+    },
+    "real_index_fault_detection": "PASS"
+  },
+  "official_candidate_freeze": "NOT_PERFORMED",
+  "official_freezes_consumed": 0,
+  "independent_F": "NOT_EXECUTED",
+  "historical_P3A_F": "BLOCKED retained",
+  "G4": "STOP",
+  "B2": "NOT_STARTED",
+  "github": "PUSH_BLOCKED_BY_AUTO_REVIEW; local artifacts prepared",
+  "unverified": [
+    "Missing four priority local input files",
+    "Windows/Edge native GUI/address-bar evidence",
+    "Independent F CT04 and targeted recheck",
+    "Full original P2/P3-A ZIP hashes: pins only; extracted source subtree verified",
+    "Production authorization/JWT/Access and delivery",
+    "Microsoft Office desktop interoperability",
+    "Production dependency audit/full WCAG/AT"
+  ],
+  "scope": "Local loopback and synthetic artifacts; current user authorizes GitHub management but automatic approval review requires explicit Owner approval."
+}

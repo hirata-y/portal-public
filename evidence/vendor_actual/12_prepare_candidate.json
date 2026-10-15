@@ -1,0 +1,14 @@
+{
+  "name": "12_prepare_candidate",
+  "argv": [
+    "python",
+    "tools/prepare_candidate.py"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:42:40.563283+00:00",
+  "end_utc": "2026-10-15T03:42:40.584919+00:00",
+  "duration_seconds": 0.021637129999987792,
+  "exit_code": 0,
+  "stdout": "Prepared 8 derived detail pages. Fixed source unchanged; all record values retained.\n",
+  "stderr": ""
+}

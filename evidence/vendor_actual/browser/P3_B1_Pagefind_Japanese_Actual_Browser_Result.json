@@ -1,0 +1,54 @@
+{
+  "time": "2026-10-15T03:46:24.302Z",
+  "location": "http://127.0.0.1:8766/tech-evidence/pagefind_japanese_browser_probe.html",
+  "agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "query": "谷川",
+      "expectedDetailIds": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "actualDetailIds": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "totalPagefindResults": 4,
+      "urls": [
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "/themes/tanigawa-sawa-db/",
+        "/"
+      ],
+      "status": "PASS",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    },
+    {
+      "query": "奥多摩",
+      "expectedDetailIds": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actualDetailIds": [],
+      "totalPagefindResults": 1,
+      "urls": [
+        "/"
+      ],
+      "status": "FAIL",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    },
+    {
+      "query": "穂高岳",
+      "expectedDetailIds": [],
+      "actualDetailIds": [],
+      "totalPagefindResults": 0,
+      "urls": [],
+      "status": "PASS",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    }
+  ],
+  "summary": {
+    "PASS": 2,
+    "FAIL": 1
+  }
+}

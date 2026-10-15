@@ -1,0 +1,17 @@
+{
+  "name": "31_syntax",
+  "argv": [
+    "python",
+    "-m",
+    "compileall",
+    "-q",
+    "tools"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:51:12.981313+00:00",
+  "end_utc": "2026-10-15T03:51:13.015420+00:00",
+  "duration_seconds": 0.03411065399996005,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

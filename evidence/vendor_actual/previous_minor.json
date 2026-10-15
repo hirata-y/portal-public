@@ -1,0 +1,34 @@
+{
+  "version": "1.4.0",
+  "argv": [
+    "/tmp/p3-b1-pagefind14/node_modules/.bin/pagefind",
+    "--site",
+    "/tmp/tmp9mt9cnfe/dist",
+    "--force-language",
+    "ja"
+  ],
+  "exit_code": 0,
+  "stdout": "\nRunning Pagefind v1.4.0 (Extended)\nRunning from: \"/workspace/portal-public\"\nSource:       \"/tmp/tmp9mt9cnfe/dist\"\nOutput:       \"/tmp/tmp9mt9cnfe/dist/pagefind\"\n\n[Walking source directory]\nFound 13 files matching **/*.{html}\n\n[Parsing files]\nDid not find a data-pagefind-body element on the site.\n↳ Indexing all <body> elements on the site.\n\n[Reading languages]\nDiscovered 1 language: ja\n\n[Building search indexes]\nTotal: \n  Indexed 1 language\n  Indexed 13 pages\n  Indexed 315 words\n  Indexed 0 filters\n  Indexed 0 sorts\n\nFinished in 0.769 seconds\n",
+  "stderr": "Note: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\nNote: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\n",
+  "actual": [
+    {
+      "query": "谷川",
+      "urls": [
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "/themes/tanigawa-sawa-db/",
+        "/"
+      ]
+    },
+    {
+      "query": "奥多摩",
+      "urls": [
+        "/"
+      ]
+    },
+    {
+      "query": "穂高岳",
+      "urls": []
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "summary": {
+    "total": 59,
+    "PASS": 59,
+    "FAIL": 0,
+    "NOT_COVERED_BY_THIS_BASELINE_SUITE": [
+      "ASTRO_REAL_BUILD",
+      "PAGEFIND_EXTENDED_JAPANESE_INDEX",
+      "PAGEFIND_SEARCH_QUERY",
+      "CHROMIUM_NATIVE_HTTP_NAVIGATION",
+      "CLOUDFLARE_ACCESS_JWT",
+      "WORKERS_RANGE_304_REAL_DELIVERY",
+      "FULL_WCAG_AND_AT",
+      "PRODUCTION_DEPENDENCY_AUDIT"
+    ],
+    "benchmark": {
+      "name": "Python baseline title substring only",
+      "iterations": 10000,
+      "total_seconds": 0.013846667000052548,
+      "avg_milliseconds": 0.0013846667000052548,
+      "NOT_A_PAGEFIND_BENCHMARK": true
+    },
+    "bytes": {
+      "p3a_original_site": 60102,
+      "b1_public_including_synthetic_formats": 99245,
+      "b1_members_synthetic_canary": 553,
+      "astro_candidate_source_only": 233786
+    }
+  },
+  "checks": [
+    {
+      "id": "SOURCE_P3A_SHA_PIN",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SOURCE_P2_SHA_PIN",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SOURCE_16_MEMBER_COUNT",
+      "status": "PASS",
+      "expected": 16,
+      "actual": 16,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_app.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_styles.css",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_demo-data.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_data-validation.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanigawa-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanzawa-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/okutama-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_UNCHANGED_themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": "byte-identical P3-A fixed source"
+    },
+    {
+      "id": "PUBLIC_8_RECORDS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_3_THEMES",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_8_DETAIL_PAGES",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "EIGHT_UNIQUE_SOURCE_IDS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SOURCE_NO_REAL_PERSONAL_DATA",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "DETAIL_FILE_EXISTENCE",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "DETAIL_NO_TRAVERSAL",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "BASELINE_LOCAL_SUBSTR_TANIGAWA",
+      "status": "PASS",
+      "expected": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "actual": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "note": "B1 baseline local substring demonstration, not actual Pagefind"
+    },
+    {
+      "id": "BASELINE_LOCAL_SUBSTR_OKUTAMA",
+      "status": "PASS",
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "note": "B1 baseline local substring demonstration, not actual Pagefind"
+    },
+    {
+      "id": "BASELINE_LOCAL_SUBSTR_TOKYO",
+      "status": "PASS",
+      "expected": [],
+      "actual": [],
+      "note": "B1 baseline local substring demonstration, not actual Pagefind"
+    },
+    {
+      "id": "BASELINE_LOCAL_SUBSTR_NONMATCH",
+      "status": "PASS",
+      "expected": [],
+      "actual": [],
+      "note": "B1 baseline local substring demonstration, not actual Pagefind"
+    },
+    {
+      "id": "BASELINE_SEARCH_EMPTY",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_CANARY_NOT_IN_FILE_BYTES",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PRIVATE_CANARY_EXISTS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_OUTPUT_NOT_PRIVATE_INDEX",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PRIVATE_OUTPUT_NOT_PUBLIC_INDEX",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_NO_REFERENCES_TO_MEMBERS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PUBLIC_MISSING_PRIVATE_HTML",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "MUTATION_CANARY_IN_PUBLIC_DETECTED",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "MUTATION_DUPLICATE_RECORD_ID_DETECTED",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "MUTATION_TRAVERSAL_REF_DETECTED",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SYNTHETIC_HTML_EXISTS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SYNTHETIC_PDF_EXISTS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SYNTHETIC_PPTX_EXISTS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "SYNTHETIC_XLSX_EXISTS",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PDF_PARSE_AND_TEXT",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "PPTX_VALID_OFFICE_ZIP",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "XLSX_VALID_OFFICE_ZIP",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "ASTRO_TEMPLATE_CREATED",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "ASTRO_TEMPLATE_CONTROLLED_INLINE_DERIVATIVE",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "ASTRO_PACKAGE_JSON_VALID",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "READINESS_HISTORICAL_NPM_ERROR_RETAINED",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        9432
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_themes/tanigawa-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        1209
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        2085
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_experimental_offline_search_index.json",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        4041
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_fixtures/synthetic_format.pdf",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        2547
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_fixtures/synthetic_format.pptx",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        28523
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_GET_fixtures/synthetic_format.xlsx",
+      "status": "PASS",
+      "expected": true,
+      "actual": [
+        200,
+        3721
+      ],
+      "note": ""
+    },
+    {
+      "id": "LOOPBACK_PRIVATE_ASSET_NOT_FOUND",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "note": ""
+    }
+  ]
+}

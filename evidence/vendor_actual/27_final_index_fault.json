@@ -1,0 +1,14 @@
+{
+  "name": "27_final_index_fault",
+  "argv": [
+    "python",
+    "tools/index_fault_probe.py"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:46:18.795717+00:00",
+  "end_utc": "2026-10-15T03:46:21.428352+00:00",
+  "duration_seconds": 2.6326396940000905,
+  "exit_code": 0,
+  "stdout": "{\n  \"role\": \"A Producer self-check\",\n  \"time_utc\": \"2026-10-15T03:46:18.888544+00:00\",\n  \"index_build\": {\n    \"argv\": [\n      \"/workspace/portal-public/astro_candidate/node_modules/.bin/pagefind\",\n      \"--site\",\n      \"/tmp/p3b1-index-fault-tsvyt920/public\",\n      \"--force-language\",\n      \"ja\"\n    ],\n    \"exit_code\": 0,\n    \"stdout\": \"\\nRunning Pagefind v1.5.2 (Extended)\\nRunning from: \\\"/workspace/portal-public\\\"\\nSource:       \\\"/tmp/p3b1-index-fault-tsvyt920/public\\\"\\nOutput:       \\\"/tmp/p3b1-index-fault-tsvyt920/public/pagefind\\\"\\n\\n[Walking source directory]\\nFound 14 files matching **/*.{html}\\n\\n[Parsing files]\\nDid not find a data-pagefind-body element on the site.\\n↳ Indexing all <body> elements on the site.\\n\\n[Reading languages]\\nDiscovered 1 language: ja\\n\\n[Building search indexes]\\nTotal: \\n  Indexed 1 language\\n  Indexed 14 pages\\n  Indexed 350 words\\n  Indexed 0 filters\\n  Indexed 0 sorts\\n\\nFinished in 0.894 seconds\\n\",\n    \"stderr\": \"Note: Pagefind doesn't support stemming for the language ja. \\nSearch will still work, but will not match across root words.\\nNote: Pagefind doesn't support stemming for the language ja. \\nSearch will still work, but will not match across root words.\\n\"\n  },\n  \"actual\": [\n    {\n      \"query\": \"SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1\",\n      \"count\": 9,\n      \"urls\": [\n        \"/fixtures/synthetic_format.html\",\n        \"/members/canary.html\",\n        \"/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html\",\n        \"/themes/okutama-sawa-db/records/SYN-OKU-001.html\",\n        \"/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html\",\n        \"/themes/okutama-sawa-db/records/SYN-OKU-002.html\",\n        \"/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html\",\n        \"/themes/tanigawa-sawa-db/records/SYN-TGW-001.html\",\n        \"/\"\n      ]\n    },\n    {\n      \"query\": \"\\\"SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1\\\"\",\n      \"count\": 0,\n      \"urls\": []\n    }\n  ],\n  \"scanner_findings\": [\n    \"canary:members/canary.html\",\n    \"private_path:members/canary.html\",\n    \"canary:members/members-index.json\",\n    \"private_path:members/members-index.json\",\n    \"decoded_content_canary:pagefind/fragment/ja_ee1c299.pf_fragment\",\n    \"decoded_private_url:pagefind/fragment/ja_ee1c299.pf_fragment\"\n  ],\n  \"status\": \"PASS\"\n}\n",
+  "stderr": ""
+}

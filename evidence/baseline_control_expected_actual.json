@@ -1,0 +1,307 @@
+{
+  "summary": {
+    "status": "COMPLETE",
+    "total": 41,
+    "PASS": 41,
+    "FAIL": 0,
+    "required_pagefind": false,
+    "pagefind_actual_status": "TO_BE_CHECKED_AFTER_VENDOR_BUILD",
+    "dist": "/mnt/data/P3_B1_VENDOR_READINESS_v0.2.1_20261015/outputs/public",
+    "dist_total_bytes": 99245,
+    "pagefind_file_count": 0,
+    "source_p3_a_sha256": "bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23",
+    "notes": [
+      "This is a Producer check, not independent F verification.",
+      "Japanese query accuracy and native browser URL/Back require browser probe evidence."
+    ]
+  },
+  "checks": [
+    {
+      "id": "ASTRO_DIST_FILES_PRESENT",
+      "status": "PASS",
+      "expected": true,
+      "actual": 21,
+      "notes": ""
+    },
+    {
+      "id": "BUNDLED_UNCHANGED_styles.css",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": "Static public assets expected copied exactly"
+    },
+    {
+      "id": "BUNDLED_UNCHANGED_app.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": "Static public assets expected copied exactly"
+    },
+    {
+      "id": "BUNDLED_UNCHANGED_data-validation.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": "Static public assets expected copied exactly"
+    },
+    {
+      "id": "BUNDLED_UNCHANGED_demo-data.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": "Static public assets expected copied exactly"
+    },
+    {
+      "id": "HTML_ROUTE_index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "HTML_ROUTE_themes/tanigawa-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "HTML_ROUTE_themes/okutama-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "HTML_ROUTE_themes/tanzawa-sawa-db/index.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_COUNT_EIGHT",
+      "status": "PASS",
+      "expected": 8,
+      "actual": 8,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TNZ-004",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TNZ-001",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TNZ-003",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TNZ-002",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TGW-002",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-TGW-001",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-OKU-002",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "DETAIL_ID_SYN-OKU-001",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "HOME_LANG_JA",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "HOME_A_HYBRID",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "PRIVATE_CANARY_IN_PRIVATE",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "CANARY_ABSENT_FROM_ASTRO_PUBLIC",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "PRIVATE_FILE_NAME_ABSENT",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "MEMBERS_NO_DIR_IN_PUBLIC",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_app.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_styles.css",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_demo-data.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_data-validation.js",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "SYNTHETIC_FORMAT_html",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "SYNTHETIC_FORMAT_pdf",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "SYNTHETIC_FORMAT_pptx",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "SYNTHETIC_FORMAT_xlsx",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    },
+    {
+      "id": "MUTATION_CANARY_BYTE_SCAN_DETECTS_INJECTION",
+      "status": "PASS",
+      "expected": true,
+      "actual": true,
+      "notes": ""
+    }
+  ]
+}

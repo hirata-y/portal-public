@@ -1,0 +1,26 @@
+{
+  "data_origin": "synthetic",
+  "policy": "no real content, no production upload",
+  "formats": [
+    {
+      "file": "synthetic_format.html",
+      "bytes": 311,
+      "sha256": "ec3d53b12bc1653752c14350edbd606712b82bc043f4d1a97f120ee8f6948ce5"
+    },
+    {
+      "file": "synthetic_format.pdf",
+      "bytes": 2547,
+      "sha256": "c3858fd1df1d6003e3567a854f62abbce6d91d59cbbe4f444a204ea9f3e01d32"
+    },
+    {
+      "file": "synthetic_format.pptx",
+      "bytes": 28523,
+      "sha256": "aa120675f6c1d2818ad617217e07b4c54438ae9887c8bf97c3e28ef31fb378c1"
+    },
+    {
+      "file": "synthetic_format.xlsx",
+      "bytes": 3721,
+      "sha256": "4cf268969a7eddc70c41e4db5118c254b0dd80c6c0c13b8a9325b93dd27b63d1"
+    }
+  ]
+}
