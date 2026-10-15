@@ -6,8 +6,8 @@
   "drive_raw_readback_sha256": "1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9",
   "bytes": 2477711,
   "raw_readback": "PASS",
-  "github_push": "AUTHORIZED_PENDING_EXECUTION",
-  "github_pr": "NOT_CREATED",
+  "github_push": "PASS",
+  "github_pr": "https://github.com/hirata-y/portal-public/pull/1",
   "official_freeze": false,
   "owner_approval": {
     "quote": "Ownerとして、公開GitHubへのpushとDraft PR作成を追加承認する",
@@ -15,5 +15,9 @@
     "repository": "hirata-y/portal-public",
     "scope": "Public synthetic code, dist, tests including canary, evidence and ZIP; push main initialization and execution branch; Draft PR only."
   },
-  "historical_block": "Auto-review rejected the earlier push; explicit Owner approval was then supplied. Archived snapshot retains the state at its creation time."
+  "historical_block": "Auto-review rejected the earlier push; explicit Owner approval was then supplied. Archived snapshot retains the state at its creation time.",
+  "github_pr_draft": true,
+  "github_initial_published_head": "f2625e5f7d771a526658bd0dd09c8b39faa17c86",
+  "publication_completed_utc": "2026-10-15T03:54:08.863799+00:00",
+  "snapshot_interpretation": "ZIP and MANIFEST preserve execution state before additional public-GitHub approval. B1-E003 and GitHub BLOCKED in that immutable snapshot are historical; explicit Owner approval and successful push/Draft PR supersede that publication blocker. Product Major B1-M001 remains OPEN, F remains NOT_EXECUTED, official freeze remains false, G4 STOP."
 }
