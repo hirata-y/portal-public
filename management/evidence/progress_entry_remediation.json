@@ -1,0 +1,11 @@
+{
+  "drive_id": "1xRtm1KjJYwpnzXlKsYlFKYP_2Z08NTRI",
+  "old_bytes": 14895,
+  "old_sha256": "e0def60f2fe85b8aaa65dd69151356821de60d4577f5d5c2a6c96077343a64ed",
+  "prefix_bytes": 1156,
+  "new_sha256": "8eb90e66316b2e1ab2e58f28facacf36b5a3aec84b4f8244373d92e0a91aa66e",
+  "old_body_preserved_byte_exact": true,
+  "public_repository_contains_old_body": false,
+  "readback": "PASS",
+  "verified_jst": "2026-10-15T16:33:40.362551+09:00"
+}

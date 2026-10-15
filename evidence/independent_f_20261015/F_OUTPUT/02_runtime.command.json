@@ -1,0 +1,12 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "node --version; npm --version; python --version; chromium --version; python -m pip show playwright; command -v ffmpeg"
+  ],
+  "cwd": "/workspace/p3-b1-f-review-20261015",
+  "start_utc": "2026-10-15T07:20:08.016866+00:00",
+  "end_utc": "2026-10-15T07:20:08.771386+00:00",
+  "elapsed_seconds": 0.7545263119991432,
+  "exit": 0
+}

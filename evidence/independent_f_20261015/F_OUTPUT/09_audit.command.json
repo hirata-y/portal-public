@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm",
+    "audit",
+    "--json",
+    "--cache",
+    "/workspace/p3-b1-f-review-20261015/F_OUTPUT/npm-cache"
+  ],
+  "cwd": "/workspace/p3-b1-f-review-20261015/astro_candidate",
+  "start_utc": "2026-10-15T07:22:12.051088+00:00",
+  "end_utc": "2026-10-15T07:22:12.493614+00:00",
+  "elapsed_seconds": 0.44253515800119203,
+  "exit": 0
+}

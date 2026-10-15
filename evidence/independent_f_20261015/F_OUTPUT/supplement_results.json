@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "name": "lock_license_metadata_missing",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "lock_resolved_non_npm",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "installed_vendor_version_astro",
+      "expected": "7.3.8",
+      "actual": "7.3.8",
+      "pass": true
+    },
+    {
+      "name": "installed_vendor_version_pagefind",
+      "expected": "1.5.2",
+      "actual": "1.5.2",
+      "pass": true
+    },
+    {
+      "name": "installed_license_file_astro",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "installed_license_file_pagefind",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "rebuilt_vendor26_count",
+      "expected": 26,
+      "actual": 26,
+      "pass": true
+    },
+    {
+      "name": "rebuilt_vendor26_byte_parity",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "rebuilt_all_dist_bytes",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "recovered_four_inputs_hashes",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "original_workorder_sha",
+      "expected": "c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5",
+      "actual": "c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5",
+      "pass": true
+    },
+    {
+      "name": "query_201_char_rejected",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "segmentation_over32_rejected",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "untrusted_title_rendered_as_text",
+      "expected": "<img src=x onerror=\"window.__F_XSS=1\">",
+      "actual": "<img src=x onerror=\"window.__F_XSS=1\">",
+      "pass": true
+    },
+    {
+      "name": "untrusted_title_no_img_DOM",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "name": "untrusted_title_nonexecution",
+      "expected": null,
+      "actual": null,
+      "pass": true
+    },
+    {
+      "name": "remote_js_private_result_filtered",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    }
+  ],
+  "lock_package_count": 267,
+  "note": "Synthetic worker response is solely an XSS rendering boundary test; native search correctness evidence is in browser_results.json."
+}

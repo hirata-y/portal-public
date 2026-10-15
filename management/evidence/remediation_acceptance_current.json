@@ -1,0 +1,144 @@
+{
+  "checked_jst": "2026-10-15T16:29:30.416041+09:00",
+  "task_id": "P3-B1-REMEDIATION-20261015-01",
+  "method": "Current A/F actual evidence, unaffected carried previous format renders, explicit Owner/Gate non-execution. Control rows are not assertion counts.",
+  "rows": [
+    {
+      "id": "AC01",
+      "scope": "固定入力ZIPのSHA/88 entries",
+      "status": "PASS"
+    },
+    {
+      "id": "AC02",
+      "scope": "P3-A source16バイト一致",
+      "status": "PASS"
+    },
+    {
+      "id": "AC03",
+      "scope": "npm導入・固定lock・npm ci",
+      "status": "PASS"
+    },
+    {
+      "id": "AC04",
+      "scope": "Astro実ビルド",
+      "status": "PASS"
+    },
+    {
+      "id": "AC05",
+      "scope": "Pagefind実ja索引",
+      "status": "PASS"
+    },
+    {
+      "id": "AC06",
+      "scope": "谷川の詳細ID2件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC07",
+      "scope": "奥多摩の詳細ID2件",
+      "status": "PASS",
+      "basis": "Real Pagefind JS/WASM + public-index boundary adapter. Native client alone remains FAIL."
+    },
+    {
+      "id": "AC08",
+      "scope": "穂高岳0件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC09",
+      "scope": "8件/3テーマ/構造化フィルタ11条件",
+      "status": "PASS"
+    },
+    {
+      "id": "AC10",
+      "scope": "public/member合成分離とraw/gzip/実索引故障",
+      "status": "PASS"
+    },
+    {
+      "id": "AC11",
+      "scope": "合成4形式構造・内容解析",
+      "status": "PASS"
+    },
+    {
+      "id": "AC12",
+      "scope": "PPTX/XLSXのLibreOfficeレンダリング",
+      "status": "PASS"
+    },
+    {
+      "id": "AC13",
+      "scope": "Chromium HTTP Home→theme→detail→Back/Forward",
+      "status": "PASS"
+    },
+    {
+      "id": "AC14",
+      "scope": "検索結果リンクから詳細へのクリック単独受入",
+      "status": "PASS"
+    },
+    {
+      "id": "AC15",
+      "scope": "B1対象の明示XSS文字列非実行負試験",
+      "status": "PASS"
+    },
+    {
+      "id": "AC16",
+      "scope": "Console/Networkの包括監査",
+      "status": "PASS_WITH_MINOR",
+      "basis": "Explicit normal Network/Console audit completed; favicon404 gives one Console error as independent B1-F001 Minor OPEN."
+    },
+    {
+      "id": "AC17",
+      "scope": "ライセンス・依存安全性の明示確認",
+      "status": "PASS"
+    },
+    {
+      "id": "AC18",
+      "scope": "Windows/Edge GUI・ネイティブURLバーEvidence",
+      "status": "NOT_EXECUTED",
+      "basis": "Windows/Edge not executed. Linux headful native URL bar captured and PASS as separate evidence; original row not silently redefined. Work Order explicitly permits Linux/Windows."
+    },
+    {
+      "id": "AC19",
+      "scope": "B1独立F限定レビュー",
+      "status": "PASS",
+      "basis": "Review execution completed; actual Verdict PASS_WITH_MINOR, 110PASS/1FAIL. This control-row PASS never means zero failed assertions."
+    },
+    {
+      "id": "AC20",
+      "scope": "B1公式Candidate Freeze",
+      "status": "PASS"
+    },
+    {
+      "id": "AC21",
+      "scope": "B1のOwner受入",
+      "status": "NOT_EXECUTED"
+    },
+    {
+      "id": "AC22",
+      "scope": "G4正式承認",
+      "status": "BLOCKED",
+      "basis": "G4 remains STOP; B1 success never supplies Gate approval."
+    }
+  ],
+  "evidence_root": "evidence/remediation_20261015",
+  "carry_forward": {
+    "baseline_59": "Not rerun; fixed source unchanged.",
+    "AC12": "Previous actual LibreOffice renders retained; unchanged format input hashes plus current HTTP GET/parse."
+  },
+  "independent_F": {
+    "verdict": "PASS_WITH_MINOR",
+    "PASS": 110,
+    "FAIL": 1,
+    "critical": 0,
+    "major": 0,
+    "minor": 1,
+    "scope": "local/synthetic integration only"
+  },
+  "owner_acceptance": "PENDING",
+  "G4": "STOP",
+  "control_counts": {
+    "BLOCKED": 1,
+    "NOT_EXECUTED": 2,
+    "PASS": 18,
+    "PASS_WITH_MINOR": 1
+  }
+}

@@ -13,16 +13,84 @@
     "url": "https://drive.google.com/file/d/1-R__3zV-6GBROgvb4Nv4nwaCqooAPtQJ/view",
     "raw_readback": "PASS",
     "readback_sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
-    "verified_jst": "2026-10-15T16:20:14.988886+09:00"
+    "verified_jst": "2026-10-15T16:20:14.988886+09:00",
+    "shared": false
   },
   "independent_F": {
-    "state": "IN_PROGRESS",
+    "state": "COMPLETED",
     "task_id": "P3-B1-F-INDEPENDENT-20261015-01",
     "session": "f_review_freeze1",
-    "started_after_freeze": true
+    "started_after_freeze": true,
+    "task_id_in_original_verdict": "P3-B1-F-INDEPENDENT-01",
+    "verdict": "PASS_WITH_MINOR",
+    "totals": {
+      "PASS": 110,
+      "FAIL": 1,
+      "BLOCKED": 0
+    },
+    "critical": 0,
+    "major": 0,
+    "minor": 1,
+    "end_utc": "2026-10-15T07:26:11.780358+00:00",
+    "archive": "artifacts/P3_B1_FREEZE1_F_REVIEW_20261015.zip",
+    "sha256": "17f9f82f39b5e0aaced7ee64ac6fc35f78b02ee4c7bc08b361cd14ccae5aa5a3",
+    "drive_id": "1lIsakOpBeLXedmF0ODV3cVr3Nbhv3HXI",
+    "drive_url": "https://drive.google.com/file/d/1lIsakOpBeLXedmF0ODV3cVr3Nbhv3HXI/view",
+    "shared": false,
+    "raw_readback": "PASS",
+    "readback_sha256": "17f9f82f39b5e0aaced7ee64ac6fc35f78b02ee4c7bc08b361cd14ccae5aa5a3",
+    "readback_verified_jst": "2026-10-15T16:29:30.416041+09:00"
   },
   "github": {
     "pr": "https://github.com/hirata-y/portal-public/pull/1",
-    "sync": "PENDING"
-  }
+    "sync": "BLOCKED_AUTO_REVIEW",
+    "local_commit": "7a48080",
+    "attempted_command": "git push origin HEAD:p3-b1/real-vendor-poc-20261015",
+    "executed": false,
+    "exit_code": null,
+    "reason": "Auto-review rejected public egress of the new remediation code, Freeze1 archive, internal status and added evidence; prior permissions deemed version-bound to earlier payloads. No workaround attempted.",
+    "owner_specific_payload_approval": "PENDING_AFTER_DELIVERY"
+  },
+  "task_result": "A_COMPLETED_F_PASS_WITH_MINOR_PUBLIC_SYNC_BLOCKED",
+  "owner_acceptance": "PENDING",
+  "G4": "STOP",
+  "status_markdown_readbacks": {
+    "count": 7,
+    "status": "PASS",
+    "evidence": "management/evidence/current_markdown_readbacks.json"
+  },
+  "report": {
+    "drive_id": "1E3EkkIxTAaO09VipYuVTCtXnL75mx9r0",
+    "url": "https://drive.google.com/file/d/1E3EkkIxTAaO09VipYuVTCtXnL75mx9r0/view",
+    "raw_readback": "PASS"
+  },
+  "legacy_progress": {
+    "id": "1xRtm1KjJYwpnzXlKsYlFKYP_2Z08NTRI",
+    "readback": "PASS",
+    "original_body_byte_preserved": true
+  },
+  "management_snapshot": {
+    "archive": "/workspace/portal-b1-remediation/artifacts/P3_B1_REMEDIATION_STATUS_20261015_v1.1.0.zip",
+    "sha256": "455660e0c3e4e62db7b8e64720cf05356ee83c83f3a639a52c29d23094afc4bc",
+    "bytes": 70111,
+    "entries": 22,
+    "payload_files": 21,
+    "archive_readback": "PASS",
+    "drive_id": "1-mBDSzve8MnYTCfYPI1W2Mdd7BErRr93",
+    "drive_url": "https://drive.google.com/file/d/1-mBDSzve8MnYTCfYPI1W2Mdd7BErRr93/view",
+    "raw_readback": "PASS",
+    "readback_sha256": "455660e0c3e4e62db7b8e64720cf05356ee83c83f3a639a52c29d23094afc4bc",
+    "shared": false
+  },
+  "final_handoff": {
+    "drive_id": "1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5",
+    "drive_url": "https://drive.google.com/file/d/1lFuPKVRGl7eDUJ8bM8TZdO791uMUsOe5/view",
+    "raw_readback": "PASS",
+    "sha256": "dd1e86a6ec2fe59e094988f66955ea1ba4032ed4fdfffe36ea0ed3bfff53babd"
+  },
+  "finalized_jst": "2026-10-15T16:34:46.298150+09:00",
+  "next_owner_decisions": [
+    "B1 local/synthetic acceptance and Minor backlog disposition",
+    "Specific approval to publish this remediation/Freeze1/F/evidence/status payload to existing public GitHub PR #1"
+  ]
 }

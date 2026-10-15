@@ -1,0 +1,22 @@
+{
+  "checked_jst": "2026-10-15T16:33:15.412872+09:00",
+  "frozen_archive_sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
+  "changed_existing_payload_files": [
+    "DECISION_LOG.md",
+    "EVIDENCE_INDEX.md",
+    "FINDINGS_REGISTER.md",
+    "PROJECT_STATUS.md",
+    "ROADMAP_STATUS.md",
+    "TASK_REGISTER.md"
+  ],
+  "allowed_live_management_files": [
+    "PROJECT_STATUS.md",
+    "ROADMAP_STATUS.md",
+    "TASK_REGISTER.md",
+    "FINDINGS_REGISTER.md",
+    "DECISION_LOG.md",
+    "EVIDENCE_INDEX.md"
+  ],
+  "all_other_frozen_payload_files_unchanged": true,
+  "note": "New post-Freeze metadata/F outputs are external to the immutable candidate. Freeze ZIP remains the authoritative review input."
+}

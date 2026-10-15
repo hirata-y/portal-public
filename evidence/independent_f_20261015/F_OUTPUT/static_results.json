@@ -1,0 +1,541 @@
+{
+  "timestamp": "2026-10-15T07:26:11.749781+00:00",
+  "checks": [
+    {
+      "name": "freeze_manifest_payload_count",
+      "expected": 398,
+      "actual": 398,
+      "pass": true
+    },
+    {
+      "name": "freeze_manifest_mismatches",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "lock_pinned",
+      "expected": "dd957c01dc054952d911b48cff783e62c500d83d5d06898d730fba46faac5117",
+      "actual": "dd957c01dc054952d911b48cff783e62c500d83d5d06898d730fba46faac5117",
+      "pass": true
+    },
+    {
+      "name": "vendor_input_sha",
+      "expected": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+      "actual": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+      "pass": true
+    },
+    {
+      "name": "source16_count",
+      "expected": 16,
+      "actual": 16,
+      "pass": true
+    },
+    {
+      "name": "source16_mismatches",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "public_input_parity",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "home_is_inline_scripts",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "clean_public_raw_and_decoded",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "raw_mutation_detected",
+      "expected": [
+        "canary.html"
+      ],
+      "actual": [
+        "canary.html"
+      ],
+      "pass": true
+    },
+    {
+      "name": "compressed_mutation_detected",
+      "expected": [
+        "compressed.pf_fragment"
+      ],
+      "actual": [
+        "compressed.pf_fragment"
+      ],
+      "pass": true
+    },
+    {
+      "name": "native_fragment_count",
+      "expected": 13,
+      "actual": 13,
+      "pass": true
+    },
+    {
+      "name": "native_fragment_private_routes",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "detailed_record_count",
+      "expected": 8,
+      "actual": 8,
+      "pass": true
+    },
+    {
+      "name": "lexicon_sources_hash",
+      "expected": [],
+      "actual": [],
+      "pass": true
+    },
+    {
+      "name": "lexicon_public_fragment_count",
+      "expected": 13,
+      "actual": 13,
+      "pass": true
+    }
+  ],
+  "fragments": [
+    {
+      "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "content": "本文​へ​移動 ​架空​谷川​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanigawa​-​sawa​-​db ​山域​tanigawa ​レコード​IDSYN​-​TGW​-​002 ​原典​グレード​（​合成​）​未​確​認 ​難易​度​の​合成​根拠​未​確認 ​適期​・​推奨​月​（​合成​）​未​確​認​（​実績​月​から​自動​生成​し​ない​） ​実績​の​ある​月​（​合成​）​8​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TGW​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 248,
+      "filters": {},
+      "meta": {
+        "title": "架空谷川B：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 54
+        }
+      ]
+    },
+    {
+      "url": "/fixtures/synthetic_format.html",
+      "content": "合成​・​形式​比較​HTML ​合成​ルート​の​形式​比較​. ​実在​情報​で​は​あり​ませ​ん​／​PUBLIC ​SYNTHETIC ​ONLY​. ​架空​ID​点数 ​SYN​-​TGW​-​001​. ​7​.",
+      "word_count": 34,
+      "filters": {},
+      "meta": {
+        "title": "合成ルートの形式比較"
+      },
+      "anchors": []
+    },
+    {
+      "url": "/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "content": "本文​へ​移動 ​架空​奥多​摩​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​002 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X3 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​003​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​002​） ​実績​の​ある​月​（​合成​）​7​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​〜​3​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 294,
+      "filters": {},
+      "meta": {
+        "title": "架空奥多摩B：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    },
+    {
+      "url": "/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "content": "本文​へ​移動 ​架空​奥多​摩​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​okutama​-​sawa​-​db ​山域​okutama ​レコード​IDSYN​-​OKU​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​002​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​5​・​6​・​9​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​OKU​-​001​） ​実績​の​ある​月​（​合成​）​6​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​OKU​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 286,
+      "filters": {},
+      "meta": {
+        "title": "架空奥多摩A：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "content": "本文​へ​移動 ​架空​丹​沢​C​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​003 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X1 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​005​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​12​・​1​・​2​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TNZ​-​003​） ​実績​の​ある​月​（​合成​）​12​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TNZ​-​003​、​適期​と​は​別​） ​行程​日数​（​合成​）​1​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 286,
+      "filters": {},
+      "meta": {
+        "title": "架空丹沢C：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    },
+    {
+      "url": "/themes/okutama-sawa-db/",
+      "content": "本文​へ​移動 ​okutama​-​sawa​-​db​：​合成​テーマ​一覧​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​この​テーマ​の​内部​ルート​. ​架空​奥多​摩​A ​— ​SYN​-​OKU​-​001​. ​架空​奥多​摩​B ​— ​SYN​-​OKU​-​002​. ​山域​ごと​に​独立​し​た​合成​テーマ​です​。​全​山域​検索​は​レコード​へ​の​リンク​を​持ち​、​テーマ​の​内容​を​併合​し​ませ​ん​。",
+      "word_count": 115,
+      "filters": {},
+      "meta": {
+        "title": "okutama-sawa-db：合成テーマ一覧"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "theme-heading",
+          "text": "このテーマの内部ルート",
+          "location": 57
+        }
+      ]
+    },
+    {
+      "url": "/",
+      "content": "本文​へ​スキップ ​AArtifact ​AtlasResearch ​Library ​· ​P3​-​ALOCAL ​/ ​SYNTHETIC​. ​自分​の​調査​を​、​見つけ​やすく​。​使い​やすく​。 ​調査​成果​を​、 ​ひと​つ​の​ライブラリ​に​。 ​テーマ​から​探す​。​条件​を​絞り込む​。​根拠​を​たどる​。​AI​調査​成果​物​共有​ポータル​の​、​実際​に​操作​できる​合成​データ​版​です​。 ​成果​物​を​検索​する ​↗​テーマ​を​見​て​みる​. ​PREVIEW ​SNAPSHOT​. ​08​件​. ​元​の​P2​合成​レコード​を​改変​せ​ず​使用​. ​3​テーマ​公開​認証​は​未​実装​. ​検証​専用​・​架空​データ​です​。 ​実在​の​沢​の​難易​度​・​適期​・​山行​助言​で​は​あり​ませ​ん​。​外部​公開​・​会員​認証​・​実​ファイル​移行​は​行っ​て​い​ませ​ん​。​P2​の​G3​は​条件​付き​GO​、​現在​は​P3​-​A​の​ローカル​実証​段階​です​。 ​BROWSE ​BY ​THEME​. ​テーマ​から​探す​. ​まず​関心​の​ある​分野​を​選ん​で​、​資料​と​その​根拠​を​たどれ​ます​。 ​合成​テーマ ​3​件​. ​01 ​/ ​上​越​MOUNTAIN ​/ ​VALLEY​谷川​連峰​架空​ルート​2​件​・​原典​体系​の​比較​テーマ​を​見る ​↗02 ​/ ​奥多​摩​MOUNTAIN ​/ ​VALLEY​奥多摩​架空​ルート​2​件​・​行程​日数​の​例​テーマ​を​見る ​↗03 ​/ ​丹​沢​MOUNTAIN ​/ ​VALLEY​丹沢​架空​ルート​4​件​・​未​評価​データ​の​例​テーマ​を​見る ​↗ ​EXPLORE ​COLLECTION​. ​成果​物​を​探す​. ​キー​ワード​・​山域​・​難度​体系​・​月​・​行程​日数​で​絞り込め​ます​。 ​検​索​対​象​：​合成​8​件​. ​検​索​条件​. ​検索​条件​を​閉じる​. ​同じ​項目​の​複数​選択​は​OR​、​項目​間​は​AND​です​。 ​検​索​結​果​. ​テーマ​を​またぐ​合成​データ​の​一覧​. ​カード ​リスト​. ​検索​データ​を​確認​中​です​。 ​ページ​を​再​読み込み ​検索​トップ​へ​戻る​. ​該​当 ​— ​/ ​全 ​— ​件​。​難​度​未​確​認​： ​— ​件​。 ​該当​する​合成​レコード​が​あり​ませ​ん​。​検索​条件​を​変更​する​か​、​すべて​の​条件​を​クリア​し​て​ください​。 ​ABOUT ​THIS ​BUILD​. ​情報​の​意味​を​、​変え​ず​に​見せる​。 ​「​A​｜​ハイブリッド​・​ライブラリ​」​の​注目​情報​・​カテゴリ​・​カード​／​リスト​表示​を​採り入れ​、​P2​の​合成​検索​条件​と​テーマ​別​ページ​を​再​利用​し​て​い​ます​。​難度​の​異なる​体系​間​換算​、​null​を​ゼロ​に​する​処理​、​架空​の​実​出典​は​行い​ませ​ん​。 ​P2 ​v1​.​1​.​6​固定​仕様​を​参照​. ​P3​-​A​ローカル​UI​実​証​. ​G4 ​未​承認​実​配信​・​本番​認証​は​対象​外​.",
+      "word_count": 487,
+      "filters": {},
+      "meta": {
+        "title": "調査成果を、 ひとつのライブラリに。"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "main-content",
+          "text": "",
+          "location": 13
+        },
+        {
+          "element": "h1",
+          "id": "hero-title",
+          "text": "調査成果を、ひとつのライブラリに。",
+          "location": 24
+        },
+        {
+          "element": "section",
+          "id": "themes",
+          "text": "",
+          "location": 159
+        },
+        {
+          "element": "h2",
+          "id": "themes-title",
+          "text": "テーマから探す",
+          "location": 163
+        },
+        {
+          "element": "section",
+          "id": "explore",
+          "text": "",
+          "location": 252
+        },
+        {
+          "element": "h2",
+          "id": "explore-title",
+          "text": "成果物を探す",
+          "location": 255
+        },
+        {
+          "element": "h3",
+          "id": "filters-heading",
+          "text": "検索条件",
+          "location": 285
+        },
+        {
+          "element": "button",
+          "id": "filter-toggle",
+          "text": "検索条件を閉じる",
+          "location": 289
+        },
+        {
+          "element": "div",
+          "id": "filter-content",
+          "text": "",
+          "location": 294
+        },
+        {
+          "element": "p",
+          "id": "input-error",
+          "text": "",
+          "location": 308
+        },
+        {
+          "element": "form",
+          "id": "filters",
+          "text": "",
+          "location": 308
+        },
+        {
+          "element": "h3",
+          "id": "results-heading",
+          "text": "検索結果",
+          "location": 308
+        },
+        {
+          "element": "button",
+          "id": "card-view",
+          "text": "カード",
+          "location": 321
+        },
+        {
+          "element": "button",
+          "id": "list-view",
+          "text": "リスト",
+          "location": 322
+        },
+        {
+          "element": "p",
+          "id": "loading-state",
+          "text": "検索データを確認中です。",
+          "location": 324
+        },
+        {
+          "element": "p",
+          "id": "data-error",
+          "text": "",
+          "location": 331
+        },
+        {
+          "element": "div",
+          "id": "recovery-actions",
+          "text": "ページを再読み込み 検索トップへ戻る",
+          "location": 331
+        },
+        {
+          "element": "button",
+          "id": "retry-data",
+          "text": "ページを再読み込み",
+          "location": 331
+        },
+        {
+          "element": "p",
+          "id": "result-stats",
+          "text": "該当 — / 全 — 件。難度未確認：— 件。",
+          "location": 340
+        },
+        {
+          "element": "strong",
+          "id": "count",
+          "text": "—",
+          "location": 342
+        },
+        {
+          "element": "strong",
+          "id": "total-count",
+          "text": "—",
+          "location": 345
+        },
+        {
+          "element": "strong",
+          "id": "ungraded-count",
+          "text": "—",
+          "location": 354
+        },
+        {
+          "element": "p",
+          "id": "empty-state",
+          "text": "該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。",
+          "location": 357
+        },
+        {
+          "element": "ul",
+          "id": "results",
+          "text": "",
+          "location": 382
+        },
+        {
+          "element": "section",
+          "id": "about",
+          "text": "",
+          "location": 382
+        },
+        {
+          "element": "h2",
+          "id": "about-title",
+          "text": "情報の意味を、変えずに見せる。",
+          "location": 386
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "content": "本文​へ​移動 ​架空​丹​沢​D​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​004 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X4 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​006​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​未​確​認​（​実績​月​から​自動​生成​し​ない​） ​実績​の​ある​月​（​合成​）​未​確​認 ​行程​日数​（​合成​）​未​確​認 ​独自​総​合​評​価 ​source​_​score​（​合成​）​未​評​価​（​null​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 259,
+      "filters": {},
+      "meta": {
+        "title": "架空丹沢D：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanzawa-sawa-db/",
+      "content": "本文​へ​移動 ​tanzawa​-​sawa​-​db​：​合成​テーマ​一覧​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​この​テーマ​の​内部​ルート​. ​架空​丹​沢​A ​— ​SYN​-​TNZ​-​001​. ​架空​丹​沢​B ​— ​SYN​-​TNZ​-​002​. ​架空​丹​沢​C ​— ​SYN​-​TNZ​-​003​. ​架空​丹​沢​D ​— ​SYN​-​TNZ​-​004​. ​山域​ごと​に​独立​し​た​合成​テーマ​です​。​全​山域​検索​は​レコード​へ​の​リンク​を​持ち​、​テーマ​の​内容​を​併合​し​ませ​ん​。",
+      "word_count": 137,
+      "filters": {},
+      "meta": {
+        "title": "tanzawa-sawa-db：合成テーマ一覧"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "theme-heading",
+          "text": "このテーマの内部ルート",
+          "location": 57
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "content": "本文​へ​移動 ​架空​谷川​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanigawa​-​sawa​-​db ​山域​tanigawa ​レコード​IDSYN​-​TGW​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​x​・​X2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​001​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​6​・​7​・​8​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TGW​-​001​） ​実績​の​ある​月​（​合成​）​10​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TGW​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2020​-​01​-​01​（​古い​出典​表示​の​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 297,
+      "filters": {},
+      "meta": {
+        "title": "架空谷川A：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 54
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "content": "本文​へ​移動 ​架空​丹​沢​A​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​001 ​原典​グレード​（​合成​）​syn​-​scale​-​y​・​Y2 ​難易​度​の​合成​根拠​https​:​/​/​example​.​invalid​/​synthetic​/​evidence​/​SYN​-​EVID​-​004​（​架空​出典​URL​・​外部​リンク​なし​） ​適期​・​推奨​月​（​合成​）​4​・​5​・​10​・​1​1​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TNZ​-​001​） ​実績​の​ある​月​（​合成​）​9​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TNZ​-​001​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​3​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 297,
+      "filters": {},
+      "meta": {
+        "title": "架空丹沢A：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanigawa-sawa-db/",
+      "content": "本文​へ​移動 ​tanigawa​-​sawa​-​db​：​合成​テーマ​一覧​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​この​テーマ​の​内部​ルート​. ​架空​谷川​A ​— ​SYN​-​TGW​-​001​. ​架空​谷川​B ​— ​SYN​-​TGW​-​002​. ​山域​ごと​に​独立​し​た​合成​テーマ​です​。​全​山域​検索​は​レコード​へ​の​リンク​を​持ち​、​テーマ​の​内容​を​併合​し​ませ​ん​。",
+      "word_count": 113,
+      "filters": {},
+      "meta": {
+        "title": "tanigawa-sawa-db：合成テーマ一覧"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "theme-heading",
+          "text": "このテーマの内部ルート",
+          "location": 57
+        }
+      ]
+    },
+    {
+      "url": "/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "content": "本文​へ​移動 ​架空​丹​沢​B​：​ルート​詳細​. ​合成​専用​・​実​運用​不可​。 ​実​原典​・​実​山行​情報​で​は​あり​ませ​ん​。​P3​-​A​ローカル​UI​検​証​専​用​。​P2 ​G3​は​条件​付き​GO​、​G4​・​本番​公開​は​未​承認​。 ​合成​レコード​の​詳細​. ​元​テーマ​tanzawa​-​sawa​-​db ​山域​tanzawa ​レコード​IDSYN​-​TNZ​-​002 ​原典​グレード​（​合成​）​未​確​認 ​難易​度​の​合成​根拠​未​確認 ​適期​・​推奨​月​（​合成​）​6​月​（​合成​の​根拠​例 ​SYN​-​REC​-​SYN​-​TNZ​-​002​） ​実績​の​ある​月​（​合成​）​7​月​（​架空​の​実績​例 ​SYN​-​OBS​-​SYN​-​TNZ​-​002​、​適期​と​は​別​） ​行程​日数​（​合成​）​2​日 ​独自​総​合​評​価 ​source​_​score​（​合成​）​0​（​評価​済み​の​合成​例​、​技術​グレード​と​は​別​） ​実​原典​の​確認​日​未​確認​：​合成​fixture​の​ため​実​原典​未​調査​。​example​.​invalid​は​架空​出典​専用​。 ​情​報​基​準​日​（​合成​）​2026​-​10​-​13​（​架空​例​） ​原典​ラベル​の​厳密​一致​のみ​。​体系​間​換算​、​序列​、​独自​評価​の​難易​度​代用​、​実績​月​の​適期​代用​は​行い​ませ​ん​。​この​詳細​に​は​実​山行​ルート​や​安全​助言​を​含み​ませ​ん​。",
+      "word_count": 262,
+      "filters": {},
+      "meta": {
+        "title": "架空丹沢B：ルート詳細"
+      },
+      "anchors": [
+        {
+          "element": "main",
+          "id": "record-content",
+          "text": "",
+          "location": 3
+        },
+        {
+          "element": "h2",
+          "id": "detail-heading",
+          "text": "合成レコードの詳細",
+          "location": 55
+        }
+      ]
+    }
+  ]
+}

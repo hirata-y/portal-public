@@ -28,7 +28,10 @@
 - R07 `dependency_inventory.json`全lock267件／欠落0、08_npm_audit exit0／既知脆弱性0、`comparison_metrics.json`。
 - R08 `EXPERIMENT_NOTES.md`、初期失敗JSON・10/12ログ：未成功を保持。最終PASSだけに履歴を塗り替えない。
 - R09 ADR002、是正Handoff。正式Freezeの正本ManifestはFREEZE1_MANIFEST.json。旧MANIFEST.jsonは前版時点の歴史資料。
-- R10 F原票／公開readback：Freeze後に発行。未発行の結果・SHAを創作しない。
+- R10 独立F原票：evidence/independent_f_20261015/F_OUTPUT/REVIEW.md、SUMMARY.json。110PASS/1FAIL、C0/M0/Minor1。原票はそのまま保管。
+- R11 独立F ZIP：artifacts/P3_B1_FREEZE1_F_REVIEW_20261015.zip、SHA17f9f82f39b5e0aaced7ee64ac6fc35f78b02ee4c7bc08b361cd14ccae5aa5a3、1,841,404B、115entries。Drive非共有raw照合一致 <https://drive.google.com/file/d/1lIsakOpBeLXedmF0ODV3cVr3Nbhv3HXI/view>。
+- R12 Freeze1 ZIP：5,403,706B/399entries、SHA7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75。Drive非共有raw照合一致 <https://drive.google.com/file/d/1-R__3zV-6GBROgvb4Nv4nwaCqooAPtQJ/view>。
+- R13 後発管理：management/REMEDIATION_PUBLICATION_RECEIPT.json、management/evidence/remediation_acceptance_current.json、post_freeze_scope.json、今回進捗報告。製品コード・索引はFreeze以後変更なし。
 
 ## 前回A実行成果と検査（版固定の履歴）
 
@@ -77,3 +80,9 @@ OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッ�
 
 
 2026-10-15 16:18:36 JST：初回Freeze1確定、SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。以後コード変更なし。別セッションF初回1回へ固定ZIPを発注。A判定をF PASSにしない。
+
+
+2026-10-15T16:21:31.886293+09:00：B1-E005として公開GitHubへの新是正payload pushがauto-reviewで実行前拒否。local7a48080／非共有Drive／独立Fは継続し、今回payload特定の追加承認後に同期。過去の公開承認と成功は変更しない。
+
+
+2026-10-15T16:29:30.416041+09:00 最終：F原票・CandidateとF ZIPのDrive raw検算成立。今回GitHub同期のみE005で追加承認待ち。旧PRリンクの製品状態を現行と取り違えない。

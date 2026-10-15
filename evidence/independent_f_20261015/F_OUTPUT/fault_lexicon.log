@@ -1,0 +1,13 @@
+file:///workspace/p3-b1-f-review-20261015/tools/create_ja_lexicon.mjs:14
+    if(!fragment.url?.startsWith('/')||fragment.url.includes('/members/'))throw new Error('Non-public index source');
+                                                                                ^
+
+Error: Non-public index source
+    at createLexicon (file:///workspace/p3-b1-f-review-20261015/tools/create_ja_lexicon.mjs:14:81)
+    at file:///workspace/p3-b1-f-review-20261015/[eval1]:1:62
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:224:26
+    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:221:20)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0

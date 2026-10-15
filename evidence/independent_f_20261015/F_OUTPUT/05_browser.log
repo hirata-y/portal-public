@@ -1,0 +1,4 @@
+  File "/workspace/p3-b1-f-review-20261015/F_OUTPUT/browser_check.py", line 38
+    queries += [(t,[i]) for t,i in [('架空谷川A','SYN-TGW-001'),('架空谷川B','SYN-TGW-002'),('架空奥多摩A','SYN-OKU-001'),('架空奥多摩B','SYN-OKU-002')]+[(f'架空丹沢{chr(64+i)}',[f'SYN-TNZ-00{i}']) for i in range(1,5)]
+               ^
+SyntaxError: '[' was never closed

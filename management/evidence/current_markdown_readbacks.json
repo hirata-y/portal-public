@@ -1,0 +1,55 @@
+{
+  "verification": "PASS",
+  "files": [
+    {
+      "path": "PROJECT_STATUS.md",
+      "drive_id": "1PBLYLOUqV1Of1_F4gUWoRRenkHaYMn1w",
+      "local_sha256": "ed0db36362ed9584ea02eb6842956438297b92668249a718de0cae776be1ca4c",
+      "readback_sha256": "ed0db36362ed9584ea02eb6842956438297b92668249a718de0cae776be1ca4c",
+      "status": "PASS"
+    },
+    {
+      "path": "ROADMAP_STATUS.md",
+      "drive_id": "1mj9wg6tbpUIgV5ddiLQSBxAQdKvD9k5W",
+      "local_sha256": "0b9ef025a48c08ddec360c20af82ce7b968f3c0719ad38adafbb30046606f3a1",
+      "readback_sha256": "0b9ef025a48c08ddec360c20af82ce7b968f3c0719ad38adafbb30046606f3a1",
+      "status": "PASS"
+    },
+    {
+      "path": "TASK_REGISTER.md",
+      "drive_id": "1wMRZThnpefxMrJi4luVeTCc4UgQOtD8g",
+      "local_sha256": "169520a597b50d896d93de749e94c9b4a6a52450a5f4cbfaa312471bdf17b3cc",
+      "readback_sha256": "169520a597b50d896d93de749e94c9b4a6a52450a5f4cbfaa312471bdf17b3cc",
+      "status": "PASS"
+    },
+    {
+      "path": "FINDINGS_REGISTER.md",
+      "drive_id": "1HZPKbgIo5qnXmFWCVBZUoSvrAcmeowjL",
+      "local_sha256": "3d9ba02e4b874f0e73b424afbd9355de20c06ba7c4b1f3fdc610edf034c7b7f0",
+      "readback_sha256": "3d9ba02e4b874f0e73b424afbd9355de20c06ba7c4b1f3fdc610edf034c7b7f0",
+      "status": "PASS"
+    },
+    {
+      "path": "DECISION_LOG.md",
+      "drive_id": "1hX9J_jAfbhRUJNolJICI53Mm50QcXpm9",
+      "local_sha256": "19cd9c2714c0b67368e506335230be3a3c848d750d123eebb4c67b6619f19f51",
+      "readback_sha256": "19cd9c2714c0b67368e506335230be3a3c848d750d123eebb4c67b6619f19f51",
+      "status": "PASS"
+    },
+    {
+      "path": "EVIDENCE_INDEX.md",
+      "drive_id": "1AOyaThgJ7DILW2HCKj3SEH39-8QgzZ29",
+      "local_sha256": "c4b5b76ae878900278734a179bfb8cf142ddcf945e5ca328993c9f2a5bac2bf1",
+      "readback_sha256": "c4b5b76ae878900278734a179bfb8cf142ddcf945e5ca328993c9f2a5bac2bf1",
+      "status": "PASS"
+    },
+    {
+      "path": "management/P3_B1_REMEDIATION_PROGRESS_REPORT_20261015.md",
+      "drive_id": "1E3EkkIxTAaO09VipYuVTCtXnL75mx9r0",
+      "local_sha256": "4307e9ea4d2ddfcc10cf4f0e4a5ea806652678e6cc31b7142069889fe990ce44",
+      "readback_sha256": "4307e9ea4d2ddfcc10cf4f0e4a5ea806652678e6cc31b7142069889fe990ce44",
+      "status": "PASS"
+    }
+  ],
+  "verified_jst": "2026-10-15T16:31:37.511412+09:00"
+}

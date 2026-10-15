@@ -1,0 +1,16 @@
+v24.19.0
+11.9.0
+Python 3.12.14
+Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Name: playwright
+Version: 1.62.0
+Summary: A high-level API to automate web browsers
+Home-page: https://github.com/Microsoft/playwright-python
+Author: Microsoft Corporation
+Author-email: 
+License-Expression: Apache-2.0
+Location: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages
+Requires: greenlet, pyee
+Required-by: 
+/usr/bin/ffmpeg

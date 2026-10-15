@@ -1,0 +1,24 @@
+import pathlib,json,hashlib,asyncio,threading,http.server,functools
+from playwright.async_api import async_playwright
+R=pathlib.Path(__file__).resolve().parent.parent;O=R/'F_OUTPUT';D=R/'astro_candidate/dist';checks=[]
+def c(n,e,a):checks.append({'name':n,'expected':e,'actual':a,'pass':e==a})
+lock=json.loads((R/'astro_candidate/package-lock.json').read_text());pkgs=lock['packages'];c('lock_license_metadata_missing',[],[k for k,v in pkgs.items() if k and not v.get('license')]);c('lock_resolved_non_npm',[],[k for k,v in pkgs.items() if k and v.get('resolved') and not v['resolved'].startswith('https://registry.npmjs.org/')]);c('installed_vendor_version_astro','7.3.8',json.loads((R/'astro_candidate/node_modules/astro/package.json').read_text())['version']);c('installed_vendor_version_pagefind','1.5.2',json.loads((R/'astro_candidate/node_modules/pagefind/package.json').read_text())['version'])
+for vendor in ['astro','pagefind']:
+ c('installed_license_file_'+vendor,True,any(x.name.lower().startswith('license') for x in (R/'astro_candidate/node_modules'/vendor).iterdir()))
+vd=D/'pagefind';reb=O/'rebuild/astro_candidate/dist/pagefind';paths=[p.relative_to(vd) for p in vd.rglob('*') if p.is_file()];c('rebuilt_vendor26_count',26,len(paths));c('rebuilt_vendor26_byte_parity',[],[str(p) for p in paths if (vd/p).read_bytes()!=(reb/p).read_bytes()]);c('rebuilt_all_dist_bytes',[],[str(p.relative_to(D)) for p in D.rglob('*') if p.is_file() and p.read_bytes()!=(O/'rebuild/astro_candidate/dist'/p.relative_to(D)).read_bytes()])
+m=json.loads((R/'management/evidence/input_recovery.json').read_text());c('recovered_four_inputs_hashes',[],[x['path'] for x in m['files'] if hashlib.sha256((R/x['path']).read_bytes()).hexdigest()!=x['sha256']]);c('original_workorder_sha','c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5',hashlib.sha256((R/'management/input-recovery/P3_B1_CODEX_A_WORKORDER.md').read_bytes()).hexdigest())
+class Quiet(http.server.SimpleHTTPRequestHandler):
+ def log_message(self,*a):pass
+s=http.server.ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Quiet,directory=str(D)));threading.Thread(target=s.serve_forever,daemon=True).start();base=f'http://127.0.0.1:{s.server_port}'
+async def run():
+ async with async_playwright() as p:
+  b=await p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);page=await b.new_page();await page.goto(base+'/search/')
+  too_long=await page.evaluate('''async()=>{try{await (await import('/search/pagefind-ja.js')).search('奥'.repeat(201));return false}catch(e){return e.message.includes('200')}}''');c('query_201_char_rejected',True,too_long)
+  await page.route('**/search/ja-terms.json',lambda r:r.fulfill(status=200,body=json.dumps({'schema_version':1,'language':'ja','terms':['あ','ああ']}),content_type='application/json'))
+  count=await page.evaluate('''async()=>{try{await (await import('/search/pagefind-ja.js')).queryVariants('あ'.repeat(14));return false}catch(e){return e.message.includes('候補')}}''');c('segmentation_over32_rejected',True,count);await page.close()
+  page=await b.new_page();worker='''self.onmessage=({data:m})=>self.postMessage({id:m.id,response:{results:[{id:'ok',fragment:{url:'/themes/tanigawa-sawa-db/records/SYN-TGW-001.html',meta:{title:'<img src=x onerror="window.__F_XSS=1">'}}},{id:'remote',fragment:{url:'https://example.invalid/themes/tanigawa-sawa-db/records/SYN-TGW-001.html',meta:{title:'external'}}},{id:'js',fragment:{url:'javascript:window.__F_XSS=1',meta:{title:'js'}}},{id:'private',fragment:{url:'/members/secret.html',meta:{title:'private'}}}]}});'''
+  await page.route('**/search/pagefind-ja-worker.js',lambda r:r.fulfill(status=200,body=worker,content_type='application/javascript'));await page.goto(base+'/search/');await page.locator('#q').fill('XSS');await page.locator('button').click();await page.wait_for_function("document.querySelector('#status').textContent==='1件'")
+  c('untrusted_title_rendered_as_text','<img src=x onerror="window.__F_XSS=1">',await page.locator('#results a').inner_text());c('untrusted_title_no_img_DOM',0,await page.locator('#results img').count());c('untrusted_title_nonexecution',None,await page.evaluate('window.__F_XSS||null'));c('remote_js_private_result_filtered',1,await page.locator('#results a').count());await page.screenshot(path=str(O/'xss_untrusted_result.png'));await b.close()
+try:asyncio.run(run())
+finally:s.shutdown()
+(O/'supplement_results.json').write_text(json.dumps({'checks':checks,'lock_package_count':len(pkgs)-1,'note':'Synthetic worker response is solely an XSS rendering boundary test; native search correctness evidence is in browser_results.json.'},ensure_ascii=False,indent=2));print(json.dumps({'pass':sum(x['pass'] for x in checks),'fail':[x for x in checks if not x['pass']]},ensure_ascii=False));assert all(x['pass'] for x in checks)

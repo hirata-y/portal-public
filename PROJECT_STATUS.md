@@ -1,16 +1,18 @@
 【PROJECT_STATUS】
 
-- 更新JST：2026-10-15T16:17:34.895869+09:00
-- Phase／Task：P3-B1／P3-B1-REMEDIATION-20261015-01、A是正・Evidence完備。
-- Owner決定：Pagefind限定是正を優先。A是正→Evidence完備→初回Freeze→別セッション独立F1回まで承認済み。
-- 実装／実ビルド：完了。Astro7.3.8・Pagefind1.5.2 Extended、公開索引由来の日本語分割補助。元vendor26ファイル／P3-A16ファイル／lock不変。
-- A検査：dist42 PASS、security25 PASS、実故障索引PASS、headfulブラウザ33 PASS、追加統合62 PASS、adapter負例3 PASS。各suiteの母数を分離し、重複する検索3照会を加算しない。
-- 検索：補助込みで谷川TGW001/002、奥多摩OKU001/002、丹沢TNZ001〜004。標準Pagefind単独は奥多摩0のまま。全20照会の期待ID一致。
-- 正式Candidate：初回Freeze1確定、2026-10-15 16:18:36 JST。ZIP SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`。399entries実検算PASS。旧実行ZIP／MANIFESTは歴史資料のまま。
-- 独立F：初回1回を実行中。別セッション f_review_freeze1 に同一ZIP SHAで発注済み。AのPASSは独立closeでない。
-- Finding：M001〜M004はA_VERIFIED_FIXED/F_PENDING。E001は回収済み・原実行前未読履歴を保持。追加不足Evidence Q001はA実行済み／F確認待ち。
-- 未検証：Windows/Edge、Microsoft Office GUI、全WCAG/AT/native200%、本番JWT/配信、実原典／PII、DG012／52N/A判断。Linux実Chromium native URLバーは取得済み。
-- 正式判断：既存P2 H G3 GO WITH CONDITIONS／K2狭義CLOSEを維持。P3-A過去F BLOCKED不変。G4 STOP、B2未着手。
-- 次：同一SHAのFreezeを別セッションFで1回限定レビュー→Finding処置→OwnerのB1受入／技術採用判断。B2開始は別契約。
+- 更新JST：2026-10-15T16:29:30.416041+09:00
+- Phase：P3-B1のA実証・初回Freeze・別セッションF1回まで完了。Owner受入判断待ち。
+- Task ID：P3-B1-REMEDIATION-20261015-01。実開始15:59:17.859823 JST、Freeze16:18:36.077893、F原票終了16:26:11.780358。納品管理は本更新時刻まで。人時／課金値ではない。
+- Owner決定：Pagefind限定是正と、A Evidence完備→初回Freeze→別F1回までを選択済み。B1受入・MVP技術採用・B2開始は未決。
+- 実装／実build：Astro7.3.8・Pagefind1.5.2 Extended、公開索引由来の日本語分割補助。元vendor26file／source16file／lock不変。Fもfresh npm ci/build/indexとdist全bytes再現を確認。
+- 検索：補助統合で谷川TGW001/002、奥多摩OKU001/002、丹沢TNZ001〜004、個別title・不一致も成立。標準Pagefind単独は奥多摩0のまま。全面置換せずホームのVanilla構造化filterを保持。
+- A結果：dist42、security25、headful browser33、追加統合62、adapter負例3が全PASS、実故障index PASS。suiteごとの母数を保持し工程進捗率に換算しない。
+- 正式Candidate：初回Freeze1、ZIP SHA `7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75`、399entries／398payload。FREEZE1_MANIFEST正本。コードを以後変更せず。
+- 独立F：通常1回完了、**PASS_WITH_MINOR**。110 PASS／1 FAIL／0 BLOCKED、Critical0／Major0／Minor1。F原票Task P3-B1-F-INDEPENDENT-01。別AIセッションの独自コード・実HTTP・故障検査であり、外部人間監査ではない。
+- Finding：M001〜M004は今回の統合範囲で独立是正確認。B1-F001 favicon404／Console1件＝Minor OPEN、条件付き受入／backlogをOwnerへ提案し、再Freezeや無限再レビューを行わない。
+- CT04：B1 Linux Chromiumの独立実HTTP・履歴・検索click・native URL画面を取得。原P3-A F正式BLOCKEDは維持。全AA/AT/native200%は未完。
+- 保存：Candidate／F ZIPを非共有Driveへ保存しraw再取得SHA一致。GitHub新payload同期だけB1-E005 BLOCKED_AUTO_REVIEW、local7a48080以降の納品commitに保存。旧PR #1公開成功は取消さない。
+- 次のOwner判断：B1 local/synthetic成果の受領・Minor処置、技術採用の扱い、今回payloadの公開GitHub追加承認。公開承認前に迂回pushしない。
+- 継続STOP：G4 STOP、B2／本番JWT／Cloudflare／公開配備／PII・実原典未着手。DG012、52N/A、全AA/AT等の別判断は残る。既存P2 H G3 GO WITH CONDITIONS／K2狭義CLOSEは不変。
 
-今回の直接Evidenceは evidence/remediation_20261015/、ADR002、是正Handoff。旧 vendor_actual は前版159/160 PASSの履歴。テストPASS率を工程進捗率にしない。GitHub公開承認は継続有効、Draft PR #1へ成果物管理の範囲で同期し、merge／配備は行わない。
+入口：docs/ADR_002_JAPANESE_BOUNDARY_ADAPTER.md、docs/P3_B1_REMEDIATION_HANDOFF.md、evidence/independent_f_20261015/F_OUTPUT/REVIEW.md、management/P3_B1_REMEDIATION_PROGRESS_REPORT_20261015.md、management/REMEDIATION_PUBLICATION_RECEIPT.json。旧vendor_actual・旧Manifest/ZIP・旧管理報告は当時の履歴。
