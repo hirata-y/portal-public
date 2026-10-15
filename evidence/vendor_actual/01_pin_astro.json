@@ -1,0 +1,22 @@
+{
+  "name": "01_pin_astro",
+  "argv": [
+    "npm",
+    "install",
+    "astro@latest",
+    "--save-exact",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "/tmp/p3-b1-npm",
+    "--fetch-retries=0",
+    "--fetch-timeout=30000"
+  ],
+  "cwd": "/workspace/portal-public/astro_candidate",
+  "start_utc": "2026-10-15T03:38:22.850036+00:00",
+  "end_utc": "2026-10-15T03:38:23.965526+00:00",
+  "duration_seconds": 1.1154991450000011,
+  "exit_code": 0,
+  "stdout": "\nadded 6 packages in 1s\n",
+  "stderr": ""
+}

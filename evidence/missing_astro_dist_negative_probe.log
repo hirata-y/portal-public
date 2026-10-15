@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "reason": "Actual Astro dist does not exist. npm installation/build has not completed",
+  "dist": "/mnt/data/P3_B1_VENDOR_READINESS_v0.2.1_20261015/astro_candidate/dist"
+}

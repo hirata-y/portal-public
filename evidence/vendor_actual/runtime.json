@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-10-15T12:37:34.201228+09:00",
+  "os": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "sites_managed_linux": null,
+  "missing_priority_files": [
+    "AGENTS.md",
+    "START_HERE.md",
+    "P3_B1_CODEX_A_WORKORDER.md",
+    "CODEX_EXECUTION_STATE.json"
+  ],
+  "input_sha256": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+  "node": {
+    "command": [
+      "node",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "v24.19.0\n",
+    "stderr": ""
+  },
+  "npm": {
+    "command": [
+      "npm",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "11.9.0\n",
+    "stderr": ""
+  },
+  "python": {
+    "command": [
+      "python",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "Python 3.12.14\n",
+    "stderr": ""
+  },
+  "browser": {
+    "command": [
+      "chromium",
+      "--version"
+    ],
+    "exit": 0,
+    "stdout": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)\n",
+    "stderr": ""
+  }
+}

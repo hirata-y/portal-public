@@ -1,0 +1,85 @@
+{
+  "time": "2026-10-15T07:08:43.443Z",
+  "location": "http://127.0.0.1:8766/tech-evidence/pagefind_japanese_browser_probe.html",
+  "agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "query": "谷川",
+      "expectedDetailIds": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "actualDetailIds": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "totalPagefindResults": 4,
+      "normalization": {
+        "queries": [
+          "\"谷川\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "urls": [
+        "http://127.0.0.1:8766/",
+        "http://127.0.0.1:8766/themes/tanigawa-sawa-db/",
+        "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-002.html"
+      ],
+      "status": "PASS",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    },
+    {
+      "query": "奥多摩",
+      "expectedDetailIds": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actualDetailIds": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "totalPagefindResults": 4,
+      "normalization": {
+        "queries": [
+          "\"奥多摩\"",
+          "\"奥多 摩\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "urls": [
+        "http://127.0.0.1:8766/",
+        "http://127.0.0.1:8766/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8766/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "http://127.0.0.1:8766/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+      ],
+      "status": "PASS",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    },
+    {
+      "query": "穂高岳",
+      "expectedDetailIds": [],
+      "actualDetailIds": [],
+      "totalPagefindResults": 0,
+      "normalization": {
+        "queries": [
+          "\"穂高岳\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "urls": [],
+      "status": "PASS",
+      "note": "Pagefind matches across site pages; strict count applies only to record detail URLs"
+    }
+  ],
+  "summary": {
+    "PASS": 3,
+    "FAIL": 0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "kind": "POST_F_MANAGEMENT_SNAPSHOT_NOT_ANOTHER_CANDIDATE_FREEZE",
+  "version": "1.1.0",
+  "created_jst": "2026-10-15T16:33:40.391760+09:00",
+  "normal_candidate_freeze_count": 1,
+  "normal_independent_F_count": 1,
+  "F_verdict": "PASS_WITH_MINOR",
+  "owner_acceptance": "PENDING",
+  "github_new_payload": "BLOCKED_AUTO_REVIEW",
+  "G4": "STOP",
+  "exclusions": [
+    "REMEDIATION_PUBLICATION_RECEIPT.json: created/updated after packaging for raw readback and public approval",
+    "this manifest self hash",
+    "node_modules/npm caches",
+    "Candidate and F binary ZIPs delivered separately and identified by SHA sidecars"
+  ],
+  "files": [
+    {
+      "path": "PROJECT_STATUS.md",
+      "bytes": 2957,
+      "sha256": "ed0db36362ed9584ea02eb6842956438297b92668249a718de0cae776be1ca4c"
+    },
+    {
+      "path": "ROADMAP_STATUS.md",
+      "bytes": 8129,
+      "sha256": "0b9ef025a48c08ddec360c20af82ce7b968f3c0719ad38adafbb30046606f3a1"
+    },
+    {
+      "path": "TASK_REGISTER.md",
+      "bytes": 13550,
+      "sha256": "169520a597b50d896d93de749e94c9b4a6a52450a5f4cbfaa312471bdf17b3cc"
+    },
+    {
+      "path": "FINDINGS_REGISTER.md",
+      "bytes": 4076,
+      "sha256": "3d9ba02e4b874f0e73b424afbd9355de20c06ba7c4b1f3fdc610edf034c7b7f0"
+    },
+    {
+      "path": "DECISION_LOG.md",
+      "bytes": 8424,
+      "sha256": "19cd9c2714c0b67368e506335230be3a3c848d750d123eebb4c67b6619f19f51"
+    },
+    {
+      "path": "EVIDENCE_INDEX.md",
+      "bytes": 10804,
+      "sha256": "c4b5b76ae878900278734a179bfb8cf142ddcf945e5ca328993c9f2a5bac2bf1"
+    },
+    {
+      "path": "management/P3_B1_REMEDIATION_PROGRESS_REPORT_20261015.md",
+      "bytes": 6795,
+      "sha256": "4307e9ea4d2ddfcc10cf4f0e4a5ea806652678e6cc31b7142069889fe990ce44"
+    },
+    {
+      "path": "management/P3_B1_FINAL_EXECUTION_HANDOFF.md",
+      "bytes": 4491,
+      "sha256": "dd1e86a6ec2fe59e094988f66955ea1ba4032ed4fdfffe36ea0ed3bfff53babd"
+    },
+    {
+      "path": "management/NEXT_OWNER_DECISIONS.md",
+      "bytes": 1769,
+      "sha256": "33c980e5cf926095285582306a2c661dcaff67aa63ace888e8574994ae3d3bf4"
+    },
+    {
+      "path": "management/F_REVIEW_TASK_ORDER.md",
+      "bytes": 2147,
+      "sha256": "55fa76fdd394f544d7373d678f8ba29368466536edc89c48134a18a696165680"
+    },
+    {
+      "path": "management/package_remediation_status.py",
+      "bytes": 2833,
+      "sha256": "713cd3d9207637b554bcd0242e2ac1019a4d36154078c44ae2dc837121fce1ff"
+    },
+    {
+      "path": "management/evidence/current_markdown_readbacks.json",
+      "bytes": 2301,
+      "sha256": "c836250d98e48ca309ee8dfa8d38fd62b9ba5d8c9c37ef903bccfd881f1ae036"
+    },
+    {
+      "path": "management/evidence/remediation_acceptance_current.json",
+      "bytes": 3956,
+      "sha256": "2ac6d54737fb2986da5bede18480285171621c913fa3d909eaf7358ad20b9d20"
+    },
+    {
+      "path": "management/evidence/post_freeze_scope.json",
+      "bytes": 725,
+      "sha256": "5998f51d666a435a574d9bdf25f6e2d65308990b9d904f8945c612e086d50794"
+    },
+    {
+      "path": "management/evidence/progress_entry_remediation.json",
+      "bytes": 432,
+      "sha256": "4ed00641cf81ce96b32e37bcd93d231ce192e57c9b99e080721cc1ccaba99c7a"
+    },
+    {
+      "path": "evidence/remediation_20261015/FREEZE_RECEIPT.json",
+      "bytes": 386,
+      "sha256": "86a4eefdce52988a61f761715717b9a2fa3153d6611c7e306a9c34739e519dd6"
+    },
+    {
+      "path": "FREEZE1_MANIFEST.json",
+      "bytes": 72291,
+      "sha256": "3d067ec4c896cdc8bea316c100413e00ec1adca04dcd052b752bdc7dc5c8e4ed"
+    },
+    {
+      "path": "evidence/independent_f_20261015/F_OUTPUT/REVIEW.md",
+      "bytes": 8495,
+      "sha256": "f931062e22e121e3f53954ce60c3268a64179d141fecf51d0ed23e290651766f"
+    },
+    {
+      "path": "evidence/independent_f_20261015/F_OUTPUT/SUMMARY.json",
+      "bytes": 1742,
+      "sha256": "ee5bb235040e5bbbb66d1526823b205a2b86a5181796f7195e3324170f758cc5"
+    },
+    {
+      "path": "artifacts/P3_B1_CANDIDATE_v0.3.0_20261015_FREEZE1.zip.sha256",
+      "bytes": 110,
+      "sha256": "01d7e376a7676634d664c0975636f347afff5fb3726cc293b1c3f98ff20d7fbb"
+    },
+    {
+      "path": "artifacts/P3_B1_FREEZE1_F_REVIEW_20261015.zip.sha256",
+      "bytes": 102,
+      "sha256": "a2ecc0bc5a19ba859ab419436fba8628231c6ebf67d5e38da668fc8d44b7f24b"
+    }
+  ]
+}

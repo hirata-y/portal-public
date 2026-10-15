@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "PASS": 47,
+    "FAIL": 1
+  },
+  "exception": "Page.wait_for_function: Timeout 30000ms exceeded.",
+  "failures": [
+    {
+      "id": "EXECUTION_COMPLETED",
+      "actual": false,
+      "expected": true,
+      "status": "FAIL"
+    }
+  ]
+}
+
+STDERR:
+
+EXIT: 2

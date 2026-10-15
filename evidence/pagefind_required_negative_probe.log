@@ -1,0 +1,58 @@
+PASS ASTRO_DIST_FILES_PRESENT
+PASS BUNDLED_UNCHANGED_styles.css
+PASS BUNDLED_UNCHANGED_app.js
+PASS BUNDLED_UNCHANGED_data-validation.js
+PASS BUNDLED_UNCHANGED_demo-data.js
+PASS HTML_ROUTE_index.html
+PASS HTML_ROUTE_themes/tanigawa-sawa-db/index.html
+PASS HTML_ROUTE_themes/okutama-sawa-db/index.html
+PASS HTML_ROUTE_themes/tanzawa-sawa-db/index.html
+PASS DETAIL_COUNT_EIGHT
+PASS DETAIL_ID_SYN-TNZ-004
+PASS DETAIL_ID_SYN-TNZ-001
+PASS DETAIL_ID_SYN-TNZ-003
+PASS DETAIL_ID_SYN-TNZ-002
+PASS DETAIL_ID_SYN-TGW-002
+PASS DETAIL_ID_SYN-TGW-001
+PASS DETAIL_ID_SYN-OKU-002
+PASS DETAIL_ID_SYN-OKU-001
+PASS HOME_LANG_JA
+PASS HOME_A_HYBRID
+PASS PRIVATE_CANARY_IN_PRIVATE
+PASS CANARY_ABSENT_FROM_ASTRO_PUBLIC
+PASS PRIVATE_FILE_NAME_ABSENT
+PASS MEMBERS_NO_DIR_IN_PUBLIC
+PASS P3A_STATIC_PARITY_app.js
+PASS P3A_STATIC_PARITY_styles.css
+PASS P3A_STATIC_PARITY_demo-data.js
+PASS P3A_STATIC_PARITY_data-validation.js
+PASS P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-002.html
+PASS P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-001.html
+PASS P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-002.html
+PASS P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-001.html
+PASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-004.html
+PASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-001.html
+PASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-003.html
+PASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-002.html
+PASS SYNTHETIC_FORMAT_html
+PASS SYNTHETIC_FORMAT_pdf
+PASS SYNTHETIC_FORMAT_pptx
+PASS SYNTHETIC_FORMAT_xlsx
+FAIL PAGEFIND_ACTUAL_INDEX_EXISTS
+PASS MUTATION_CANARY_BYTE_SCAN_DETECTS_INJECTION
+{
+  "status": "FAIL",
+  "total": 42,
+  "PASS": 41,
+  "FAIL": 1,
+  "required_pagefind": true,
+  "pagefind_actual_status": "MISSING",
+  "dist": "/mnt/data/P3_B1_VENDOR_READINESS_v0.2.1_20261015/outputs/public",
+  "dist_total_bytes": 99245,
+  "pagefind_file_count": 0,
+  "source_p3_a_sha256": "bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23",
+  "notes": [
+    "This is a Producer check, not independent F verification.",
+    "Japanese query accuracy and native browser URL/Back require browser probe evidence."
+  ]
+}

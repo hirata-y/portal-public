@@ -1,0 +1,128 @@
+{
+  "measured_utc": "2026-10-15T07:13:54.168015+00:00",
+  "same_host": "Linux Chromium154, loopback, no throttling, synthetic 8 records",
+  "home_median_ms": {
+    "vanilla": 375.5953350000709,
+    "astro": 379.83396549952886
+  },
+  "home_runs_each": 10,
+  "adapter_queries": [
+    {
+      "query": "谷川",
+      "ms": 112.30000000074506,
+      "detail_count": 2
+    },
+    {
+      "query": "奥多摩",
+      "ms": 10,
+      "detail_count": 2
+    },
+    {
+      "query": "丹沢",
+      "ms": 11.300000000745058,
+      "detail_count": 4
+    },
+    {
+      "query": "穂高岳",
+      "ms": 0.5,
+      "detail_count": 0
+    },
+    {
+      "query": "東京",
+      "ms": 0.2999999988824129,
+      "detail_count": 0
+    },
+    {
+      "query": "存在しない沢",
+      "ms": 0.09999999962747097,
+      "detail_count": 0
+    },
+    {
+      "query": "奥多摩不存在",
+      "ms": 0.30000000074505806,
+      "detail_count": 0
+    },
+    {
+      "query": "谷川丹沢",
+      "ms": 0.5,
+      "detail_count": 0
+    },
+    {
+      "query": "丹沢奥多摩",
+      "ms": 0.6999999992549419,
+      "detail_count": 0
+    },
+    {
+      "query": "",
+      "ms": 1,
+      "detail_count": 0
+    },
+    {
+      "query": "架空谷川A",
+      "ms": 0.5,
+      "detail_count": 1
+    },
+    {
+      "query": "架空谷川B",
+      "ms": 1.700000001117587,
+      "detail_count": 1
+    },
+    {
+      "query": "架空奥多摩A",
+      "ms": 1.299999998882413,
+      "detail_count": 1
+    },
+    {
+      "query": "架空奥多摩B",
+      "ms": 0.8000000007450581,
+      "detail_count": 1
+    },
+    {
+      "query": "架空丹沢A",
+      "ms": 0.5,
+      "detail_count": 1
+    },
+    {
+      "query": "架空丹沢B",
+      "ms": 0.40000000037252903,
+      "detail_count": 1
+    },
+    {
+      "query": "架空丹沢C",
+      "ms": 0.599999999627471,
+      "detail_count": 1
+    },
+    {
+      "query": "架空丹沢D",
+      "ms": 0.40000000037252903,
+      "detail_count": 1
+    },
+    {
+      "query": "  奥多摩  ",
+      "ms": 0.6999999992549419,
+      "detail_count": 2
+    },
+    {
+      "query": "\"奥多摩\"",
+      "ms": 0.7000000011175871,
+      "detail_count": 2
+    }
+  ],
+  "adapter_first_ms": 112.30000000074506,
+  "adapter_remaining_median_ms": 0.599999999627471,
+  "output_bytes": {
+    "vanilla": 99245,
+    "astro_pagefind_adapter": 705809
+  },
+  "build_seconds": 1.0205699669986643,
+  "index_seconds": 1.1047187130006932,
+  "limits": [
+    "One host, tiny synthetic corpus, no representative production throughput/memory/concurrency measurement.",
+    "Home UI same original filters; observed ~4ms difference does not establish a significant speed advantage.",
+    "Search adapter timing includes actual native result fragment retrieval; vanilla title substring microbenchmark not equivalent full-text work."
+  ]
+}
+
+STDERR:
+
+EXIT: 0

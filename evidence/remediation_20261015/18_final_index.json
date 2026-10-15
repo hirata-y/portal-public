@@ -1,0 +1,15 @@
+{
+  "name": "18_final_index",
+  "argv": [
+    "npm",
+    "run",
+    "index:pagefind"
+  ],
+  "cwd": "/workspace/portal-b1-remediation/astro_candidate",
+  "start_utc": "2026-10-15T07:13:28.565035+00:00",
+  "end_utc": "2026-10-15T07:13:29.669747+00:00",
+  "duration_seconds": 1.1047187130006932,
+  "exit_code": 0,
+  "stdout": "\n> index:pagefind\n> node ../tools/index_pagefind.mjs\n\n\nRunning Pagefind v1.5.2 (Extended)\nRunning from: \"/workspace/portal-b1-remediation/astro_candidate\"\nSource:       \"dist\"\nOutput:       \"dist/pagefind\"\n\n[Walking source directory]\nFound 14 files matching **/*.{html}\n\n[Parsing files]\nDid not find a data-pagefind-body element on the site.\n↳ Indexing all <body> elements on the site.\n\n[Reading languages]\nDiscovered 1 language: ja\n\n[Building search indexes]\nTotal: \n  Indexed 1 language\n  Indexed 13 pages\n  Indexed 338 words\n  Indexed 0 filters\n  Indexed 0 sorts\n\nFinished in 0.833 seconds\nJapanese lexicon: { terms: 219, fragments: 13 }\n",
+  "stderr": "Note: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\nNote: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\n"
+}

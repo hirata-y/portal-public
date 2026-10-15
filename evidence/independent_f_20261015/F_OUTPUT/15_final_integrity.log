@@ -1,0 +1,6 @@
+{"pass": 15, "fail": [{"name": "raw_mutation_detected", "expected": ["canary.html"], "actual": ["canary.html", "compressed.pf_fragment"], "pass": false}]}
+Traceback (most recent call last):
+  File "/workspace/p3-b1-f-review-20261015/F_OUTPUT/static_check.py", line 34, in <module>
+    (O/'static_results.json').write_text(json.dumps({'timestamp':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':checks,'fragments':frags},ensure_ascii=False,indent=2));print(json.dumps({'pass':sum(x['pass'] for x in checks),'fail':[x for x in checks if not x['pass']]},ensure_ascii=False));assert all(x['pass'] for x in checks)
+                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

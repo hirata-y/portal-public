@@ -1,0 +1,12 @@
+{
+  "visibility": "members",
+  "records": [
+    {
+      "record_id": "MEM-CANARY-001",
+      "title": "合成会員限定カナリア",
+      "visibility": "members",
+      "canary": "SYNTHETIC_MEMBERS_CANARY_NOT_FOR_PUBLIC_P3_B1_20261015_f249d1",
+      "detail_path": "canary.html"
+    }
+  ]
+}

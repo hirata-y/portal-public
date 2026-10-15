@@ -1,0 +1,15 @@
+{
+  "name": "08_npm_audit",
+  "argv": [
+    "npm",
+    "audit",
+    "--json"
+  ],
+  "cwd": "/workspace/portal-b1-remediation/astro_candidate",
+  "start_utc": "2026-10-15T07:08:40.196584+00:00",
+  "end_utc": "2026-10-15T07:08:40.810339+00:00",
+  "duration_seconds": 0.6137762269991072,
+  "exit_code": 0,
+  "stdout": "{\n  \"auditReportVersion\": 2,\n  \"vulnerabilities\": {},\n  \"metadata\": {\n    \"vulnerabilities\": {\n      \"info\": 0,\n      \"low\": 0,\n      \"moderate\": 0,\n      \"high\": 0,\n      \"critical\": 0,\n      \"total\": 0\n    },\n    \"dependencies\": {\n      \"prod\": 176,\n      \"dev\": 8,\n      \"optional\": 91,\n      \"peer\": 0,\n      \"peerOptional\": 0,\n      \"total\": 267\n    }\n  }\n}\n",
+  "stderr": ""
+}

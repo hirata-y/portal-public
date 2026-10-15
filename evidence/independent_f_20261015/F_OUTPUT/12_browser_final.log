@@ -1,0 +1,79 @@
+{"name": "home_8", "expected": 8, "actual": 8, "pass": true, "utc": "2026-10-15T07:22:43.834541+00:00"}
+{"name": "theme_3", "expected": 3, "actual": 3, "pass": true, "utc": "2026-10-15T07:22:43.837774+00:00"}
+{"name": "home_theme_navigation", "expected": "http://127.0.0.1:41085/themes/tanigawa-sawa-db/index.html", "actual": "http://127.0.0.1:41085/themes/tanigawa-sawa-db/index.html", "pass": true, "utc": "2026-10-15T07:22:44.610682+00:00"}
+{"name": "theme_detail_navigation", "expected": true, "actual": true, "pass": true, "utc": "2026-10-15T07:22:44.694532+00:00"}
+{"name": "back_theme", "expected": true, "actual": true, "pass": true, "utc": "2026-10-15T07:22:45.192845+00:00"}
+{"name": "forward_detail", "expected": true, "actual": true, "pass": true, "utc": "2026-10-15T07:22:45.217150+00:00"}
+{"name": "back_home", "expected": "http://127.0.0.1:41085/", "actual": "http://127.0.0.1:41085/", "pass": true, "utc": "2026-10-15T07:22:45.295611+00:00"}
+{"name": "home_record_ids", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002", "SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002", "SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "pass": true, "utc": "2026-10-15T07:22:45.328543+00:00"}
+{"name": "null_difficulty_default", "expected": "2", "actual": "2", "pass": true, "utc": "2026-10-15T07:22:45.344812+00:00"}
+{"name": "area_OR", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002"], "pass": true, "utc": "2026-10-15T07:22:45.416697+00:00"}
+{"name": "area_AND_month_OR_excludes_null", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001"], "pass": true, "utc": "2026-10-15T07:22:45.507160+00:00"}
+{"name": "area_month_AND_days", "expected": ["SYN-OKU-001"], "actual": ["SYN-OKU-001"], "pass": true, "utc": "2026-10-15T07:22:45.518015+00:00"}
+{"name": "reset_8", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002", "SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TGW-002", "SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "pass": true, "utc": "2026-10-15T07:22:45.566987+00:00"}
+{"name": "scheme_excludes_null_and_other", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TNZ-003", "SYN-TNZ-004"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001", "SYN-TNZ-003", "SYN-TNZ-004"], "pass": true, "utc": "2026-10-15T07:22:45.585823+00:00"}
+{"name": "grade_OR", "expected": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001"], "actual": ["SYN-OKU-001", "SYN-OKU-002", "SYN-TGW-001"], "pass": true, "utc": "2026-10-15T07:22:45.670851+00:00"}
+{"name": "scheme_switch_clears_grades", "expected": ["SYN-TNZ-001"], "actual": ["SYN-TNZ-001"], "pass": true, "utc": "2026-10-15T07:22:45.681977+00:00"}
+{"name": "days_null_excluded", "expected": ["SYN-OKU-001", "SYN-TGW-002", "SYN-TNZ-003"], "actual": ["SYN-OKU-001", "SYN-TGW-002", "SYN-TNZ-003"], "pass": true, "utc": "2026-10-15T07:22:45.736284+00:00"}
+{"name": "home_xss_zero", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:45.794091+00:00"}
+{"name": "home_xss_not_executed", "expected": null, "actual": null, "pass": true, "utc": "2026-10-15T07:22:45.800752+00:00"}
+{"name": "adapter_query_谷川", "expected": ["SYN-TGW-001", "SYN-TGW-002"], "actual": ["SYN-TGW-001", "SYN-TGW-002"], "pass": true, "utc": "2026-10-15T07:22:46.381616+00:00"}
+{"name": "adapter_query_奥多摩", "expected": ["SYN-OKU-001", "SYN-OKU-002"], "actual": ["SYN-OKU-001", "SYN-OKU-002"], "pass": true, "utc": "2026-10-15T07:22:46.395325+00:00"}
+{"name": "adapter_query_丹沢", "expected": ["SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "actual": ["SYN-TNZ-001", "SYN-TNZ-002", "SYN-TNZ-003", "SYN-TNZ-004"], "pass": true, "utc": "2026-10-15T07:22:46.413208+00:00"}
+{"name": "adapter_query_穂高岳", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:46.418390+00:00"}
+{"name": "adapter_query_F_REVIEW_NONEXISTENT_791", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:46.420543+00:00"}
+{"name": "adapter_query_奥多摩不存在", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:46.422161+00:00"}
+{"name": "adapter_query_架空谷川A", "expected": ["SYN-TGW-001"], "actual": ["SYN-TGW-001"], "pass": true, "utc": "2026-10-15T07:22:46.425300+00:00"}
+{"name": "adapter_query_架空谷川B", "expected": ["SYN-TGW-002"], "actual": ["SYN-TGW-002"], "pass": true, "utc": "2026-10-15T07:22:46.428579+00:00"}
+{"name": "adapter_query_架空奥多摩A", "expected": ["SYN-OKU-001"], "actual": ["SYN-OKU-001"], "pass": true, "utc": "2026-10-15T07:22:46.435191+00:00"}
+{"name": "adapter_query_架空奥多摩B", "expected": ["SYN-OKU-002"], "actual": ["SYN-OKU-002"], "pass": true, "utc": "2026-10-15T07:22:46.439729+00:00"}
+{"name": "adapter_query_架空丹沢A", "expected": ["SYN-TNZ-001"], "actual": ["SYN-TNZ-001"], "pass": true, "utc": "2026-10-15T07:22:46.443136+00:00"}
+{"name": "adapter_query_架空丹沢B", "expected": ["SYN-TNZ-002"], "actual": ["SYN-TNZ-002"], "pass": true, "utc": "2026-10-15T07:22:46.446741+00:00"}
+{"name": "adapter_query_架空丹沢C", "expected": ["SYN-TNZ-003"], "actual": ["SYN-TNZ-003"], "pass": true, "utc": "2026-10-15T07:22:46.449973+00:00"}
+{"name": "adapter_query_架空丹沢D", "expected": ["SYN-TNZ-004"], "actual": ["SYN-TNZ-004"], "pass": true, "utc": "2026-10-15T07:22:46.453485+00:00"}
+{"name": "adapter_query_\"奥多摩\"", "expected": ["SYN-OKU-001", "SYN-OKU-002"], "actual": ["SYN-OKU-001", "SYN-OKU-002"], "pass": true, "utc": "2026-10-15T07:22:46.458695+00:00"}
+{"name": "adapter_query_ 奥多摩 ", "expected": ["SYN-OKU-001", "SYN-OKU-002"], "actual": ["SYN-OKU-001", "SYN-OKU-002"], "pass": true, "utc": "2026-10-15T07:22:46.464006+00:00"}
+{"name": "native_only_known_limitation", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:46.562547+00:00"}
+{"name": "page_Intl_Segmenter_intact", "expected": "function", "actual": "function", "pass": true, "utc": "2026-10-15T07:22:46.565157+00:00"}
+{"name": "search_UI_exact_ids", "expected": ["SYN-OKU-001", "SYN-OKU-002"], "actual": ["SYN-OKU-001", "SYN-OKU-002"], "pass": true, "utc": "2026-10-15T07:22:46.649023+00:00"}
+{"name": "search_click_detail", "expected": true, "actual": true, "pass": true, "utc": "2026-10-15T07:22:47.093263+00:00"}
+{"name": "search_back", "expected": "http://127.0.0.1:41085/search/", "actual": "http://127.0.0.1:41085/search/", "pass": true, "utc": "2026-10-15T07:22:47.600853+00:00"}
+{"name": "search_xss_not_executed_<script>window.__F_XSS=1</script>", "expected": null, "actual": null, "pass": true, "utc": "2026-10-15T07:22:47.756116+00:00"}
+{"name": "search_xss_no_injected_DOM_<script>window.__F_XSS=1</script>", "expected": 0, "actual": 0, "pass": true, "utc": "2026-10-15T07:22:47.759216+00:00"}
+{"name": "search_xss_not_executed_<img src=x onerror=\"window.__F_XSS=1\">", "expected": null, "actual": null, "pass": true, "utc": "2026-10-15T07:22:47.830520+00:00"}
+{"name": "search_xss_no_injected_DOM_<img src=x onerror=\"window.__F_XSS=1\">", "expected": 0, "actual": 0, "pass": true, "utc": "2026-10-15T07:22:47.832589+00:00"}
+{"name": "search_xss_not_executed_javascript:alert(1)", "expected": null, "actual": null, "pass": true, "utc": "2026-10-15T07:22:47.919290+00:00"}
+{"name": "search_xss_no_injected_DOM_javascript:alert(1)", "expected": 0, "actual": 0, "pass": true, "utc": "2026-10-15T07:22:47.920858+00:00"}
+{"name": "http_page_/themes/tanigawa-sawa-db/index.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:47.946077+00:00"}
+{"name": "http_page_/themes/okutama-sawa-db/index.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:47.971125+00:00"}
+{"name": "http_page_/themes/tanzawa-sawa-db/index.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.005754+00:00"}
+{"name": "http_page_/themes/okutama-sawa-db/records/SYN-OKU-001.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.035722+00:00"}
+{"name": "http_page_/themes/okutama-sawa-db/records/SYN-OKU-002.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.067720+00:00"}
+{"name": "http_page_/themes/tanigawa-sawa-db/records/SYN-TGW-001.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.098579+00:00"}
+{"name": "http_page_/themes/tanigawa-sawa-db/records/SYN-TGW-002.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.129876+00:00"}
+{"name": "http_page_/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.160387+00:00"}
+{"name": "http_page_/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.199672+00:00"}
+{"name": "http_page_/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.226122+00:00"}
+{"name": "http_page_/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.249923+00:00"}
+{"name": "format_get_html", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.268838+00:00"}
+{"name": "format_bytes_html", "expected": 311, "actual": 311, "pass": true, "utc": "2026-10-15T07:22:48.286091+00:00"}
+{"name": "format_get_pdf", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.289504+00:00"}
+{"name": "format_bytes_pdf", "expected": 2547, "actual": 2547, "pass": true, "utc": "2026-10-15T07:22:48.289964+00:00"}
+{"name": "format_get_pptx", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.291979+00:00"}
+{"name": "format_bytes_pptx", "expected": 28523, "actual": 28523, "pass": true, "utc": "2026-10-15T07:22:48.292468+00:00"}
+{"name": "format_get_xlsx", "expected": 200, "actual": 200, "pass": true, "utc": "2026-10-15T07:22:48.293862+00:00"}
+{"name": "format_bytes_xlsx", "expected": 3721, "actual": 3721, "pass": true, "utc": "2026-10-15T07:22:48.294407+00:00"}
+{"name": "lexicon_bad_fails_closed", "expected": 0, "actual": 0, "pass": true, "utc": "2026-10-15T07:22:48.478470+00:00"}
+{"name": "worker_bad_fails_closed", "expected": 0, "actual": 0, "pass": true, "utc": "2026-10-15T07:22:48.720589+00:00"}
+{"name": "normal_pageerrors", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:48.730411+00:00"}
+{"name": "normal_console_errors", "expected": [], "actual": [{"type": "error", "text": "Failed to load resource: the server responded with a status of 404 (File not found)", "location": {"url": "http://127.0.0.1:41085/favicon.ico", "line": 0, "column": 0, "lineNumber": 0, "columnNumber": 0}}], "pass": false, "utc": "2026-10-15T07:22:48.730469+00:00"}
+{"name": "normal_request_failed", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:48.730484+00:00"}
+{"name": "normal_http_error_status", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:48.730508+00:00"}
+{"name": "normal_external_requests", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:48.730541+00:00"}
+{"name": "native_screens_capture", "expected": [], "actual": [], "pass": true, "utc": "2026-10-15T07:22:48.730555+00:00"}
+{"pass": 72, "fail": [{"name": "normal_console_errors", "expected": [], "actual": [{"type": "error", "text": "Failed to load resource: the server responded with a status of 404 (File not found)", "location": {"url": "http://127.0.0.1:41085/favicon.ico", "line": 0, "column": 0, "lineNumber": 0, "columnNumber": 0}}], "pass": false, "utc": "2026-10-15T07:22:48.730469+00:00"}]}
+Traceback (most recent call last):
+  File "/workspace/p3-b1-f-review-20261015/F_OUTPUT/browser_check.py", line 66, in <module>
+    print(json.dumps({'pass':sum(x['pass'] for x in checks),'fail':[x for x in checks if not x['pass']]},ensure_ascii=False));assert checks and all(x['pass'] for x in checks)
+                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

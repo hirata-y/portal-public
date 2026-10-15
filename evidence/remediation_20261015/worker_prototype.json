@@ -1,0 +1,138 @@
+[
+  {
+    "q": "谷川",
+    "normalization": {
+      "queries": [
+        "谷川",
+        "\"谷川\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "http://127.0.0.1:8770/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "http://127.0.0.1:8770/themes/tanigawa-sawa-db/",
+      "http://127.0.0.1:8770/"
+    ]
+  },
+  {
+    "q": "奥多摩",
+    "normalization": {
+      "queries": [
+        "奥多摩",
+        "\"奥多摩\"",
+        "\"奥多 摩\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/",
+      "http://127.0.0.1:8770/themes/okutama-sawa-db/",
+      "http://127.0.0.1:8770/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "http://127.0.0.1:8770/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+    ]
+  },
+  {
+    "q": "丹沢",
+    "normalization": {
+      "queries": [
+        "丹沢",
+        "\"丹沢\"",
+        "\"丹 沢\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html"
+    ]
+  },
+  {
+    "q": "架空奥多摩A",
+    "normalization": {
+      "queries": [
+        "架空奥多摩A",
+        "\"架空 奥多摩 A\"",
+        "\"架空 奥多 摩 A\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "http://127.0.0.1:8770/themes/okutama-sawa-db/"
+    ]
+  },
+  {
+    "q": "架空谷川B",
+    "normalization": {
+      "queries": [
+        "架空谷川B",
+        "\"架空 谷川 B\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "http://127.0.0.1:8770/themes/tanigawa-sawa-db/"
+    ]
+  },
+  {
+    "q": "穂高岳",
+    "normalization": {
+      "queries": [
+        "穂高岳",
+        "\"穂高岳\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": []
+  },
+  {
+    "q": "奥多摩不存在",
+    "normalization": {
+      "queries": [
+        "奥多摩不存在",
+        "\"奥多摩不存在\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/"
+    ]
+  },
+  {
+    "q": "架空丹沢C",
+    "normalization": {
+      "queries": [
+        "架空丹沢C",
+        "\"架空 丹沢 C\"",
+        "\"架空 丹 沢 C\""
+      ],
+      "method": "public-index-token-boundaries",
+      "native_version": "1.5.2",
+      "realm": "dedicated-worker-no-Intl-Segmenter"
+    },
+    "urls": [
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "http://127.0.0.1:8770/themes/tanzawa-sawa-db/"
+    ]
+  }
+]

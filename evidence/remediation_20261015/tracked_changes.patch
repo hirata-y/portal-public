@@ -1,0 +1,453 @@
+diff --git a/DECISION_LOG.md b/DECISION_LOG.md
+index 6bcbfbd..15a0691 100644
+--- a/DECISION_LOG.md
++++ b/DECISION_LOG.md
+@@ -10,6 +10,7 @@
+ | D05 | Aの技術提案／未採用 | 10/15：Astroは実行可能候補、Pagefind検索置換は保留、Vanilla保持 | E01/ADR、M001 | Owner正式技術採用・受入・G4を代行しない |
+ | D06 | 明示Owner承認＋実行済み | 10/15 12:53記録：「Ownerとして、公開GitHubへのpushとDraft PR作成を追加承認する」→push／Draft PR #1成功 | PUBLICATION_RECEIPT.json、現PR metadata | 公開先hirata-y/portal-public、合成コード・dist・test・ZIP。merge／サイト配備／Cloudflare／Access／実データ／B2／G4は含まない |
+ | D07 | 今回Owner依頼／A実施 | 実態報告、6Markdown、Task開始・節目・問題・終了時の継続更新、適切なDrive保存とreadback | 今回添付依頼文 | 追加製品実装・独立レビューは開始せず、次Taskを正式化する材料を作る |
++| D10 | 明示Owner選択／今回実行 | Pagefind限定是正を優先。A是正・Evidence完備・初回Freeze後の別F1回まで進める | TASK_START.jsonのOwner回答原文 | 受入IDを変更しない。B1受入／本番／B2／G4は含まない |
+ | D08 | A照合結果／独立評価待ち | 4入力をSHA一致キットから回収・読了。前実行時未読という履歴は維持 | management/evidence/input_recovery.json | 旧Handoff／Findingを書き換えず、現状態と受入不足を追記 |
+ 
+ ## 今回管理資料の公開境界
+@@ -20,9 +21,9 @@
+ 
+ | Pending | 選択・決定が必要なこと | 判断材料／停止点 |
+ |---|---|---|
+-| O01 | Pagefind M001是正継続か、Vanilla維持の契約変更か | 実IDの0/2差、ADR。未決のまま採用PASSにしない |
+-| O02 | 次Taskの担当・日時・予算上限・重大是正期限 | TASK_REGISTERの4.5〜9h相当案。既存16h残余未測定 |
+-| O03 | B1公式Freeze／独立Fの具体Task、native環境、未収集Evidenceの対象 | Freeze前に受入不足を処置。Fは別セッション、CT04未免除 |
++| O01 | 解決済み：Pagefind限定是正を選択 | D10。正式技術採用は別Owner判断 |
++| O02 | A/F範囲と提示見積りを選択済み。追加超過・重大是正が必要なら再判断 | 期限の絶対値は未固定、既存16h残余未測定 |
++| O03 | 初回Freeze後F1回まで承認済み。A不足Evidenceを実行 | Fは同一SHA・別セッションで限定検証、CT04未免除 |
+ | O04 | DG012、実個人情報・保持削除・招待等の正式境界 | 実PII初処理／G4の所定停止点。暫定日数を自動採用しない |
+ | O05 | 52 N/Aと全AA／AT等の個別受入、Gate定義不足 | WCAG品質目標採用と実適合／N/A承認は別 |
+ | O07 | 解決済み：今回管理パックの公開を別途明示承認 | 上記Owner原文とpush成功。製品採用／Gateとは別 |
+@@ -39,3 +40,11 @@
+ 7. 履歴：固定P2/P3-A・入力ZIP・旧実行Manifest/ZIPを変更しない。新しい管理資料は別スナップショット。Gate原票や統合台帳の過去VerdictをAが再判定しない。
+ 8. 公開：Owner承認済みの公開GitHub範囲に限り管理資料を同期する。内部原台帳全文やOwnerブラウザ原画像・実PIIを公開リポジトリへコピーしない。Drive既存ファイルを無断で移動・上書きしない。
+ 9. 可視化：今後の対話Task中の節目で更新し、質問時はこの最新ファイルと実Evidenceを読む。別途未依頼の定期Automation、常時監視、バックグラウンド継続を作成・約束しない。
++
++
++## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
++
++OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
++
++
++更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+diff --git a/EVIDENCE_INDEX.md b/EVIDENCE_INDEX.md
+index 2c58113..9be9c5e 100644
+--- a/EVIDENCE_INDEX.md
++++ b/EVIDENCE_INDEX.md
+@@ -17,7 +17,20 @@
+ 
+ 参照した内部原台帳121,711文字・原Doc本文はローカル別領域で読取り。公開repoや管理ZIPにその全文や実Owner画像を複製しない。今回の根拠URL・版・要約・local export hashのみmanagement/SOURCE_REFERENCES.jsonで追跡する。
+ 
+-## A実行成果と検査
++## 今回の是正Evidence
++
++- R01 `evidence/remediation_20261015/TASK_START.json`：Owner2回答・実開始・入力SHA。
++- R02 17_final_build / 18_final_index json/log：Astro／Pagefind exit0。公開13ページ・338語・26索引file＋219語辞書。
++- R03 `browser/`：headful33 PASS、実日本語3照会、8枚のnative URLバー画面、performance。A自己検査。
++- R04 `remediation_checks.json`：20照会・検索click・XSS・主要link・形式GET・Console/Network・不正asset等62 PASS。
++- R05 `adapter_negative.json`：32候補制限、private fragment拒否、vendor26file同一bytesの3 PASS。
++- R06 `security_formats.json`25 PASS、`index_fault_injection.json`実汚染index検出PASS。
++- R07 `dependency_inventory.json`全lock267件／欠落0、08_npm_audit exit0／既知脆弱性0、`comparison_metrics.json`。
++- R08 `EXPERIMENT_NOTES.md`、初期失敗JSON・10/12ログ：未成功を保持。最終PASSだけに履歴を塗り替えない。
++- R09 ADR002、是正Handoff。正式Freezeの正本ManifestはFREEZE1_MANIFEST.json。旧MANIFEST.jsonは前版時点の歴史資料。
++- R10 F原票／公開readback：Freeze後に発行。未発行の結果・SHAを創作しない。
++
++## 前回A実行成果と検査（版固定の履歴）
+ 
+ | ID | 内容 | 実ファイル／結果 |
+ |---|---|---|
+@@ -48,8 +61,16 @@
+ | M04 | 9節詳細報告／Coordinator引継ぎ | `management/P3_B1_PROGRESS_REPORT_20261015.md` |
+ | M05 | 今回管理パック・Manifest・SHA・読戻し | `management/STATUS_MANIFEST.json`、`artifacts/P3_B1_STATUS_MANAGEMENT_20261015_v1.0.2.zip`、SHA sidecar。Drive保存先・readback結果はmanagement/PUBLICATION_RECEIPT.json。旧E01や公式Freezeを置換しない |
+ 
+-## 非実施の根拠
++## 前報告時点の非実施根拠（今回R系の後発実証を優先）
+ 
+ 該当するログ／コードのassertionがない項目はNOT_EXECUTED。ブラウザpageerror=[]は包括Console/Network検査やXSS負試験を意味しない。Fの旧版87PASSはB1の独立PASSではない。未実施GateとOwner受入は実行済みassertion件数へ混ぜない。
+ 
+ 今回管理資料の公開GitHub同期はB1-E004として一旦停止したが、別Owner明示追加承認後のpush成功で解消。PR #1に現在の管理資料も同期。v1.0.1は承認前履歴、v1.0.2が承認反映後。Driveの7Markdownと旧PROGRESSは所有者一致・非共有を確認して保存／raw読戻し済み。
++
++
++## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
++
++OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
++
++
++更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+diff --git a/FINDINGS_REGISTER.md b/FINDINGS_REGISTER.md
+index 6e0654d..f39a227 100644
+--- a/FINDINGS_REGISTER.md
++++ b/FINDINGS_REGISTER.md
+@@ -4,21 +4,29 @@
+ 
+ | ID | 重要度／区分 | 原因・期待／実測 | 是正と担当 | 現在状態 | 再検証／close条件・期限 |
+ |---|---|---|---|---|---|
+-| B1-M001 | Major／A製品・統合 | 奥多摩の索引は奥多＋摩、ブラウザは奥多摩。期待OKU-001/002、実測詳細0。1.4.0でも再現 | A。Vanilla保持・Pagefind採用保留。語の表示補正実験は不成功でrevert | OPEN／独立Severity未判定 | Owner方針→必要な局所是正→新Candidate→F。10/17 12:41 JSTは48h提案に過ぎず正式期限ではない |
++| B1-M001 | Major／A製品・統合 | 奥多摩の索引は奥多＋摩、ブラウザは奥多摩。期待OKU-001/002、実測詳細0。1.4.0でも再現 | A。公開索引由来の一般分割＋専用WorkerでPagefindフォールバック。標準vendor単独のFAILは継続 | A_VERIFIED_FIXED／F_PENDING | Owner方針→必要な局所是正→新Candidate→F。10/17 12:41 JSTは48h提案に過ぎず正式期限ではない |
+ | B1-M002 | Major／Aソース | Astroがpublicのscript srcを処理しapp.js解決不能 | 3scriptにis:inline、順序と元JS bytesを保持 | A_VERIFIED_FIXED／F_PENDING | 実build0・既存UIのA試験済み。別Fの差分確認まで独立closeにしない |
+ | B1-M003 | Major／Aテスト配布境界 | 公開用probe自身に合成限定カナリアがありbyte scan FAIL | probeから除去、照会は外部テストコード側へ。raw/gzip/content/URL共通scanner、4mutation、実故障索引 | A_VERIFIED_FIXED／F_PENDING | 正常distと故障索引に同一scanner。別Fで限定再検証 |
+ | B1-M004 | Major／A検証方法 | 汚染索引でもquoted canary0、正常索引で無引用8hit。照会0件のみは分離証明にならない | queryは参考とし、生成入力・decoded fragment・route・faultを判定根拠へ変更 | A_VERIFIED_FIXED／F_PENDING | 実故障索引でprivate URL/decoded content検出済み。別F未実施 |
+ | B1-E001 | Major／入力手続 | 前Task開始時4入力不在、別の正式Docで実行。今回指定キット内に発見 | Aがkit SHA・単体WO SHA・nested ZIP同一性を確認、4原文回収・読了 | RECOVERED_RECONCILED_A_ONLY／手続差異評価待ち | 不在という現行物流阻害は解消。実行前未読の履歴は残る。回収WOに照らした不足をB1-Q001へ。F／Coordinatorが影響判定 |
+-| B1-E002 | Minor／環境 | npm接続EPERM、Astro設定書込み、動画ffmpeg不足 | 許可networkで接続、telemetry無効、実Chromium PNG＋URL/時刻JSON | A_RESOLVED／GUI制約継続 | NativeURLバー・Windows/Edge Evidenceは未実施のまま |
++| B1-E002 | Minor／環境 | npm接続EPERM、Astro設定書込み、動画ffmpeg不足 | 許可networkで接続、telemetry無効、実Chromium PNG＋URL/時刻JSON | A_RESOLVED／GUI制約継続 | Linux native URLバーをx11grabで取得。Windows/Edgeは未実施 |
+ | B1-E003 | Major／公開権限 | 初回pushは自動承認レビュー拒否 | Ownerが明示追加承認しpush・Draft PR #1成功 | AUTHORIZATION_RESOLVED | PUBLICATION_RECEIPTと現PR readback。旧ZIP中のBLOCKEDは過去状態で再openしない |
+ | B1-E004 | 管理公開承認／Severity未査定 | 今回管理資料のpublic GitHub pushがauto-reviewで拒否 | Aはローカル／非共有Driveへ保存後、別Owner追加承認を受け公開同期 | AUTHORIZATION_RESOLVED | 具体的な管理パックの追加承認とpush成功。B1-M001や元PoC公開成功とは別 |
+-| B1-Q001 | 受入Evidence不足／Severity未査定 | 回収WO要求の一部に実行ログがない | Aの次Taskで未収集分のみ。検索結果click→detail、明示XSS、包括Console/Network、license依存確認、nativeGUI等 | NOT_EXECUTED／受入未完 | 管理22項目表AC14〜18。既に成功したbuild等の重複発注ではない。新規実行は未開始 |
+-| P3-F-BLK-001／CT04 | 歴史的独立F BLOCKED／受入阻害 | P3-A Fのnative localhost navigationがERR_BLOCKED_BY_ADMINISTRATOR | Owner UATは緩和Evidence。B1 A headlessHTTPは追加の自己証拠 | F正式BLOCKED維持／独立native未確認 | 元FをPASSにせず、Router選定別Fで実HTTPと履歴を検証。G4 STOP |
++| B1-Q001 | 受入Evidence不足／Severity未査定 | 回収WO要求の一部に実行ログがない | Aの次Taskで未収集分のみ。検索結果click→detail、明示XSS、包括Console/Network、license依存確認、nativeGUI等 | A_EXECUTED／F_PENDING | 管理22項目表AC14〜18。既に成功したbuild等の重複発注ではない。追加62検査とlicense inventory/audit・headful33検査を実行 |
++| P3-F-BLK-001／CT04 | 歴史的独立F BLOCKED／受入阻害 | P3-A Fのnative localhost navigationがERR_BLOCKED_BY_ADMINISTRATOR | Owner UATは緩和Evidence。B1 A headful HTTP＋native URLバーは追加の自己証拠 | F正式BLOCKED維持／独立native未確認 | 元FをPASSにせず、Router選定別Fで実HTTPと履歴を検証。G4 STOP |
+ 
+ ## 件数の読み方
+ 
+-原A台帳7件＝Major6・Minor1という当時の自己分類。現在は製品Major OPEN1、A是正済みF待ち3、入力回収済み手続評価待ち1、公開権限解消1、環境是正1。今回のEvidence不足はB1-Q001として明示するが、独立Reviewerの新Major確定と偽らない。P3-AのF指摘は別版・別Roleの継承で、B1独立レビュー件数に足さない。
++原A台帳7件＝Major6・Minor1という当時の自己分類。是正Task後は製品Major4件がA是正済みF待ち、入力回収済み手続評価待ち1、公開権限解消1、環境是正1。今回のEvidence不足はB1-Q001として明示するが、独立Reviewerの新Major確定と偽らない。P3-AのF指摘は別版・別Roleの継承で、B1独立レビュー件数に足さない。
+ 
+ ## 継続ルール
+ 
+ 新FindingはID・版SHA・Role・severity・根因・expected/actual・Evidence・影響範囲・担当・期限・回数・予算影響を記録。是正には新差分と正負試験を添付。重大未解消をPASSにせず、独立closeには別Fの根拠とCoordinator処置が必要。Minorも安全／受入条件を破る場合は単なるBacklogへ押し出さない。48hと2回はOwner未確定の提案値。期限接近・工数超過見込みは追加見積りを出し、無限再レビューをしない。
++
++
++## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
++
++OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
++
++
++更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+diff --git a/PROJECT_STATUS.md b/PROJECT_STATUS.md
+index 7578dd8..1d15504 100644
+--- a/PROJECT_STATUS.md
++++ b/PROJECT_STATUS.md
+@@ -1,35 +1,16 @@
+ 【PROJECT_STATUS】
+ 
+-- プロジェクト名：AI調査成果物共有ポータル
+-- 報告日時（JST）：2026-10-15T15:46:29.823147+09:00
+-- 現在のPhase／Subphase：P3-B1 ローカル技術PoC／実行成果の評価・進捗統合。製品是正・独立レビューは未開始。
+-- 現在のTask ID：P3-B1-STATUS-INTEGRATION-20261015-01（今回Aが付番した報告・管理Task。新製品実装契約ではない）
+-- Taskの実行状態：報告・6管理ファイル整備完了。保存／読戻し結果はmanagement/PUBLICATION_RECEIPT.json。今回管理資料も別Owner追加承認を受け、公開GitHub同期を実施。
+-- 直近完了したTask：P3-B1-REAL-VENDOR-POC-20261016-01の実行・納品。実行終了と受入完了を分離：日本語検索Majorが残る。
+-- 現在の正式Candidate：P3-B1は未Freeze（0回）。正式前段はP2 v1.1.6とP3-A v0.1.0。B1提出物は実行スナップショットSHA `1e0b42cdeb5f08686df09ca2f0d5a95a2cdbd9abc4728d29326b12952e11e8d9`。
+-- 最新の独立レビューVerdict：B1未実施（0回）。P3-A F正式BLOCKEDを維持（87 PASS / 0 FAIL / 1 BLOCKED / 3 NOT EXECUTED）。
+-- 直近のGate判定：P2 H G3＝GO WITH CONDITIONS、P1 QA02 K2＝狭義CLOSE。G4未承認／STOP。AはGateを再判定しない。
+-- 現在の阻害事項：B1-M001「奥多摩」詳細0/期待2、M002〜M004の独立確証待ち、未収集受入Evidence、CT04独立実HTTPブラウザ。4入力は今回回収済みだが実行前未読の履歴は残る。管理資料の公開GitHub阻害は別Owner追加承認とpush成功で解消。
+-- Owner判断待ち事項：Pagefind是正継続か、Vanilla維持に伴う受入範囲変更か。次Task範囲・追加工数・期限。DG012、52 N/A等の後続条件。管理資料の公開も追加承認済み（Drive私有保存・読戻し済み）。
+-- 次に実施するTask：提案 P3-B1-DISPOSITION-01（結果受領・検索方針／是正枠の決定）。本報告では発注しない。
+-- 次Taskの実施担当：Owner＋Coordinator。Aは資料提供。
+-- 次Taskの開始条件：本報告・ADR・固定実行SHAの受領。
+-- 次Taskの完了条件：検索方針、影響する受入条件、担当、期限、工数枠、Freeze／Fの開始条件を明示決定。未決ならHOLD。
+-
+-## 結論
+-
+-Astro 7.3.8の実ビルドとPagefind 1.5.2 Extendedの日本語索引生成は成功。Pagefind「谷川」はTGW-001/002、「奥多摩」は詳細0件でFAIL、「穂高岳」は0件。既存Vanilla検索・フィルタは維持する。A検査は160 assertion中159 PASS／1 FAIL（独立Fではない）。日本語3照会2 PASS／1 FAILは内包されるため加算しない。
+-
+-管理受入表は22項目：12 PASS／1 FAIL／2 BLOCKED／7 NOT_EXECUTED。これは160 assertionとは異なる母数で、工程の進捗率には使わない。
+-
+-## 状態を読み違えないための順序
+-
+-1. この6ファイルが現在の統合管理ビュー。Task＝TASK_REGISTER、Finding＝FINDINGS_REGISTER、判断＝DECISION_LOG、Evidence＝EVIDENCE_INDEXを正本とし、PROJECT_STATUSとROADMAPはその要約。
+-2. 原P2/P3-Aの正式Verdictは正式原文に従う。Google統合台帳の冒頭には古いP3未承認記述が残るが§68・§72・§76・§78を版／時点別に読む。過去Gateの上書き禁止。
+-3. CODEX_EXECUTION_STATE.jsonは回収した実行前入力、EXECUTION_STATE_RESULT.jsonとdocs/P3_B1_A_EXECUTION_HANDOFF.mdは前回の実行時点記録。これらのGitHub BLOCKED／入力不在は当時の履歴。
+-4. PUBLICATION_RECEIPT.jsonは追加Owner承認・push・Draft PR作成成功の後発証拠。GitHub禁止を再度未承認へ戻さない。
+-5. 実行スナップショット・旧Manifest・原Finding JSONは不変。新しい管理スナップショットは別SHAで保存し、公式Freeze回数に算入しない。
+-
+-## 今回の変更範囲
+-
+-既存ログ・SHA・Drive正式資料の照合、4入力回収、6管理Markdown、AGENTS／START_HEREの継続運用入口、詳細報告、管理ZIPと保存receiptのみ。製品コード・dist・Pagefind期待値・独立Verdict・Gateは変更しない。新たな実装・レビュー・バックグラウンド監視は開始しない。
++- 更新JST：2026-10-15T16:17:34.895869+09:00
++- Phase／Task：P3-B1／P3-B1-REMEDIATION-20261015-01、A是正・Evidence完備。
++- Owner決定：Pagefind限定是正を優先。A是正→Evidence完備→初回Freeze→別セッション独立F1回まで承認済み。
++- 実装／実ビルド：完了。Astro7.3.8・Pagefind1.5.2 Extended、公開索引由来の日本語分割補助。元vendor26ファイル／P3-A16ファイル／lock不変。
++- A検査：dist42 PASS、security25 PASS、実故障索引PASS、headfulブラウザ33 PASS、追加統合62 PASS、adapter負例3 PASS。各suiteの母数を分離し、重複する検索3照会を加算しない。
++- 検索：補助込みで谷川TGW001/002、奥多摩OKU001/002、丹沢TNZ001〜004。標準Pagefind単独は奥多摩0のまま。全20照会の期待ID一致。
++- 正式Candidate：初回Freeze1を準備。FREEZE1_MANIFEST.jsonとZIPの実検算成立時に固定。旧実行ZIP／MANIFESTは歴史資料のまま。
++- 独立F：未実施（0回）。Freeze後、RouterがOwner指定範囲を別Fへ発注。AのPASSは独立closeでない。
++- Finding：M001〜M004はA_VERIFIED_FIXED/F_PENDING。E001は回収済み・原実行前未読履歴を保持。追加不足Evidence Q001はA実行済み／F確認待ち。
++- 未検証：Windows/Edge、Microsoft Office GUI、全WCAG/AT/native200%、本番JWT/配信、実原典／PII、DG012／52N/A判断。Linux実Chromium native URLバーは取得済み。
++- 正式判断：既存P2 H G3 GO WITH CONDITIONS／K2狭義CLOSEを維持。P3-A過去F BLOCKED不変。G4 STOP、B2未着手。
++- 次：同一SHAのFreezeを別セッションFで1回限定レビュー→Finding処置→OwnerのB1受入／技術採用判断。B2開始は別契約。
++
++今回の直接Evidenceは evidence/remediation_20261015/、ADR002、是正Handoff。旧 vendor_actual は前版159/160 PASSの履歴。テストPASS率を工程進捗率にしない。GitHub公開承認は継続有効、Draft PR #1へ成果物管理の範囲で同期し、merge／配備は行わない。
+diff --git a/README.md b/README.md
+index 4c62fc7..8bbe230 100644
+--- a/README.md
++++ b/README.md
+@@ -1,8 +1,11 @@
+ # AI調査成果物共有ポータル — P3-B1 実行成果
+ 
+-Astro 7.3.8の実ビルドとPagefind 1.5.2 Extendedの日本語索引を生成しました。**Pagefind「奥多摩」は期待2詳細に対し0詳細でFAIL。正式Freeze未実施、G4 STOPです。**
++Astro 7.3.8の実ビルドとPagefind 1.5.2 Extendedの日本語索引を生成しました。**日本語分割補助を加え、谷川2件・奥多摩2件・不一致0件を実証しました。標準Pagefind単独は未解決です。初回Freezeと独立Fの最新状態はPROJECT_STATUS.mdを参照。G4 STOP。**
+ 
+-- [実行Handoff](docs/P3_B1_A_EXECUTION_HANDOFF.md)
++- [今回の是正Handoff](docs/P3_B1_REMEDIATION_HANDOFF.md)
++- [今回ADR・実測比較](docs/ADR_002_JAPANESE_BOUNDARY_ADAPTER.md)
++- [最新管理状態](PROJECT_STATUS.md)
++- [旧実行Handoff](docs/P3_B1_A_EXECUTION_HANDOFF.md)
+ - [ADR・実測比較](docs/ADR_001_ASTRO_PAGEFIND.md)
+ - [Finding台帳](docs/FINDINGS.json)
+ - [最新ブラウザ結果](evidence/vendor_actual/browser/browser_report.json)
+@@ -18,7 +21,7 @@ cd astro_candidate/dist
+ python -m http.server 8766 --bind 127.0.0.1
+ ```
+ 
+-`http://127.0.0.1:8766/` が既存8レコードの検索UI、`http://127.0.0.1:8766/tech-evidence/pagefind_japanese_browser_probe.html` が実Pagefind照会です。画面のボタンで照会・JSON保存できます。既存UIは引き続きVanillaの構造化検索を使用します。
++`http://127.0.0.1:8766/` が既存8レコードの検索UI、`http://127.0.0.1:8766/tech-evidence/pagefind_japanese_browser_probe.html` が補助付き実Pagefind照会、`http://127.0.0.1:8766/search/` が検索結果をクリックできるPoCです。画面のボタンで照会・JSON保存できます。既存UIは引き続きVanillaの構造化検索を使用します。
+ 
+ ## 再生成
+ 
+@@ -38,16 +41,18 @@ cd ..
+ 
+ ```sh
+ python -m pip install -r tools/python-requirements.txt
+-python tools/run_acceptance.py
++P3_B1_EVIDENCE="$PWD/evidence/remediation_rerun" python tools/browser_probe.py
++python tools/remediation_checks.py
++python tools/adapter_negative_probe.py
+ ```
+ 
+ Chromium実行ファイルが `/usr/bin/chromium` 以外なら環境変数 `P3_B1_BROWSER` に絶対パスを指定してください。ブラウザは既存の実バイナリを使用します。PDF/PPTX/XLSXの解析は上記Python依存で実行し、Officeレンダリングは別途LibreOfficeが必要です。
+ 
+-**現在は日本語検索FAILを検出して終了コード2になります。** 実行成功を示すために期待値を変更していません。
++現行受入実測は `evidence/remediation_20261015/`。元vendor_actualのFAILは当時の履歴として維持。上記追加2スクリプトは今回ディレクトリへ書き込むため、Freeze ZIPは別フォルダへ展開して再検証してください。期待IDは変更していません。
+ 
+ ## 証拠の読み方
+ 
+-`evidence/vendor_actual/` が今回の実行記録。`23_final_build`〜`29_final_browser` が提出distに対応する最終実行です。以前の失敗・局所是正は時刻付きログとして残しています。入力由来の `evidence/*.json` と旧README・旧技術評価・旧Manifestは準備段階の履歴であり、今回のPASS根拠に使いません。今回の一覧は `EXECUTION_STATE_RESULT.json` と `MANIFEST.json` を参照してください。
++`evidence/vendor_actual/` は前回の実行記録。`23_final_build`〜`29_final_browser` が提出distに対応する最終実行です。以前の失敗・局所是正は時刻付きログとして残しています。入力由来の `evidence/*.json` と旧README・旧技術評価・旧Manifestは準備段階の履歴であり、今回のPASS根拠に使いません。今回の一覧は `EXECUTION_STATE_RESULT.json` と `MANIFEST.json` を参照してください。
+ 
+ 固定入力ZIPと `source/p3_a_site` は保存・照合済み。P2/P3-Aの完全な元ZIPは今回の作業領域にはなく、正式Work Order上のSHA pinと、入力ZIPに含まれるP3-A 16ファイルの同一性を区別しています。
+ 
+diff --git a/ROADMAP_STATUS.md b/ROADMAP_STATUS.md
+index 438dec2..4ec55e7 100644
+--- a/ROADMAP_STATUS.md
++++ b/ROADMAP_STATUS.md
+@@ -8,7 +8,7 @@
+ | P1 標準適用・統制設計 | 標準・Role・Router・Gate | Role分離・PROC02/03/04・GOV12運用参照、v1.1.6へのQA02 K2狭義CLOSE | P1全体完了原票・初期Gate全定義未照合 | 統制適用／部分的正式証拠 | Owner判断A（条件付き支持）とP1完了保留の既存履歴を保持。後発K2狭義CLOSE範囲を超えない | S08 P1_COMPLETION/OWNER_DECISION＋S03 §68、S01/S02 | K2の限定判断維持。P1全体やG1/G2と同一視しない |
+ | P2 要件・コンテンツ・UX設計 | 要件・schema・受入契約・G3 | v1.1.6固定、レビュー工程終了、H G3 GO WITH CONDITIONS | CT01〜07後続実証、DG012・52 N/A等 | 設計レビュー完結／条件付き | 条件の担当・Evidence・停止Gateを後続に移管 | S03 §68/69/72、Full SHA pin | 既存G3とOwner CP3決定を維持。再レビュー自動起動なし |
+ | P3-A ローカルUI | 8件・3テーマ・検索・HTTP UI | v0.1.0公式Freeze1、F1回、Owner local/synthetic条件付き受入 | F BLOCKEDの独立native HTTP、CT04、全AA/AT | Owner条件付き受入／F履歴BLOCKED | CT04独立ブラウザと後続AX証拠を指定Gateまでに充足 | S03 §72〜76、P3-A SHA pin／F原票リンク | Owner受入をF PASSへ転記しない。CT04はG4 STOP |
+-| P3-B1 ローカル技術PoC | Astro・日本語検索・分離・4形式・ADR | 実build/index、A検査159/160 PASS、実行ZIP、GitHub Draft PR、今回6管理資料 | 奥多摩FAIL、未収集チェック、正式Freeze0/F0/Owner B1受入 | 実行済み／受入未完 | M001是正または正式契約変更、必要Evidence→Freeze→別F→Owner判断 | E01〜E14、PR #1、今回管理Evidence | 検索方針と次Task／工数枠決定待ち。G4未承認 |
++| P3-B1 ローカル技術PoC | Astro・日本語検索・分離・4形式・ADR | 補助付き日本語20照会・A各suite PASS、native URL画面、XSS/HTTP/依存確認 | 正式Freeze準備／F0／Owner受入未決。標準vendor単独は奥多摩FAIL | A是正実証／独立検証待ち | 同一SHA Freeze→別F1回→Owner判断 | evidence/remediation_20261015、ADR002、現行6資料 | 是正・Fまで選択済み。B1受入・採用・B2は別判断、G4 STOP |
+ | P3-B2 認証・実配信PoC | Workers・Access・JWT・実HTTP | 範囲分離とCT01/02停止条件を定義 | 実装・実環境・権限・認可・Range/cache等すべて | 未着手／別契約 | Ownerの明示Task／環境認可と実正負試験、専門レビュー | S01/S02/S03、SECURITY_AND_G4_STOPS | B1完了だけで開始しない。別Owner承認とGate条件 |
+ | P4 MVP実装・品質 | 本体・CI/CD・統合試験 | 今回参照資料で本体完成Evidenceなし | MVP実装、統合・CI/CD、品質判定 | 未着手として管理／着手Evidenceなし | 採用方式・要件・認証境界・テスト／Gate契約を満たす | 将来Evidence未作成 | 先行技術／Gate判断とP4正式Task |
+ | P5 既存成果物移行 | HTML/PDF/Slides/Sheets実資料移行 | B1の合成4形式のみ | 実原典53、権利・意味・忠実性・移行試験 | 未着手／合成と区別 | CT05、権利・承認・provenanceと形式別受入 | S03の後続条件、B1合成形式は参考のみ | 実資料取込・権利確認をOwnerが別承認 |
+@@ -32,6 +32,14 @@
+ 
+ ## CT01〜07継承
+ 
+-CT01実issuer/JWT/Access：未実施。CT02 GET/HEAD/Range/304/cache：公開loopback GETのみ、実protected delivery未実施。CT03依存：lockとnpm ciは実証、ライセンス・安全性監査は未実証。CT04：A headless HTTPは実施、独立Fとnative GUI/全AA/ATは未完。CT05実原典・権利：合成のみ。CT06 DG012：未承認の実PII処理禁止。CT07 Task責任／日付／Evidence：本6資料で追跡し、提案と承認済みTaskを分離。
++CT01実issuer/JWT/Access：未実施。CT02 GET/HEAD/Range/304/cache：公開loopback GETのみ、実protected delivery未実施。CT03依存：lockとnpm ci、license metadata267件・実license確認、npm audit既知0を実施。法的／全バイナリ権利証明は未実施。CT04：A headful実HTTP＋native URLバー実施、独立Fと全AA/ATは未完。CT05実原典・権利：合成のみ。CT06 DG012：未承認の実PII処理禁止。CT07 Task責任／日付／Evidence：本6資料で追跡し、提案と承認済みTaskを分離。
+ 
+ S01〜S03／E01〜の所在はEVIDENCE_INDEX.md。統合台帳原文は読み取りのみとし、今回の追加資料で古い見出しと最新節の混在を解消する。正式原台帳を勝手に再判定・全文書換えしない。
++
++
++## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
++
++OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
++
++
++更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+diff --git a/START_HERE.md b/START_HERE.md
+index 5584aaa..a3e0231 100644
+--- a/START_HERE.md
++++ b/START_HERE.md
+@@ -11,4 +11,4 @@
+ 
+ CODEX_EXECUTION_STATE.jsonは回収した実行前の正本入力です。最新状態へ上書きしません。実行結果はEXECUTION_STATE_RESULT.json、公開承認後はPUBLICATION_RECEIPT.json、現在の統合状態は上記6ファイルで確認します。
+ 
+-Pagefind「奥多摩」はMajor OPEN。P3-B1正式Freeze 0、独立F 0、G4 STOP。過去P3-A F BLOCKEDとCT04は維持。
++Pagefind「奥多摩」は補助込みでA是正実証済み／F待ち。正式Freezeと独立Fの最新状態・SHAはPROJECT_STATUS.mdとFREEZE1_MANIFEST.json。G4 STOP。過去P3-A F BLOCKEDとCT04は維持。
+diff --git a/TASK_REGISTER.md b/TASK_REGISTER.md
+index fdb3d8a..397a22b 100644
+--- a/TASK_REGISTER.md
++++ b/TASK_REGISTER.md
+@@ -2,6 +2,12 @@
+ 
+ 現在位置はPROJECT_STATUS.md。Task IDは既存正式IDを保持。今回の報告IDと末尾の提案IDはAの管理付番で、Owner発注・内部サービスUUIDではない。表の「実行完了」は受入／レビュー／Gate合格を意味しない。
+ 
++## 現行契約
++
++Ownerの後発回答により、当初提案の検索方針決定・限定是正・不足Evidence・Freeze後F1回の順に進行を承認。作業推計はA2〜4h＋A1〜2h＋F1〜2h相当。実人時／料金／16h残余を意味せず、追加範囲・超過見込みが生じれば再見積りする。期限は新たに固定されていない。
++
++Aの対象・expected IDsは当初案を維持。独立Fは未Freezeでは開始せず、別セッションへ実ZIP SHAを固定して1回発注する。Coordinator／OwnerのB1受入とB2開始は未承認。
++
+ ## 履歴と現在
+ 
+ | Task ID | Phase／担当 | 実開始／終了（JST） | 状態・結果 | 依存／次の条件 |
+@@ -11,11 +17,12 @@
+ | P3-F-LOCAL-HYBRID-ONE-REVIEW-20261015-01 | P3-A／独立F | 台帳上の完了2026-10-15 10:29:10.971927 | BLOCKED、87 PASS/0 FAIL/1 BLOCKED/3 NOT_EXECUTED | 独立native HTTPの不足をCT04へ移管。今回再実行なし |
+ | P3-OWNER-UAT-FIXED-V010-20261015-01 | P3-A／Owner | Owner申告2026-10-15 11:07:48 | Owner UAT reported PASS、local/synthetic受入の根拠。F PASSではない | 独立性・native200%等の残条件を維持 |
+ | P3-B1-REAL-VENDOR-POC-20261016-01 | P3-B1／Codex A | 記録開始10/15 12:37:34.201228、最終vendor検査終了12:46:42.640330、公開receipt12:54:08.863799 | EXECUTION_COMPLETED_WITH_FAIL。Astro build／ja index成功。M001 OPEN。公式Freeze0/F0 | 本実測を受けたOwner方針決定、残Evidence、正式Candidate後のF |
++| P3-B1-REMEDIATION-20261015-01 | P3-B1／A | 10/15 15:59:17.859823〜継続 | Ownerが限定是正・不足Evidence・初回Freeze後別F1回を選択。A全suite PASS、Freeze準備 | 同一Candidate SHA→別F→Owner受入。G4 STOP |
+ | P3-B1-STATUS-INTEGRATION-20261015-01 | P3-B1／Codex A | 10/15報告作業。本Task全体開始時刻は未計測、管理資料の時刻は個別記録 | 6資料整備・既存ログ照合・4入力回収。保存結果は管理receipt。製品実装／レビューなし。新管理資料も別Owner追加承認後に公開GitHub同期済み | Coordinatorへ受領・統合依頼。次の実装は未発注 |
+ 
+ 前Taskの管理計画は10/16〜18 JST・合算16h相当（A/F/統合の目標）。実際には10/15に実行した。記録開始から最終vendor検査終了548.439102秒＝機械・操作のwall clockであり、人の実工数ではない。準備開始時刻、人時、16h枠の使用量／残余は未測定。待機・会話間の経過を作業時間としない。
+ 
+-## 次Taskの優先順位と契約案 — 未発注
++## 当初の次Task契約案 — Owner選択前の履歴
+ 
+ 既に成功したインストール・build/index・既存テスト全体を新規Taskとして重複発注しない。差分がないPASSは固定Evidenceを再利用し、変更で影響する部分を再検証する。
+ 
+@@ -92,3 +99,11 @@
+ ## 新見積りの扱い
+ 
+ 上記5Taskをすべて採る場合は合計4.5〜9h相当の管理推計。これは新たな作業範囲の提案であり、既存16h枠の「残り」や追加発注済み工数ではない。Vanilla維持の契約変更を選ぶ場合、優先2は未発注のまま不要となり、影響を再見積りする。予定日・正式期限はOwner確定までTBD。48h・2失敗サイクルは提案値のまま。
++
++
++## 2026-10-15T15:59:17.859823+09:00 — 是正Task開始
++
++OwnerはPagefind限定是正と、Evidence完備・初回Freeze後の別セッションF1回までの進行を選択。Task P3-B1-REMEDIATION-20261015-01を開始。受入IDは変更せず、独立Fは未実施、G4 STOP。実開始と根拠：evidence/remediation_20261015/TASK_START.json。既存の未発注記述はこの選択前の履歴であり、次回統合時に現行表を更新する。
++
++
++更新JST 2026-10-15T16:17:34.895869+09:00：A是正・不足Evidence実証、初回Freeze準備／F未開始。現行状態を本文へ統合。
+diff --git a/astro_candidate/dist/tech-evidence/pagefind_japanese_browser_probe.html b/astro_candidate/dist/tech-evidence/pagefind_japanese_browser_probe.html
+index eb368b1..ac20331 100644
+--- a/astro_candidate/dist/tech-evidence/pagefind_japanese_browser_probe.html
++++ b/astro_candidate/dist/tech-evidence/pagefind_japanese_browser_probe.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P3-B1 Pagefind日本語／公開索引検証</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:3rem auto;padding:1rem;line-height:1.6}button{font:inherit;padding:.6rem 1rem}pre{white-space:pre-wrap;border:1px solid #ddd;background:#fafafa;padding:1rem;overflow-wrap:anywhere}strong{color:#184e63}</style></head><body>
+ <h1>P3-B1 Pagefind日本語検索 実動作スポット</h1>
+-<p>合成データだけを使い、ビルド済み <code>/pagefind/pagefind.js</code> のブラウザ検索APIを呼び出します。<strong>実行してから結果を保存してください。</strong> これはProducer用の検査で、独立レビューではありません。</p>
++<p>合成データだけを使い、実索引・JS/WASMを <code>/search/pagefind-ja.js</code> の日本語分割補助を通して呼び出します。標準クライアント単独の結果は別の対照検査に記録します。<strong>実行してから結果を保存してください。</strong> これはProducer用の検査で、独立レビューではありません。</p>
+ <button id="run">実際の検索を実行</button> <button id="save" disabled>JSON実測を保存</button><p id="state" role="status"></p><pre id="report">NOT EXECUTED</pre>
+ <script type="module">
+ const p=document.querySelector('#report'), state=document.querySelector('#state'),save=document.querySelector('#save');let latest=null;
+@@ -10,12 +10,12 @@ document.querySelector('#run').addEventListener('click',async()=>{
+  state.textContent='Pagefind実検索中…';save.disabled=true;const checks=[];
+  try{
+   // Truly serves Pagefind's generated client bundle, not a mock API.
+-  const pagefind=await import('/pagefind/pagefind.js');await pagefind.init();
++  const pagefind=await import('/search/pagefind-ja.js');await pagefind.init();
+   for (const [query,wanted] of Object.entries(expected)){
+    const res=await pagefind.search(query);const data=await Promise.all(res.results.map(item=>item.data()));
+    const urls=data.map(d=>d.url||'');const ids=urls.map(u=>u.match(/\/records\/(SYN-[A-Z0-9-]+)\.html/)?.[1]).filter(Boolean).sort();
+    const pass=JSON.stringify(ids)===JSON.stringify([...wanted].sort());
+-   checks.push({query,expectedDetailIds:wanted,actualDetailIds:ids,totalPagefindResults:res.results.length,urls,status:pass?'PASS':'FAIL',note:query.includes('MEMBERS_CANARY')?'Informational query spot only; absence does NOT prove members isolation. Check public dist bytes and build inputs.':'Pagefind matches across site pages; strict count applies only to record detail URLs'});
++   checks.push({query,expectedDetailIds:wanted,actualDetailIds:ids,totalPagefindResults:res.results.length,normalization:res.normalization,urls,status:pass?'PASS':'FAIL',note:query.includes('MEMBERS_CANARY')?'Informational query spot only; absence does NOT prove members isolation. Check public dist bytes and build inputs.':'Pagefind matches across site pages; strict count applies only to record detail URLs'});
+   }
+   latest={time:new Date().toISOString(),location:window.location.href,agent:navigator.userAgent,checks,summary:{PASS:checks.filter(x=>x.status==='PASS').length,FAIL:checks.filter(x=>x.status==='FAIL').length}};
+   state.textContent=`実行完了：${latest.summary.PASS} PASS / ${latest.summary.FAIL} FAIL。結果をJSON保存してください。`;
+diff --git a/tools/browser_probe.py b/tools/browser_probe.py
+index 4a690e9..bb11929 100644
+--- a/tools/browser_probe.py
++++ b/tools/browser_probe.py
+@@ -4,7 +4,7 @@ import os
+ import json,re,time,datetime,threading,http.server,functools,statistics,sys
+ from pathlib import Path
+ from playwright.sync_api import sync_playwright
+-R=Path(__file__).resolve().parents[1]; E=R/'evidence/vendor_actual/browser';E.mkdir(parents=True,exist_ok=True)
++R=Path(__file__).resolve().parents[1]; E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')))/'browser';E.mkdir(parents=True,exist_ok=True)
+ report={'role':'A Producer self-check','start_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':[],'navigation':[],'page_errors':[]}
+ def ck(name,a,e):
+  report['checks'].append({'id':name,'actual':a,'expected':e,'status':'PASS' if a==e else 'FAIL'})
+@@ -15,11 +15,14 @@ def serve(folder,port):
+ servers=[serve(R/'astro_candidate/dist',8766),serve(R/'outputs/public',8767)]
+ try:
+  with sync_playwright() as p:
+-  b=p.chromium.launch(executable_path=os.environ.get('P3_B1_BROWSER','/usr/bin/chromium'),headless=True,args=['--no-sandbox']);report['browser']=b.version
++  b=p.chromium.launch(executable_path=os.environ.get('P3_B1_BROWSER','/usr/bin/chromium'),headless=os.environ.get('P3_B1_HEADFUL')!='1',args=['--no-sandbox','--window-position=0,0','--window-size=1440,1100','--no-first-run','--disable-session-crashed-bubble']);report['browser']=b.version
+   c=b.new_context(viewport={'width':1440,'height':1000});page=c.new_page()
+   page.on('pageerror',lambda e:report['page_errors'].append(str(e)))
+   def snap(name):
+    report['navigation'].append({'step':name,'url':page.url,'time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()});page.screenshot(path=str(E/(name+'.png')),full_page=True)
++   if os.environ.get('P3_B1_HEADFUL')=='1':
++    import subprocess
++    subprocess.run(['ffmpeg','-y','-f','x11grab','-video_size','1440x1100','-i',os.environ.get('DISPLAY',':99'),'-frames:v','1',str(E/(name+'_native.png'))],check=True,capture_output=True)
+   page.goto('http://127.0.0.1:8766/');page.wait_for_function("document.querySelector('#count').textContent==='8'");snap('01_home')
+   page.locator('a.theme-tanigawa').click();ck('HOME_THEME_URL',page.url,'http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html');snap('02_theme')
+   page.locator('a[href="records/SYN-TGW-001.html"]').click();ck('THEME_DETAIL_URL',page.url,'http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html');snap('03_detail')
+diff --git a/tools/index_fault_probe.py b/tools/index_fault_probe.py
+index 058c333..ef4630e 100644
+--- a/tools/index_fault_probe.py
++++ b/tools/index_fault_probe.py
+@@ -4,7 +4,7 @@ import os
+ import json,tempfile,shutil,subprocess,threading,http.server,functools,sys,datetime
+ from pathlib import Path
+ from playwright.sync_api import sync_playwright
+-R=Path(__file__).resolve().parents[1];E=R/'evidence/vendor_actual';canary=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary']
++R=Path(__file__).resolve().parents[1];E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')));canary=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary']
+ report={'role':'A Producer self-check','time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+ with tempfile.TemporaryDirectory(prefix='p3b1-index-fault-') as t:
+  d=Path(t)/'public';shutil.copytree(R/'astro_candidate/dist',d);shutil.rmtree(d/'pagefind');shutil.rmtree(d/'tech-evidence')
+diff --git a/tools/index_pagefind.mjs b/tools/index_pagefind.mjs
+index 99dc663..a1c5457 100644
+--- a/tools/index_pagefind.mjs
++++ b/tools/index_pagefind.mjs
+@@ -8,4 +8,6 @@ const cli=fileURLToPath(new URL('../astro_candidate/node_modules/pagefind/lib/ru
+ const result=spawnSync(process.execPath,[cli,'--site','dist','--force-language','ja'],{stdio:'inherit'});
+ if(result.error) throw result.error;
+ if(result.status!==0)process.exit(result.status ?? 1);
++const { createLexicon } = await import('./create_ja_lexicon.mjs');
++console.log('Japanese lexicon:',createLexicon('dist'));
+ await import('./copy_probe.mjs');
+diff --git a/tools/pagefind_japanese_browser_probe.html b/tools/pagefind_japanese_browser_probe.html
+index eb368b1..ac20331 100644
+--- a/tools/pagefind_japanese_browser_probe.html
++++ b/tools/pagefind_japanese_browser_probe.html
+@@ -1,7 +1,7 @@
+ <!doctype html>
+ <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P3-B1 Pagefind日本語／公開索引検証</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:3rem auto;padding:1rem;line-height:1.6}button{font:inherit;padding:.6rem 1rem}pre{white-space:pre-wrap;border:1px solid #ddd;background:#fafafa;padding:1rem;overflow-wrap:anywhere}strong{color:#184e63}</style></head><body>
+ <h1>P3-B1 Pagefind日本語検索 実動作スポット</h1>
+-<p>合成データだけを使い、ビルド済み <code>/pagefind/pagefind.js</code> のブラウザ検索APIを呼び出します。<strong>実行してから結果を保存してください。</strong> これはProducer用の検査で、独立レビューではありません。</p>
++<p>合成データだけを使い、実索引・JS/WASMを <code>/search/pagefind-ja.js</code> の日本語分割補助を通して呼び出します。標準クライアント単独の結果は別の対照検査に記録します。<strong>実行してから結果を保存してください。</strong> これはProducer用の検査で、独立レビューではありません。</p>
+ <button id="run">実際の検索を実行</button> <button id="save" disabled>JSON実測を保存</button><p id="state" role="status"></p><pre id="report">NOT EXECUTED</pre>
+ <script type="module">
+ const p=document.querySelector('#report'), state=document.querySelector('#state'),save=document.querySelector('#save');let latest=null;
+@@ -10,12 +10,12 @@ document.querySelector('#run').addEventListener('click',async()=>{
+  state.textContent='Pagefind実検索中…';save.disabled=true;const checks=[];
+  try{
+   // Truly serves Pagefind's generated client bundle, not a mock API.
+-  const pagefind=await import('/pagefind/pagefind.js');await pagefind.init();
++  const pagefind=await import('/search/pagefind-ja.js');await pagefind.init();
+   for (const [query,wanted] of Object.entries(expected)){
+    const res=await pagefind.search(query);const data=await Promise.all(res.results.map(item=>item.data()));
+    const urls=data.map(d=>d.url||'');const ids=urls.map(u=>u.match(/\/records\/(SYN-[A-Z0-9-]+)\.html/)?.[1]).filter(Boolean).sort();
+    const pass=JSON.stringify(ids)===JSON.stringify([...wanted].sort());
+-   checks.push({query,expectedDetailIds:wanted,actualDetailIds:ids,totalPagefindResults:res.results.length,urls,status:pass?'PASS':'FAIL',note:query.includes('MEMBERS_CANARY')?'Informational query spot only; absence does NOT prove members isolation. Check public dist bytes and build inputs.':'Pagefind matches across site pages; strict count applies only to record detail URLs'});
++   checks.push({query,expectedDetailIds:wanted,actualDetailIds:ids,totalPagefindResults:res.results.length,normalization:res.normalization,urls,status:pass?'PASS':'FAIL',note:query.includes('MEMBERS_CANARY')?'Informational query spot only; absence does NOT prove members isolation. Check public dist bytes and build inputs.':'Pagefind matches across site pages; strict count applies only to record detail URLs'});
+   }
+   latest={time:new Date().toISOString(),location:window.location.href,agent:navigator.userAgent,checks,summary:{PASS:checks.filter(x=>x.status==='PASS').length,FAIL:checks.filter(x=>x.status==='FAIL').length}};
+   state.textContent=`実行完了：${latest.summary.PASS} PASS / ${latest.summary.FAIL} FAIL。結果をJSON保存してください。`;
+diff --git a/tools/security_formats_probe.py b/tools/security_formats_probe.py
+index a104f5f..a03f3ab 100644
+--- a/tools/security_formats_probe.py
++++ b/tools/security_formats_probe.py
+@@ -1,12 +1,13 @@
+ #!/usr/bin/env python3
+ """Scan real build, repeat the same scanner on fault-injected temporary copies."""
++import os
+ import gzip
+ import json,hashlib,tempfile,shutil,subprocess,sys,zipfile
+ from pathlib import Path
+ import fitz
+ from pptx import Presentation
+ from openpyxl import load_workbook
+-R=Path(__file__).resolve().parents[1];D=R/'astro_candidate/dist';E=R/'evidence/vendor_actual';C=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary'].encode();checks=[]
++R=Path(__file__).resolve().parents[1];D=R/'astro_candidate/dist';E=Path(os.environ.get('P3_B1_EVIDENCE',str(R/'evidence/vendor_actual')));C=json.loads((R/'docs/SOURCE_PIN.json').read_text())['canary'].encode();checks=[]
+ def ck(id,ok,actual):checks.append({'id':id,'status':'PASS' if ok else 'FAIL','actual':actual})
+ from privacy_scan import scan as scan_root
+ scan=lambda root:scan_root(root,C)
+diff --git a/tools/verify_vendor_dist.py b/tools/verify_vendor_dist.py
+index 8f5bd37..ca350f3 100644
+--- a/tools/verify_vendor_dist.py
++++ b/tools/verify_vendor_dist.py
+@@ -3,6 +3,7 @@
+ No replacement for independent review. Standard Python library only.
+ Usage: python tools/verify_vendor_dist.py --dist astro_candidate/dist [--require-index]
+ """
++import os
+ import argparse,json,hashlib,re,sys,zipfile
+ from pathlib import Path
+ ap=argparse.ArgumentParser();ap.add_argument('--dist',default='astro_candidate/dist');ap.add_argument('--require-index',action='store_true');args=ap.parse_args()
+@@ -48,6 +49,6 @@ if args.require_index:
+ injected=(DIST/'index.html').read_bytes()+canary
+ test('MUTATION_CANARY_BYTE_SCAN_DETECTS_INJECTION',canary in injected)
+ summary={'status':'COMPLETE' if all(x['status']=='PASS' for x in results) else 'FAIL','total':len(results),'PASS':sum(x['status']=='PASS' for x in results),'FAIL':sum(x['status']=='FAIL' for x in results),'required_pagefind':args.require_index,'pagefind_actual_status':'TO_BE_CHECKED_AFTER_VENDOR_BUILD' if not args.require_index else ('INDEX_FOUND' if (pagefind_dir/'pagefind.js').exists() else 'MISSING'),'dist':str(DIST),'dist_total_bytes':sum(p.stat().st_size for p in files),'pagefind_file_count':len(pf_files),'source_p3_a_sha256':pin.get('source_p3a_zip_sha256'),'notes':['This is a Producer check, not independent F verification.','Japanese query accuracy and native browser URL/Back require browser probe evidence.']}
+-output=ROOT/'evidence/vendor_real_dist_checks.json';output.parent.mkdir(exist_ok=True)
++output=Path(os.environ.get('P3_B1_DIST_REPORT',str(ROOT/'evidence/vendor_real_dist_checks.json')));output.parent.mkdir(exist_ok=True)
+ output.write_text(json.dumps({'summary':summary,'checks':results},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps(summary,ensure_ascii=False,indent=2));sys.exit(0 if summary['FAIL']==0 else 2)

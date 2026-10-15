@@ -1,0 +1,45 @@
+[
+  {
+    "id": "S04",
+    "url": "https://docs.google.com/document/d/1xWOth352RCyzFMSd3nrG211CYG5ol06bEHA4ZCR0njQ/edit",
+    "title": "P3_B1_CODEX_EXECUTION_ENVIRONMENT_SWITCH_AND_HANDOFF_DECISION_20261015_v1.0",
+    "provider_modified_time": "2026-10-15T03:23:04.528Z",
+    "access": "FETCHED_FULL_TEXT",
+    "local_text_export": "/workspace/status-reference/doc_0.md",
+    "note": "Full internal source text was not copied into the public repository."
+  },
+  {
+    "id": "S02",
+    "url": "https://docs.google.com/document/d/1zc58zYzGKvy5eIVN-SBMv80uEP5y4yQsYVIlB4edAmM/edit",
+    "title": "P3_B1_OWNER_REVIEW_CONVERGENCE_AND_SCOPE_AUTHORIZATION_20261015_v1.0",
+    "provider_modified_time": "2026-10-15T03:11:37.444Z",
+    "access": "FETCHED_FULL_TEXT",
+    "local_text_export": "/workspace/status-reference/doc_1.md",
+    "note": "Full internal source text was not copied into the public repository."
+  },
+  {
+    "id": "S03",
+    "url": "https://docs.google.com/document/d/1tlg-28kdlstQixWRPaxI1D7NVAQfBGvj7_dfRSq1734/edit",
+    "title": "P2_REVIEW_INTEGRATION_REGISTER_20261014_v1.1.0",
+    "provider_modified_time": "2026-10-15T03:23:56.838Z",
+    "access": "FETCHED_FULL_TEXT",
+    "local_text_export": "/workspace/status-reference/doc_2.md",
+    "note": "Full internal source text was not copied into the public repository."
+  },
+  {
+    "id": "S01",
+    "url": "https://drive.google.com/file/d/1tjjp_qGtXYPH2RVm_x-9gueHWF_Rmtbp/view?usp=drivesdk",
+    "title": "P3_B1_CODEX_A_WORKORDER_20261015.md",
+    "bytes": 5795,
+    "access": "RAW_DOWNLOADED_AND_SHA_CHECKED",
+    "sha256": "c4e07507987039cf7c64ba76f9da971c7fbb8d649166c506f01ee547d74dbad5"
+  },
+  {
+    "id": "S05",
+    "url": "https://drive.google.com/file/d/1RGH2dDbCsLpWTs0615YXGH0io0Q821G8/view?usp=drivesdk",
+    "title": "P3_B1_CODEX_HANDOFF_KIT_20261015.zip",
+    "bytes": 159146,
+    "access": "RAW_DOWNLOADED_AND_SHA_CHECKED",
+    "sha256": "698431cd189234fb5ea7dd0424b6543ef21c15091b71b31a843afcb41ebea666"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "total": 59,
+  "PASS": 59,
+  "FAIL": 0,
+  "NOT_COVERED_BY_THIS_BASELINE_SUITE": [
+    "ASTRO_REAL_BUILD",
+    "PAGEFIND_EXTENDED_JAPANESE_INDEX",
+    "PAGEFIND_SEARCH_QUERY",
+    "CHROMIUM_NATIVE_HTTP_NAVIGATION",
+    "CLOUDFLARE_ACCESS_JWT",
+    "WORKERS_RANGE_304_REAL_DELIVERY",
+    "FULL_WCAG_AND_AT",
+    "PRODUCTION_DEPENDENCY_AUDIT"
+  ],
+  "benchmark": {
+    "name": "Python baseline title substring only",
+    "iterations": 10000,
+    "total_seconds": 0.013846667000052548,
+    "avg_milliseconds": 0.0013846667000052548,
+    "NOT_A_PAGEFIND_BENCHMARK": true
+  },
+  "bytes": {
+    "p3a_original_site": 60102,
+    "b1_public_including_synthetic_formats": 99245,
+    "b1_members_synthetic_canary": 553,
+    "astro_candidate_source_only": 233786
+  }
+}
+
+STDERR:
+
+EXIT: 0

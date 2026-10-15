@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Artifact Atlas｜調査成果物ライブラリ（合成プレビュー）</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
+<header class="site-header">
+ <div class="shell header-inner">
+  <a class="brand" href="index.html" aria-label="Artifact Atlas ホーム"><span class="brand-symbol" aria-hidden="true">A</span><span><strong>Artifact Atlas</strong><small>Research Library · P3-A</small></span></a>
+  <nav aria-label="主要ナビゲーション" class="top-nav"><a href="#themes">テーマ</a><a href="#explore">成果物を探す</a><a href="#about">このプレビュー</a></nav>
+  <span class="env-chip">LOCAL / SYNTHETIC</span>
+ </div>
+</header>
+<main id="main-content" class="shell">
+ <section class="hero" aria-labelledby="hero-title">
+   <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> 自分の調査を、見つけやすく。使いやすく。</div>
+   <h1 id="hero-title">調査成果を、<br><span>ひとつのライブラリに。</span></h1>
+   <p>テーマから探す。条件を絞り込む。根拠をたどる。AI調査成果物共有ポータルの、実際に操作できる合成データ版です。</p>
+   <div class="hero-actions"><a class="primary-link" href="#explore">成果物を検索する <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#themes">テーマを見てみる</a></div>
+   </div>
+   <div class="hero-aside" aria-label="プレビューの収録内容"><div class="mini-label">PREVIEW SNAPSHOT</div><div class="stat-value">08<span>件</span></div><p>元のP2合成レコードを改変せず使用</p><div class="metric-divider"></div><div class="mini-stats"><span>3テーマ</span><span>公開認証は未実装</span></div></div>
+ </section>
+ <div class="simulation-warning" role="note"><strong>検証専用・架空データです。</strong> 実在の沢の難易度・適期・山行助言ではありません。外部公開・会員認証・実ファイル移行は行っていません。P2のG3は条件付きGO、現在はP3-Aのローカル実証段階です。</div>
+ <section id="themes" class="section themes-section" aria-labelledby="themes-title">
+  <div class="section-head"><div><p class="overline">BROWSE BY THEME</p><h2 id="themes-title">テーマから探す</h2><p>まず関心のある分野を選んで、資料とその根拠をたどれます。</p></div><span class="section-count">合成テーマ 3件</span></div>
+  <div class="theme-grid">
+   <a class="theme-card theme-tanigawa" href="themes/tanigawa-sawa-db/index.html"><span class="theme-illustration" aria-hidden="true">01 / 上越</span><span class="theme-content"><span class="theme-kicker">MOUNTAIN / VALLEY</span><strong>谷川連峰</strong><span>架空ルート2件・原典体系の比較</span><span class="theme-jump">テーマを見る <span aria-hidden="true">↗</span></span></span></a>
+   <a class="theme-card theme-okutama" href="themes/okutama-sawa-db/index.html"><span class="theme-illustration" aria-hidden="true">02 / 奥多摩</span><span class="theme-content"><span class="theme-kicker">MOUNTAIN / VALLEY</span><strong>奥多摩</strong><span>架空ルート2件・行程日数の例</span><span class="theme-jump">テーマを見る <span aria-hidden="true">↗</span></span></span></a>
+   <a class="theme-card theme-tanzawa" href="themes/tanzawa-sawa-db/index.html"><span class="theme-illustration" aria-hidden="true">03 / 丹沢</span><span class="theme-content"><span class="theme-kicker">MOUNTAIN / VALLEY</span><strong>丹沢</strong><span>架空ルート4件・未評価データの例</span><span class="theme-jump">テーマを見る <span aria-hidden="true">↗</span></span></span></a>
+  </div>
+ </section>
+ <section id="explore" class="section explore-section" aria-labelledby="explore-title">
+  <div class="section-head"><div><p class="overline">EXPLORE COLLECTION</p><h2 id="explore-title">成果物を探す</h2><p>キーワード・山域・難度体系・月・行程日数で絞り込めます。</p></div><span class="section-count">検索対象：合成8件</span></div>
+  <div class="layout">
+   <section class="panel filter-panel" aria-labelledby="filters-heading">
+     <div class="panel-top"><h3 id="filters-heading">検索条件</h3><button type="button" id="filter-toggle" aria-controls="filter-content" aria-expanded="true" aria-label="検索条件を閉じる">検索条件を閉じる</button></div>
+     <div id="filter-content">
+       <p class="hint">同じ項目の複数選択はOR、項目間はANDです。</p>
+       <p id="input-error" class="error" role="alert" hidden></p>
+       <form id="filters" novalidate>
+        <fieldset id="filter-controls" disabled><legend class="sr-only">検索条件の操作</legend>
+         <div class="field"><label for="keyword">キーワード</label><input id="keyword" type="search" autocomplete="off" maxlength="200" placeholder="例：架空谷川" aria-describedby="keyword-hint input-error"><p id="keyword-hint" class="hint">ルート名の部分一致・200文字以内</p></div>
+         <fieldset id="area-fieldset" class="field" aria-describedby="input-error"><legend>山域</legend><div id="area-labels"></div></fieldset>
+         <div class="field"><label for="grade-scheme">原典難度体系</label><select id="grade-scheme" aria-describedby="grade-hint input-error"><option value="">指定しない</option></select><p id="grade-hint" class="hint">体系を選択するとラベルを選べます。</p></div>
+         <fieldset id="grade-fieldset" class="field" disabled aria-describedby="grade-hint input-error"><legend>体系内グレード</legend><div id="grade-labels"></div></fieldset>
+         <fieldset id="month-fieldset" class="field" aria-describedby="month-hint input-error"><legend>適期（合成月）</legend><div id="month-labels"></div><p id="month-hint" class="hint">実績月から推奨月を推定しません。</p></fieldset>
+         <div class="field"><label for="max-days">行程上限</label><select id="max-days" aria-describedby="days-hint input-error"><option value="">指定しない</option><option value="1">1日以内</option><option value="2">2日以内</option><option value="3">3日以内</option><option value="4">4日以内</option><option value="5">5日以内</option></select><p id="days-hint" class="hint">未確認は条件指定時に除外</p></div>
+         <button type="button" id="reset" class="reset-btn">すべての条件をクリア</button>
+        </fieldset>
+       </form>
+     </div>
+   </section>
+   <section class="panel results-panel" aria-labelledby="results-heading">
+    <div class="result-toolbar"><div><h3 id="results-heading" tabindex="-1">検索結果</h3><p class="toolbar-desc">テーマをまたぐ合成データの一覧</p></div>
+     <div class="view-switch" role="group" aria-label="検索結果の表示形式"><button id="card-view" type="button" aria-pressed="true">カード</button><button id="list-view" type="button" aria-pressed="false">リスト</button></div>
+    </div>
+    <p id="loading-state" role="status">検索データを確認中です。</p><p id="data-error" class="error" role="alert" hidden></p><div id="recovery-actions" hidden><button id="retry-data" type="button">ページを再読み込み</button> <a href="index.html">検索トップへ戻る</a></div>
+    <noscript><p class="error">JavaScriptが無効なためデータを検証できません。検索結果0件とは異なります。</p></noscript>
+    <p id="result-stats" class="stats" role="status" aria-live="polite" aria-atomic="true" hidden>該当 <strong id="count">—</strong> / 全 <strong id="total-count">—</strong> 件。難度未確認：<strong id="ungraded-count">—</strong> 件。</p>
+    <p id="empty-state" class="empty" hidden>該当する合成レコードがありません。検索条件を変更するか、すべての条件をクリアしてください。</p>
+    <ul id="results" class="result-grid"></ul>
+   </section>
+  </div>
+ </section>
+ <section id="about" class="section info-section" aria-labelledby="about-title"><div class="info-copy"><p class="overline">ABOUT THIS BUILD</p><h2 id="about-title">情報の意味を、変えずに見せる。</h2><p>「A｜ハイブリッド・ライブラリ」の注目情報・カテゴリ・カード／リスト表示を採り入れ、P2の合成検索条件とテーマ別ページを再利用しています。難度の異なる体系間換算、nullをゼロにする処理、架空の実出典は行いません。</p></div><div class="info-facts"><div><strong>P2 v1.1.6</strong><span>固定仕様を参照</span></div><div><strong>P3-A</strong><span>ローカルUI実証</span></div><div><strong>G4 未承認</strong><span>実配信・本番認証は対象外</span></div></div></section>
+</main><footer class="site-footer"><div class="shell footer-inner"><span>Artifact Atlas · Synthetic demonstration only</span><a href="#main-content">ページ上部へ ↑</a></div></footer>
+<script src="data-validation.js"></script><script src="demo-data.js"></script><script src="app.js"></script>
+</body></html>

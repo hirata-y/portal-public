@@ -1,0 +1,11 @@
+p3-b1-astro-candidate@ /workspace/p3-b1-f-review-20261015/astro_candidate
+├── @emnapi/core@1.11.3 extraneous
+├── @emnapi/runtime@1.11.3 extraneous
+├── @emnapi/wasi-threads@1.2.3 extraneous
+├── @img/sharp-wasm32@0.35.5 extraneous
+├── @napi-rs/wasm-runtime@1.2.5 extraneous
+├── @tybys/wasm-util@0.10.4 extraneous
+├── astro@7.3.8
+├── pagefind@1.5.2
+└── tslib@2.8.1 extraneous
+

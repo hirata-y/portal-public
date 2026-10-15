@@ -1,0 +1,34 @@
+{
+  "task_id": "P3-B1-OWNER-DISPOSITION-20261015-01",
+  "recorded_jst": "2026-10-15T16:39:30.339470+09:00",
+  "owner_message_timestamp": "not independently measured; this is recording time",
+  "acceptance": {
+    "answer": "条件付き受領し、Minorはbacklogで管理する（推奨）",
+    "state": "CONDITIONALLY_ACCEPTED",
+    "scope": "P3-B1 local/synthetic Freeze1 plus separate F review only",
+    "finding": "B1-F001",
+    "finding_disposition": "ACCEPTED_BACKLOG_NOT_VERIFIED_FIXED"
+  },
+  "public_sync": {
+    "answer": "Ownerとして今回の固定payloadの公開GitHub同期を追加承認する",
+    "approved_commit": "57f5f20",
+    "includes_commit": "7a48080",
+    "repository": "hirata-y/portal-public",
+    "branch": "p3-b1/real-vendor-poc-20261015",
+    "pr": 1,
+    "scope": "Remediation code, dist, Freeze1 ZIP, A/F scripts logs screenshots synthetic canary/fault fixtures, updated management materials and management ZIP v1.1.0; update existing Draft PR description",
+    "push_exit_code": 0,
+    "push_log": "evidence/remediation_20261015/23_owner_approved_push.json"
+  },
+  "not_authorized": [
+    "MVP final technical adoption",
+    "B2 implementation",
+    "G4 GO",
+    "merge",
+    "production deployment",
+    "Cloudflare/Access/JWT changes",
+    "real PII/content"
+  ],
+  "normal_freeze_count": 1,
+  "normal_F_count": 1
+}

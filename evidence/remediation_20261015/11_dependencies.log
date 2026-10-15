@@ -1,0 +1,30 @@
+{
+  "tools": {
+    "node": "v24.19.0",
+    "npm": "11.9.0",
+    "python": "Python 3.12.14",
+    "browser": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)"
+  },
+  "lock_sha256": "dd957c01dc054952d911b48cff783e62c500d83d5d06898d730fba46faac5117",
+  "fixed_input_sha256": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+  "fixed_zip_crc": null,
+  "license_counts": {
+    "MIT": 199,
+    "Apache-2.0": 16,
+    "LGPL-3.0-or-later": 10,
+    "Apache-2.0 AND LGPL-3.0-or-later AND MIT": 1,
+    "Apache-2.0 AND LGPL-3.0-or-later": 3,
+    "ISC": 9,
+    "BlueOak-1.0.0": 3,
+    "BSD-2-Clause": 8,
+    "CC0-1.0": 2,
+    "BSD-3-Clause": 3,
+    "MPL-2.0": 12,
+    "0BSD": 1
+  },
+  "missing_license_metadata": []
+}
+
+STDERR:
+
+EXIT: 0

@@ -1,0 +1,110 @@
+[
+  {
+    "html": "<p>奥多摩</p>",
+    "fragment": {
+      "url": "/0.html",
+      "content": "Case ​0 ​奥多​摩​.",
+      "word_count": 5,
+      "filters": {},
+      "meta": {
+        "title": "Case 0"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<dl><dt>山域</dt><dd> 奥多摩 </dd></dl>",
+    "fragment": {
+      "url": "/1.html",
+      "content": "Case ​1​山域 ​奥多​摩",
+      "word_count": 5,
+      "filters": {},
+      "meta": {
+        "title": "Case 1"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<dl><dt>山域</dt><dd>奥多摩</dd></dl>",
+    "fragment": {
+      "url": "/2.html",
+      "content": "Case ​2​山域​奥多​摩",
+      "word_count": 5,
+      "filters": {},
+      "meta": {
+        "title": "Case 2"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<p>山域：奥多摩</p>",
+    "fragment": {
+      "url": "/3.html",
+      "content": "Case ​3 ​山域​：​奥多​摩​.",
+      "word_count": 7,
+      "filters": {},
+      "meta": {
+        "title": "Case 3"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<p>奥多摩（okutama）</p>",
+    "fragment": {
+      "url": "/5.html",
+      "content": "Case ​5 ​奥多​摩​（​okutama​）",
+      "word_count": 7,
+      "filters": {},
+      "meta": {
+        "title": "Case 5"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<p>奥多摩。架空奥多摩A</p>",
+    "fragment": {
+      "url": "/6.html",
+      "content": "Case ​6 ​奥多​摩​。​架空​奥多​摩​A​.",
+      "word_count": 10,
+      "filters": {},
+      "meta": {
+        "title": "Case 6"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<p>奥多摩​</p>",
+    "fragment": {
+      "url": "/7.html",
+      "content": "Case ​7 ​奥多​摩",
+      "word_count": 4,
+      "filters": {},
+      "meta": {
+        "title": "Case 7"
+      },
+      "anchors": []
+    }
+  },
+  {
+    "html": "<p>山域 奥多摩</p>",
+    "fragment": {
+      "url": "/4.html",
+      "content": "Case ​4 ​山域 ​奥多​摩​.",
+      "word_count": 6,
+      "filters": {},
+      "meta": {
+        "title": "Case 4"
+      },
+      "anchors": []
+    }
+  }
+]
+
+STDERR:
+
+EXIT: 0

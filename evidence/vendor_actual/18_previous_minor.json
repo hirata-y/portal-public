@@ -1,0 +1,24 @@
+{
+  "name": "18_previous_minor",
+  "argv": [
+    "npm",
+    "install",
+    "--prefix",
+    "/tmp/p3-b1-pagefind14",
+    "pagefind@1.4.0",
+    "--save-exact",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "/tmp/p3-b1-npm",
+    "--fetch-retries=0",
+    "--fetch-timeout=30000"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:44:09.888302+00:00",
+  "end_utc": "2026-10-15T03:44:12.543512+00:00",
+  "duration_seconds": 2.655215193999993,
+  "exit_code": 0,
+  "stdout": "\nadded 2 packages in 3s\n",
+  "stderr": ""
+}

@@ -1,0 +1,38 @@
+
+> index:pagefind
+> node ../tools/index_pagefind.mjs
+
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/workspace/portal-b1-remediation/astro_candidate"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 14 files matching **/*.{html}
+
+[Parsing files]
+Did not find a data-pagefind-body element on the site.
+↳ Indexing all <body> elements on the site.
+
+[Reading languages]
+Discovered 1 language: ja
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 13 pages
+  Indexed 338 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.833 seconds
+Japanese lexicon: { terms: 219, fragments: 13 }
+
+STDERR:
+Note: Pagefind doesn't support stemming for the language ja. 
+Search will still work, but will not match across root words.
+Note: Pagefind doesn't support stemming for the language ja. 
+Search will still work, but will not match across root words.
+
+EXIT: 0

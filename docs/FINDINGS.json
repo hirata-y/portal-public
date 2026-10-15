@@ -1,0 +1,104 @@
+[
+  {
+    "id": "B1-M001",
+    "severity": "Major",
+    "kind": "product/integration",
+    "status": "OPEN",
+    "trigger": "Pagefind 1.5.2 Extended: Japanese query 奥多摩",
+    "expected": [
+      "SYN-OKU-001",
+      "SYN-OKU-002"
+    ],
+    "actual": [],
+    "cause": "Generated Japanese fragment uses 奥多 + 摩; Chromium Intl.Segmenter uses 奥多摩. Raw client/index segmentation differs.",
+    "impact": "Pagefind cannot replace the existing keyword search under current acceptance criteria. Vanilla UI is intact.",
+    "evidence": [
+      "evidence/vendor_actual/browser/japanese_search.json",
+      "evidence/vendor_actual/search_diagnostics.json",
+      "evidence/vendor_actual/segmentation_probe.json",
+      "evidence/vendor_actual/previous_minor.json"
+    ],
+    "owner": "A; Review Router selects independent F",
+    "remediation": "No test expectation relaxed. Reproduced on 1.4.0; visible area labels did not correct the mismatch and were reverted. Defer Pagefind adoption pending a bounded segmentation design or explicit acceptance-contract decision.",
+    "proposed_due_jst": "2026-10-17T12:41:00+09:00",
+    "due_note": "48h proposed planning allowance after first observed failing probe at approximately 2026-10-15 12:40:57 JST, not an Owner-approved deadline or background schedule.",
+    "estimate": "Additional A 2–4h + independent F 0.5–1h, estimate only; no background work or billing assumed."
+  },
+  {
+    "id": "B1-M002",
+    "severity": "Major",
+    "kind": "source",
+    "status": "A_VERIFIED_FIXED_F_PENDING",
+    "trigger": "Astro build of unmodified HTML scripts",
+    "expected": "build exit 0",
+    "actual_before": "Rolldown cannot resolve app.js; exit 1",
+    "cause": "Astro processes script src by default; assets live in public/.",
+    "correction": "Add is:inline to the three existing external script tags, preserving script order and copied bytes.",
+    "evidence": [
+      "evidence/vendor_actual/03b_astro_build.json",
+      "evidence/vendor_actual/23_final_build.json",
+      "evidence/vendor_actual/browser/browser_report.json"
+    ]
+  },
+  {
+    "id": "B1-M003",
+    "severity": "Major",
+    "kind": "test-artifact boundary",
+    "status": "A_VERIFIED_FIXED_F_PENDING",
+    "trigger": "Copy the readiness browser probe into dist",
+    "expected": "public dist contains no member canary bytes",
+    "actual_before": "The probe itself embeds the private synthetic canary; dist scanner exit 2.",
+    "correction": "Remove the literal from the public browser probe; inject diagnostic queries from external A test code. Use one scanner for raw/gzip/decoded Pagefind content and private URLs plus four temp mutations and a real fault-built index.",
+    "evidence": [
+      "evidence/vendor_actual/05_dist_acceptance.json",
+      "evidence/vendor_actual/26_final_security.json",
+      "evidence/vendor_actual/index_fault_injection.json"
+    ]
+  },
+  {
+    "id": "B1-M004",
+    "severity": "Major",
+    "kind": "verification method",
+    "status": "A_VERIFIED_FIXED_F_PENDING",
+    "trigger": "Use only Pagefind canary zero-result query as isolation evidence",
+    "expected": "fault injection must be detected",
+    "actual_before": "An exact quoted canary query returns 0 even in a fault-built index containing members/canary.html; unquoted normal corpus query can return 8 public pages.",
+    "correction": "Treat query count as informational. Verify decompressed fragment content/URLs, public routes and build inputs; actual fault index is detected by the same scanner.",
+    "evidence": [
+      "evidence/vendor_actual/21_index_fault_exact.json",
+      "evidence/vendor_actual/index_fault_injection.json",
+      "evidence/vendor_actual/browser/canary_search.json"
+    ]
+  },
+  {
+    "id": "B1-E001",
+    "severity": "Major",
+    "kind": "input prerequisite",
+    "status": "BLOCKED",
+    "expected": "AGENTS.md, START_HERE.md, P3_B1_CODEX_A_WORKORDER.md, CODEX_EXECUTION_STATE.json present before work",
+    "actual": "All four absent from empty checkout, /workspace file inventory and the 88-entry input ZIP.",
+    "action": "Asked for location asynchronously; used user-linked formal Work Order and SHA-verified input for independent executable work. Do not claim the missing instructions were read. Formal freeze remains withheld.",
+    "estimate": "Recover and reconcile inputs: 0.25h estimate."
+  },
+  {
+    "id": "B1-E002",
+    "severity": "Minor",
+    "kind": "environment",
+    "status": "A_RESOLVED",
+    "actual_before": "Default sandbox npm connect EPERM; Astro telemetry cannot write /home/agent/.config/astro; Playwright video ffmpeg unavailable.",
+    "correction": "Use granted network permission; disable Astro telemetry per process; capture actual Chromium screenshots and URL/time JSON instead of video.",
+    "remaining": "Headless captures do not include native address-bar chrome. Windows/Edge GUI and address-bar evidence NOT_EXECUTED."
+  },
+  {
+    "id": "B1-E003",
+    "severity": "Major",
+    "kind": "external write authorization",
+    "status": "BLOCKED",
+    "trigger": "git push -u origin main",
+    "actual": "Automatic approval review rejected GitHub public write because Owner additional approval against the formal Work Order prohibition was not established. Command was rejected before execution.",
+    "action": "No alternate write path attempted. Prepare local commits, runnable ZIP and Git bundle. Obtain explicit Owner approval for push and draft PR.",
+    "evidence": [
+      "docs/GITHUB_PUBLICATION_BLOCKED.md"
+    ]
+  }
+]

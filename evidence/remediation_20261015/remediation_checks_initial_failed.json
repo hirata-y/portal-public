@@ -1,0 +1,1350 @@
+{
+  "role": "A Producer",
+  "start_utc": "2026-10-15T07:09:43.057873+00:00",
+  "rows": [
+    {
+      "query": "谷川",
+      "expected": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "actual": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/",
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-002.html"
+      ],
+      "native_ids": [
+        "ja_79d2efa",
+        "ja_c391372",
+        "ja_ac238cd",
+        "ja_1fc9edd"
+      ],
+      "normalization": {
+        "queries": [
+          "\"谷川\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 107.09999999962747
+    },
+    {
+      "query": "奥多摩",
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+      ],
+      "native_ids": [
+        "ja_79d2efa",
+        "ja_75e64ef",
+        "ja_2ba5ab4",
+        "ja_33f818d"
+      ],
+      "normalization": {
+        "queries": [
+          "\"奥多摩\"",
+          "\"奥多 摩\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 10.900000000372529
+    },
+    {
+      "query": "丹沢",
+      "expected": [
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "actual": [
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html"
+      ],
+      "native_ids": [
+        "ja_79d2efa",
+        "ja_9cb17c4",
+        "ja_fd82349",
+        "ja_b29c3ee",
+        "ja_93a1916",
+        "ja_5d1d224"
+      ],
+      "normalization": {
+        "queries": [
+          "\"丹沢\"",
+          "\"丹 沢\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 13.799999998882413
+    },
+    {
+      "query": "穂高岳",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"穂高岳\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 1.1000000014901161
+    },
+    {
+      "query": "東京",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"東京\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.3999999985098839
+    },
+    {
+      "query": "存在しない沢",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"存在しない沢\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.40000000037252903
+    },
+    {
+      "query": "奥多摩不存在",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"奥多摩不存在\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.30000000074505806
+    },
+    {
+      "query": "谷川丹沢",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"谷川 丹沢\"",
+          "\"谷川 丹 沢\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.6999999992549419
+    },
+    {
+      "query": "丹沢奥多摩",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          "\"丹沢 奥多摩\"",
+          "\"丹沢 奥多 摩\"",
+          "\"丹 沢 奥多摩\"",
+          "\"丹 沢 奥多 摩\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.900000000372529
+    },
+    {
+      "query": "",
+      "expected": [],
+      "actual": [],
+      "urls": [],
+      "native_ids": [],
+      "normalization": {
+        "queries": [
+          ""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.30000000074505806
+    },
+    {
+      "query": "架空谷川A",
+      "expected": [
+        "SYN-TGW-001"
+      ],
+      "actual": [
+        "SYN-TGW-001"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html"
+      ],
+      "native_ids": [
+        "ja_c391372",
+        "ja_ac238cd"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 谷川 A\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.5
+    },
+    {
+      "query": "架空谷川B",
+      "expected": [
+        "SYN-TGW-002"
+      ],
+      "actual": [
+        "SYN-TGW-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-002.html"
+      ],
+      "native_ids": [
+        "ja_c391372",
+        "ja_1fc9edd"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 谷川 B\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.5
+    },
+    {
+      "query": "架空奥多摩A",
+      "expected": [
+        "SYN-OKU-001"
+      ],
+      "actual": [
+        "SYN-OKU-001"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+      ],
+      "native_ids": [
+        "ja_75e64ef",
+        "ja_33f818d"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 奥多摩 A\"",
+          "\"架空 奥多 摩 A\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.599999999627471
+    },
+    {
+      "query": "架空奥多摩B",
+      "expected": [
+        "SYN-OKU-002"
+      ],
+      "actual": [
+        "SYN-OKU-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-002.html"
+      ],
+      "native_ids": [
+        "ja_75e64ef",
+        "ja_2ba5ab4"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 奥多摩 B\"",
+          "\"架空 奥多 摩 B\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 2.400000000372529
+    },
+    {
+      "query": "架空丹沢A",
+      "expected": [
+        "SYN-TNZ-001"
+      ],
+      "actual": [
+        "SYN-TNZ-001"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html"
+      ],
+      "native_ids": [
+        "ja_9cb17c4",
+        "ja_b29c3ee"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 丹沢 A\"",
+          "\"架空 丹 沢 A\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.599999999627471
+    },
+    {
+      "query": "架空丹沢B",
+      "expected": [
+        "SYN-TNZ-002"
+      ],
+      "actual": [
+        "SYN-TNZ-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html"
+      ],
+      "native_ids": [
+        "ja_9cb17c4",
+        "ja_fd82349"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 丹沢 B\"",
+          "\"架空 丹 沢 B\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.599999999627471
+    },
+    {
+      "query": "架空丹沢C",
+      "expected": [
+        "SYN-TNZ-003"
+      ],
+      "actual": [
+        "SYN-TNZ-003"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html"
+      ],
+      "native_ids": [
+        "ja_9cb17c4",
+        "ja_5d1d224"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 丹沢 C\"",
+          "\"架空 丹 沢 C\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.6999999992549419
+    },
+    {
+      "query": "架空丹沢D",
+      "expected": [
+        "SYN-TNZ-004"
+      ],
+      "actual": [
+        "SYN-TNZ-004"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/",
+        "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html"
+      ],
+      "native_ids": [
+        "ja_9cb17c4",
+        "ja_93a1916"
+      ],
+      "normalization": {
+        "queries": [
+          "\"架空 丹沢 D\"",
+          "\"架空 丹 沢 D\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.5
+    },
+    {
+      "query": "  奥多摩  ",
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+      ],
+      "native_ids": [
+        "ja_79d2efa",
+        "ja_75e64ef",
+        "ja_2ba5ab4",
+        "ja_33f818d"
+      ],
+      "normalization": {
+        "queries": [
+          "\"奥多摩\"",
+          "\"奥多 摩\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.900000000372529
+    },
+    {
+      "query": "\"奥多摩\"",
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "urls": [
+        "http://127.0.0.1:8772/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+        "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html"
+      ],
+      "native_ids": [
+        "ja_79d2efa",
+        "ja_75e64ef",
+        "ja_2ba5ab4",
+        "ja_33f818d"
+      ],
+      "normalization": {
+        "queries": [
+          "\"奥多摩\"",
+          "\"奥多 摩\""
+        ],
+        "method": "public-index-token-boundaries",
+        "native_version": "1.5.2",
+        "realm": "dedicated-worker-no-Intl-Segmenter"
+      },
+      "ms": 0.8000000007450581
+    }
+  ],
+  "raw_vendor_control": {
+    "query": "奥多摩",
+    "urls": [
+      "/"
+    ]
+  },
+  "page_Intl_unchanged": true,
+  "normal_network": [
+    {
+      "url": "http://127.0.0.1:8772/",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/data-validation.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/demo-data.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/app.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/pagefind-ja.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/ja-terms.json",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/pagefind-ja-worker.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind-entry.json?ts=1792048184138",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/wasm.unknown.pagefind",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.ja_9a968aba9d.pf_meta",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/index/ja_d94f453.pf_index",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_c391372.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_1fc9edd.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_79d2efa.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_ac238cd.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_75e64ef.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_33f818d.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_2ba5ab4.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_9cb17c4.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_fd82349.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_b29c3ee.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_5d1d224.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_93a1916.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind-worker.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind-entry.json?ts=1792048184264",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.ja_9a968aba9d.pf_meta",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/wasm.unknown.pagefind",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/index/ja_d94f453.pf_index",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_79d2efa.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/pagefind-ja.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/ja-terms.json",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/pagefind-ja-worker.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind-entry.json?ts=1792048184514",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/pagefind.ja_9a968aba9d.pf_meta",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/wasm.unknown.pagefind",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/index/ja_d94f453.pf_index",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_79d2efa.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_75e64ef.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_2ba5ab4.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/pagefind/fragment/ja_33f818d.pf_fragment",
+      "status": 200,
+      "type": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/search/pagefind-ja.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/data-validation.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/demo-data.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/app.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/data-validation.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/demo-data.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/app.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/index.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/data-validation.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/demo-data.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/app.js",
+      "status": 200,
+      "type": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/index.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanzawa-sawa-db/index.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/okutama-sawa-db/index.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": 200,
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8772/styles.css",
+      "status": 200,
+      "type": "stylesheet"
+    }
+  ],
+  "normal_console": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ],
+  "favicon_404": [],
+  "exception": "Page.wait_for_function: Timeout 30000ms exceeded.",
+  "checks": [
+    {
+      "id": "JA_谷川",
+      "actual": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_奥多摩",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_丹沢",
+      "actual": [
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_穂高岳",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_東京",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_存在しない沢",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_奥多摩不存在",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_谷川丹沢",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_丹沢奥多摩",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空谷川A",
+      "actual": [
+        "SYN-TGW-001"
+      ],
+      "expected": [
+        "SYN-TGW-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空谷川B",
+      "actual": [
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空奥多摩A",
+      "actual": [
+        "SYN-OKU-001"
+      ],
+      "expected": [
+        "SYN-OKU-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空奥多摩B",
+      "actual": [
+        "SYN-OKU-002"
+      ],
+      "expected": [
+        "SYN-OKU-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空丹沢A",
+      "actual": [
+        "SYN-TNZ-001"
+      ],
+      "expected": [
+        "SYN-TNZ-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空丹沢B",
+      "actual": [
+        "SYN-TNZ-002"
+      ],
+      "expected": [
+        "SYN-TNZ-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空丹沢C",
+      "actual": [
+        "SYN-TNZ-003"
+      ],
+      "expected": [
+        "SYN-TNZ-003"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_架空丹沢D",
+      "actual": [
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_  奥多摩  ",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "JA_\"奥多摩\"",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "PAGE_INTL_UNCHANGED",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "NATIVE_CONTROL_STILL_REPRODUCES",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "PAGEFIND_RESULT_CLICK",
+      "actual": "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "expected": "http://127.0.0.1:8772/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "status": "PASS"
+    },
+    {
+      "id": "PAGEFIND_BACK",
+      "actual": "http://127.0.0.1:8772/search/",
+      "expected": "http://127.0.0.1:8772/search/",
+      "status": "PASS"
+    },
+    {
+      "id": "HOME_SEARCH_CLICK",
+      "actual": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "expected": "http://127.0.0.1:8772/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS"
+    },
+    {
+      "id": "HOME_EMPTY",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "id": "EMPTY_RESET",
+      "actual": "8",
+      "expected": "8",
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/index.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/okutama-sawa-db/index.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/okutama-sawa-db/records/SYN-OKU-001.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/okutama-sawa-db/records/SYN-OKU-002.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanigawa-sawa-db/index.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanzawa-sawa-db/index.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanzawa-sawa-db/records/SYN-TNZ-001.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanzawa-sawa-db/records/SYN-TNZ-002.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanzawa-sawa-db/records/SYN-TNZ-003.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP_LINK_/themes/tanzawa-sawa-db/records/SYN-TNZ-004.html",
+      "actual": 200,
+      "expected": 200,
+      "status": "PASS"
+    },
+    {
+      "id": "FORMAT_HTTP_html",
+      "actual": {
+        "status": 200,
+        "sha": "ec3d53b12bc1653752c14350edbd606712b82bc043f4d1a97f120ee8f6948ce5"
+      },
+      "expected": {
+        "status": 200,
+        "sha": "ec3d53b12bc1653752c14350edbd606712b82bc043f4d1a97f120ee8f6948ce5"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "FORMAT_HTTP_pdf",
+      "actual": {
+        "status": 200,
+        "sha": "c3858fd1df1d6003e3567a854f62abbce6d91d59cbbe4f444a204ea9f3e01d32"
+      },
+      "expected": {
+        "status": 200,
+        "sha": "c3858fd1df1d6003e3567a854f62abbce6d91d59cbbe4f444a204ea9f3e01d32"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "FORMAT_HTTP_pptx",
+      "actual": {
+        "status": 200,
+        "sha": "aa120675f6c1d2818ad617217e07b4c54438ae9887c8bf97c3e28ef31fb378c1"
+      },
+      "expected": {
+        "status": 200,
+        "sha": "aa120675f6c1d2818ad617217e07b4c54438ae9887c8bf97c3e28ef31fb378c1"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "FORMAT_HTTP_xlsx",
+      "actual": {
+        "status": 200,
+        "sha": "4cf268969a7eddc70c41e4db5118c254b0dd80c6c0c13b8a9325b93dd27b63d1"
+      },
+      "expected": {
+        "status": 200,
+        "sha": "4cf268969a7eddc70c41e4db5118c254b0dd80c6c0c13b8a9325b93dd27b63d1"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "UNEXPECTED_HTTP_STATUS",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "EXTERNAL_REQUESTS",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "BROWSER_RUNTIME_ERRORS",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "CONSOLE_ERRORS",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "EXECUTION_COMPLETED",
+      "actual": false,
+      "expected": true,
+      "status": "FAIL"
+    }
+  ],
+  "summary": {
+    "PASS": 47,
+    "FAIL": 1
+  },
+  "end_utc": "2026-10-15T07:10:18.962289+00:00"
+}

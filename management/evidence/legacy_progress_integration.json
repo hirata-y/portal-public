@@ -1,0 +1,11 @@
+{
+  "file_id": "1xRtm1KjJYwpnzXlKsYlFKYP_2Z08NTRI",
+  "mode": "prepend current index, preserve exact prior raw bytes as historical body",
+  "before_sha256": "78e6db4a8c367643d943986a6a1eb65f0db47bbd1f70dd2b33f2414e50836802",
+  "before_bytes": 13091,
+  "new_sha256": "e0def60f2fe85b8aaa65dd69151356821de60d4577f5d5c2a6c96077343a64ed",
+  "new_bytes": 14895,
+  "original_body_byte_exact_preserved": true,
+  "status": "SAME_ID_UPDATED_AND_RAW_READBACK_VERIFIED",
+  "raw_readback": "PASS"
+}

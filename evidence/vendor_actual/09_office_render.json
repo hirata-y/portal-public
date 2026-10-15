@@ -1,0 +1,21 @@
+{
+  "name": "09_office_render",
+  "argv": [
+    "soffice",
+    "-env:UserInstallation=file:///tmp/p3b1-office",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "evidence/vendor_actual/formats/office_pdf",
+    "astro_candidate/dist/fixtures/synthetic_format.pptx",
+    "astro_candidate/dist/fixtures/synthetic_format.xlsx"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:40:56.330081+00:00",
+  "end_utc": "2026-10-15T03:41:14.029237+00:00",
+  "duration_seconds": 17.699160137000035,
+  "exit_code": 0,
+  "stdout": "convert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.pptx as a Impress document -> /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf using filter : impress_pdf_Export\nconvert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.xlsx as a Calc document -> /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf using filter : calc_pdf_Export\nOverwriting: /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf\n",
+  "stderr": "Fontconfig error: No writable cache directories\nFontconfig error: No writable cache directories\nFontconfig error: No writable cache directories\n"
+}

@@ -1,0 +1,66 @@
+{
+  "verdict": "PASS_WITH_MINOR",
+  "scope": "P3-B1 Freeze1 local/synthetic integrated search and affected code only",
+  "input_sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
+  "independent_F_number": 1,
+  "role": "Separate AI session F on same AI platform, not human external auditor",
+  "end_utc": "2026-10-15T07:26:11.780358+00:00",
+  "suite_results": {
+    "static_results.json": {
+      "pass": 16,
+      "fail": 0,
+      "count": 16
+    },
+    "browser_results.json": {
+      "pass": 72,
+      "fail": 1,
+      "count": 73
+    },
+    "fault_index_results.json": {
+      "pass": 5,
+      "fail": 0,
+      "count": 5
+    },
+    "supplement_results.json": {
+      "pass": 17,
+      "fail": 0,
+      "count": 17
+    }
+  },
+  "totals": {
+    "pass": 110,
+    "fail": 1,
+    "blocked": 0
+  },
+  "findings": [
+    {
+      "id": "B1-F001",
+      "severity": "Minor",
+      "status": "OPEN",
+      "cause": "favicon.ico absent; HTTP404 automatic browser request produces one Console error",
+      "expected": "no Console errors",
+      "actual": "one favicon.ico HTTP404 Console error",
+      "scope": "favicon/HTML icon declaration; no observed primary functional impact",
+      "owner": "A/Coordinator disposition; no correction requested within this F review"
+    }
+  ],
+  "critical": 0,
+  "major": 0,
+  "G4": "STOP",
+  "history": "P3-A F BLOCKED unchanged",
+  "not_executed": [
+    "Windows/Edge",
+    "Office GUI",
+    "full AA/AT/native200%",
+    "production/protected HTTP/JWT",
+    "Cloudflare",
+    "PII",
+    "B2",
+    "G4 formal review",
+    "GitHub writes"
+  ],
+  "packaging_excludes": [
+    "npm-cache/**",
+    "rebuild/**: build working copy; reproducibility verified in supplement_results.json"
+  ]
+}

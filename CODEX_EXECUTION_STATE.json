@@ -1,0 +1,19 @@
+{
+  "date_jst": "2026-10-15",
+  "task": "P3-B1-REAL-VENDOR-POC-20261016-01",
+  "source_bundle_sha256": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+  "p2_full_v1_1_6_sha256": "c1969c801dc47cb15636ce1a74da13433d13ddccf03f308895828ef3d8632f6f",
+  "p3a_frozen_v0_1_0_sha256": "bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23",
+  "p3a_owner_status": "ACCEPTED_WITH_CONDITIONS_LOCAL_SYNTHETIC_ONLY",
+  "p3a_f_original_verdict": "BLOCKED_NOT_OVERRIDDEN",
+  "b1_initial_poc_selftest": "59/59 PASS producer only",
+  "b1_readiness_static_selftest": "41/41 PASS producer only",
+  "real_astro_build": "NOT_EXECUTED",
+  "real_pagefind_japanese_search": "NOT_EXECUTED",
+  "normal_review_policy": "one default freeze and one independent scoped review, extra bounded remediation on Critical/Major with Owner budget oversight",
+  "formal_b1_freeze_count": 0,
+  "b1_independent_reviewer_count": 0,
+  "g4": "NOT_APPROVED",
+  "external_service_changes_allowed": false,
+  "drive_work_order": "https://docs.google.com/document/d/1nE28ncCfhsEpLj3jNNz7uZXZgAfxNK4_1oQJFcr9zg0/edit"
+}

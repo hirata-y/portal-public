@@ -1,0 +1,22 @@
+
+> build
+> node ../tools/build_astro.mjs
+
+07:21:56 [types] Generated 98ms
+07:21:56 [build] output: "static"
+07:21:56 [build] mode: "static"
+07:21:56 [build] directory: /workspace/p3-b1-f-review-20261015/F_OUTPUT/rebuild/astro_candidate/dist/
+07:21:56 [build] Collecting build info...
+07:21:56 [build] ✓ Completed in 141ms.
+07:21:56 [build] Building static entrypoints...
+07:21:56 [vite] ✓ built in 292ms
+07:21:56 [vite] ✓ built in 59ms
+07:21:56 [build] Rearranging server assets...
+
+ generating static routes 
+07:21:56   ├─ /index.html (+15ms) 
+07:21:56 ✓ Completed in 30ms.
+
+07:21:56 [build] ✓ Completed in 426ms.
+07:21:56 [build] 1 page(s) built in 569ms
+07:21:56 [build] Complete!

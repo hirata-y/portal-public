@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm",
+    "ci",
+    "--no-fund",
+    "--no-audit"
+  ],
+  "cwd": "/workspace/p3-b1-f-review-20261015/astro_candidate",
+  "start_utc": "2026-10-15T07:20:15.432471+00:00",
+  "end_utc": "2026-10-15T07:20:20.840743+00:00",
+  "elapsed_seconds": 5.40827993899984,
+  "exit": 254
+}

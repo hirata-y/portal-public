@@ -1,0 +1,54 @@
+{
+  "version": "1.4.0",
+  "argv": [
+    "/tmp/p3-b1-pagefind14/node_modules/.bin/pagefind",
+    "--site",
+    "/tmp/tmp9mt9cnfe/dist",
+    "--force-language",
+    "ja"
+  ],
+  "exit_code": 0,
+  "stdout": "\nRunning Pagefind v1.4.0 (Extended)\nRunning from: \"/workspace/portal-public\"\nSource:       \"/tmp/tmp9mt9cnfe/dist\"\nOutput:       \"/tmp/tmp9mt9cnfe/dist/pagefind\"\n\n[Walking source directory]\nFound 13 files matching **/*.{html}\n\n[Parsing files]\nDid not find a data-pagefind-body element on the site.\n↳ Indexing all <body> elements on the site.\n\n[Reading languages]\nDiscovered 1 language: ja\n\n[Building search indexes]\nTotal: \n  Indexed 1 language\n  Indexed 13 pages\n  Indexed 315 words\n  Indexed 0 filters\n  Indexed 0 sorts\n\nFinished in 0.769 seconds\n",
+  "stderr": "Note: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\nNote: Pagefind doesn't support stemming for the language ja. \nSearch will still work, but will not match across root words.\n",
+  "actual": [
+    {
+      "query": "谷川",
+      "urls": [
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-002.html",
+        "/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+        "/themes/tanigawa-sawa-db/",
+        "/"
+      ]
+    },
+    {
+      "query": "奥多摩",
+      "urls": [
+        "/"
+      ]
+    },
+    {
+      "query": "穂高岳",
+      "urls": []
+    }
+  ]
+}
+
+STDERR:
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /demo-data.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /data-validation.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] code 404, message File not found
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/pagefind.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/pagefind-entry.json?ts=1792035886840 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/wasm.unknown.pagefind HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/pagefind.ja_d3a848fb5a.pf_meta HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/index/ja_622faf3.pf_index HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/fragment/ja_9c1fedd.pf_fragment HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/fragment/ja_c391372.pf_fragment HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/fragment/ja_79d2efa.pf_fragment HTTP/1.1" 200 -
+127.0.0.1 - - [15/Oct/2026 03:44:46] "GET /pagefind/fragment/ja_ae7f86c.pf_fragment HTTP/1.1" 200 -
+
+EXIT: 0

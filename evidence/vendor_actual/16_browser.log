@@ -1,0 +1,417 @@
+{
+  "role": "A Producer self-check",
+  "start_utc": "2026-10-15T03:42:43.007765+00:00",
+  "checks": [
+    {
+      "id": "HOME_THEME_URL",
+      "actual": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "expected": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "status": "PASS"
+    },
+    {
+      "id": "THEME_DETAIL_URL",
+      "actual": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "expected": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS"
+    },
+    {
+      "id": "BROWSER_BACK_THEME",
+      "actual": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "expected": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "status": "PASS"
+    },
+    {
+      "id": "BROWSER_FORWARD_DETAIL",
+      "actual": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "expected": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "status": "PASS"
+    },
+    {
+      "id": "PAGEFIND_JAPANESE_FAILURES",
+      "actual": 1,
+      "expected": 0,
+      "status": "FAIL"
+    },
+    {
+      "id": "CANARY_QUERY_ONLY_INFORMATIONAL",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_ALL",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_JAPANESE",
+      "actual": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_AREA_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_MONTH_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-001"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_AREA_MONTH_AND",
+      "actual": [
+        "SYN-TGW-001"
+      ],
+      "expected": [
+        "SYN-TGW-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_MAX_DAYS_NULL_EXCLUDED",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-003"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-003"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_SCHEME_X",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_GRADE_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_ALL_CONDITIONS_AND",
+      "actual": [
+        "SYN-OKU-001"
+      ],
+      "expected": [
+        "SYN-OKU-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_NO_MATCH",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "vanilla_MONTH_NULL_EXCLUDED",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_ALL",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-001",
+        "SYN-TNZ-002",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_JAPANESE",
+      "actual": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_AREA_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TGW-002"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_MONTH_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-001"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_AREA_MONTH_AND",
+      "actual": [
+        "SYN-TGW-001"
+      ],
+      "expected": [
+        "SYN-TGW-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_MAX_DAYS_NULL_EXCLUDED",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-003"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-TGW-002",
+        "SYN-TNZ-003"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_SCHEME_X",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001",
+        "SYN-TNZ-003",
+        "SYN-TNZ-004"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_GRADE_OR",
+      "actual": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001"
+      ],
+      "expected": [
+        "SYN-OKU-001",
+        "SYN-OKU-002",
+        "SYN-TGW-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_ALL_CONDITIONS_AND",
+      "actual": [
+        "SYN-OKU-001"
+      ],
+      "expected": [
+        "SYN-OKU-001"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_NO_MATCH",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "astro_MONTH_NULL_EXCLUDED",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    },
+    {
+      "id": "PARITY_ALL_CASES",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "PUBLIC_HTTP_canary.html",
+      "actual": 404,
+      "expected": 404,
+      "status": "PASS"
+    },
+    {
+      "id": "PUBLIC_HTTP_members-index.json",
+      "actual": 404,
+      "expected": 404,
+      "status": "PASS"
+    },
+    {
+      "id": "PUBLIC_HTTP_members/canary.html",
+      "actual": 404,
+      "expected": 404,
+      "status": "PASS"
+    },
+    {
+      "id": "BROWSER_PAGE_ERRORS",
+      "actual": [],
+      "expected": [],
+      "status": "PASS"
+    }
+  ],
+  "navigation": [
+    {
+      "step": "01_home",
+      "url": "http://127.0.0.1:8766/",
+      "time_utc": "2026-10-15T03:42:43.954425+00:00"
+    },
+    {
+      "step": "02_theme",
+      "url": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "time_utc": "2026-10-15T03:42:44.358742+00:00"
+    },
+    {
+      "step": "03_detail",
+      "url": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "time_utc": "2026-10-15T03:42:44.481801+00:00"
+    },
+    {
+      "step": "04_back",
+      "url": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/index.html",
+      "time_utc": "2026-10-15T03:42:44.609691+00:00"
+    },
+    {
+      "step": "05_forward",
+      "url": "http://127.0.0.1:8766/themes/tanigawa-sawa-db/records/SYN-TGW-001.html",
+      "time_utc": "2026-10-15T03:42:44.708919+00:00"
+    },
+    {
+      "step": "06_pagefind",
+      "url": "http://127.0.0.1:8766/tech-evidence/pagefind_japanese_browser_probe.html",
+      "time_utc": "2026-10-15T03:42:45.014412+00:00"
+    },
+    {
+      "step": "07_filters",
+      "url": "http://127.0.0.1:8766/",
+      "time_utc": "2026-10-15T03:42:57.899087+00:00"
+    },
+    {
+      "step": "08_html_fixture",
+      "url": "http://127.0.0.1:8766/fixtures/synthetic_format.html",
+      "time_utc": "2026-10-15T03:43:02.636438+00:00"
+    }
+  ],
+  "page_errors": [],
+  "browser": "154.0.8037.57",
+  "end_utc": "2026-10-15T03:43:03.589399+00:00",
+  "summary": {
+    "PASS": 32,
+    "FAIL": 1
+  }
+}
+
+STDERR:
+
+EXIT: 2

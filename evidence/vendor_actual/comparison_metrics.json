@@ -1,0 +1,13 @@
+{
+  "vanilla_public_bytes": 99245,
+  "astro_dist_bytes": 694892,
+  "pagefind_bytes": 592665,
+  "common_js_bytes": 19685,
+  "vanilla_init_median_ms": 308.6236514999996,
+  "astro_init_median_ms": 281.6094074999569,
+  "pagefind_query_cold_ms": 84.70000000006985,
+  "pagefind_query_warm_median_ms": 0.8000000000465661,
+  "substring_10000_total_ms": 7.599999999976717,
+  "build_wall_seconds": 1.1003796160000547,
+  "index_wall_seconds": 1.1902947890000632
+}

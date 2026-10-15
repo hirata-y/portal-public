@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P3-B1 Pagefind日本語／公開索引検証</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:3rem auto;padding:1rem;line-height:1.6}button{font:inherit;padding:.6rem 1rem}pre{white-space:pre-wrap;border:1px solid #ddd;background:#fafafa;padding:1rem;overflow-wrap:anywhere}strong{color:#184e63}</style></head><body>
+<h1>P3-B1 Pagefind日本語検索 実動作スポット</h1>
+<p>合成データだけを使い、実索引・JS/WASMを <code>/search/pagefind-ja.js</code> の日本語分割補助を通して呼び出します。標準クライアント単独の結果は別の対照検査に記録します。<strong>実行してから結果を保存してください。</strong> これはProducer用の検査で、独立レビューではありません。</p>
+<button id="run">実際の検索を実行</button> <button id="save" disabled>JSON実測を保存</button><p id="state" role="status"></p><pre id="report">NOT EXECUTED</pre>
+<script type="module">
+const p=document.querySelector('#report'), state=document.querySelector('#state'),save=document.querySelector('#save');let latest=null;
+const expected={ '谷川':['SYN-TGW-001','SYN-TGW-002'],'奥多摩':['SYN-OKU-001','SYN-OKU-002'],'穂高岳':[] };
+document.querySelector('#run').addEventListener('click',async()=>{
+ state.textContent='Pagefind実検索中…';save.disabled=true;const checks=[];
+ try{
+  // Truly serves Pagefind's generated client bundle, not a mock API.
+  const pagefind=await import('/search/pagefind-ja.js');await pagefind.init();
+  for (const [query,wanted] of Object.entries(expected)){
+   const res=await pagefind.search(query);const data=await Promise.all(res.results.map(item=>item.data()));
+   const urls=data.map(d=>d.url||'');const ids=urls.map(u=>u.match(/\/records\/(SYN-[A-Z0-9-]+)\.html/)?.[1]).filter(Boolean).sort();
+   const pass=JSON.stringify(ids)===JSON.stringify([...wanted].sort());
+   checks.push({query,expectedDetailIds:wanted,actualDetailIds:ids,totalPagefindResults:res.results.length,normalization:res.normalization,urls,status:pass?'PASS':'FAIL',note:query.includes('MEMBERS_CANARY')?'Informational query spot only; absence does NOT prove members isolation. Check public dist bytes and build inputs.':'Pagefind matches across site pages; strict count applies only to record detail URLs'});
+  }
+  latest={time:new Date().toISOString(),location:window.location.href,agent:navigator.userAgent,checks,summary:{PASS:checks.filter(x=>x.status==='PASS').length,FAIL:checks.filter(x=>x.status==='FAIL').length}};
+  state.textContent=`実行完了：${latest.summary.PASS} PASS / ${latest.summary.FAIL} FAIL。結果をJSON保存してください。`;
+ }catch(e){latest={time:new Date().toISOString(),location:window.location.href,agent:navigator.userAgent,exception:String(e),status:'BLOCKED'};state.textContent='BLOCKED: '+String(e)}
+ p.textContent=JSON.stringify(latest,null,2);save.disabled=false;
+});
+save.addEventListener('click',()=>{if(!latest)return;const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(latest,null,2)],{type:'application/json'}));a.download='P3_B1_Pagefind_Japanese_Actual_Browser_Result.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)});
+</script></body></html>

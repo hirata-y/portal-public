@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "/workspace/p3-b1-f-review-20261015/astro_candidate/node_modules/pagefind/lib/runner/bin.cjs",
+    "--site",
+    "/workspace/p3-b1-f-review-20261015/F_OUTPUT/fault_site",
+    "--force-language",
+    "ja"
+  ],
+  "cwd": "/workspace/p3-b1-f-review-20261015",
+  "exit": 0,
+  "utc": "2026-10-15T07:23:18.102653+00:00"
+}

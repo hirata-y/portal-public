@@ -1,0 +1,20 @@
+{
+  "name": "09c_xlsx_render",
+  "argv": [
+    "soffice",
+    "-env:UserInstallation=file:///tmp/p3b1-office",
+    "--headless",
+    "--convert-to",
+    "pdf",
+    "--outdir",
+    "evidence/vendor_actual/formats/xlsx",
+    "astro_candidate/dist/fixtures/synthetic_format.xlsx"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:41:53.806321+00:00",
+  "end_utc": "2026-10-15T03:42:02.953683+00:00",
+  "duration_seconds": 9.147368123999968,
+  "exit_code": 0,
+  "stdout": "convert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.xlsx as a Calc document -> /workspace/portal-public/evidence/vendor_actual/formats/xlsx/synthetic_format.pdf using filter : calc_pdf_Export\n",
+  "stderr": "Fontconfig error: No writable cache directories\nFontconfig error: No writable cache directories\nFontconfig error: No writable cache directories\n"
+}

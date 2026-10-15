@@ -1,0 +1,15 @@
+{
+  "name": "03b_astro_build",
+  "argv": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "/workspace/portal-public/astro_candidate",
+  "start_utc": "2026-10-15T03:39:19.076650+00:00",
+  "end_utc": "2026-10-15T03:39:20.275474+00:00",
+  "duration_seconds": 1.1988315439999724,
+  "exit_code": 1,
+  "stdout": "\n> build\n> astro build\n\n03:39:20 [types] Generated 99ms\n03:39:20 [build] output: \"static\"\n03:39:20 [build] mode: \"static\"\n03:39:20 [build] directory: /workspace/portal-public/astro_candidate/dist/\n03:39:20 [build] Collecting build info...\n03:39:20 [build] ✓ Completed in 136ms.\n03:39:20 [build] Building static entrypoints...\n03:39:20 [vite] ✓ built in 147ms\n",
+  "stderr": "03:39:20 [ERROR] [vite] ✗ Build failed in 34ms\n[vite]: Rolldown failed to resolve import \"app.js\" from \"/workspace/portal-public/astro_candidate/src/pages/index.astro?astro&type=script&index=2&lang.ts\".\nThis is most likely unintended because it can break your application at runtime.\nIf you do want to externalize this module explicitly add it to\n`build.rolldownOptions.external`\n  Stack trace:\n    at viteLog (file:///workspace/portal-public/astro_candidate/node_modules/vite/dist/node/chunks/node.js:34809:57)\n    at onLog (file:///workspace/portal-public/astro_candidate/node_modules/vite/dist/node/chunks/node.js:34601:4)\n    at logger (file:///workspace/portal-public/astro_candidate/node_modules/rolldown/dist/shared/create-bundler-option-DH74Qvg7.mjs:39:3)\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.0\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0\nnpm notice To update run: npm install -g npm@12.2.0\nnpm notice\n"
+}

@@ -1,0 +1,8 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>合成レコード全文検索 PoC</title><style>body{font:18px system-ui;line-height:1.7;max-width:900px;margin:2rem auto;padding:1rem}input,button{font:inherit;padding:.5rem}li{margin:.7rem 0}</style></head><body data-pagefind-ignore="all">
+<a href="/">ホームへ</a><h1>合成レコード全文検索 PoC</h1><p>合成8レコードを検索します。日本語は入力した語順の一致を探します。難度・月・日数の条件はホームの検索をご利用ください。</p>
+<form id="search"><label for="q">キーワード</label> <input id="q" maxlength="200" required> <button>検索</button></form><p id="status" role="status">キーワードを入力してください。</p><ul id="results"></ul>
+<script type="module">
+import {search} from './pagefind-ja.js';
+let sequence=0;
+document.querySelector('#search').addEventListener('submit',async e=>{e.preventDefault();const current=++sequence,out=document.querySelector('#results'),status=document.querySelector('#status');out.replaceChildren();status.textContent='検索中…';try{const r=await search(document.querySelector('#q').value);const data=await Promise.all(r.results.map(x=>x.data()));if(current!==sequence)return;let count=0;for(const d of data){const u=new URL(d.url,location.href);if(u.origin!==location.origin||!/^\/themes\/[a-z-]+\/records\/SYN-[A-Z]+-\d+\.html$/.test(u.pathname))continue;const li=document.createElement('li'),a=document.createElement('a');a.href=u.pathname;a.textContent=d.meta?.title||u.pathname;li.append(a);out.append(li);count++;}status.textContent=count+'件';}catch(err){if(current!==sequence)return;out.replaceChildren();status.textContent='検索を実行できません。'+String(err.message);}});
+</script></body></html>

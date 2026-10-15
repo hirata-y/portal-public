@@ -1,0 +1,17 @@
+{
+  "name": "05b_dist_acceptance",
+  "argv": [
+    "python",
+    "tools/verify_vendor_dist.py",
+    "--dist",
+    "astro_candidate/dist",
+    "--require-index"
+  ],
+  "cwd": "/workspace/portal-public",
+  "start_utc": "2026-10-15T03:40:32.283814+00:00",
+  "end_utc": "2026-10-15T03:40:32.318562+00:00",
+  "duration_seconds": 0.03475114999997686,
+  "exit_code": 0,
+  "stdout": "PASS ASTRO_DIST_FILES_PRESENT\nPASS BUNDLED_UNCHANGED_styles.css\nPASS BUNDLED_UNCHANGED_app.js\nPASS BUNDLED_UNCHANGED_data-validation.js\nPASS BUNDLED_UNCHANGED_demo-data.js\nPASS HTML_ROUTE_index.html\nPASS HTML_ROUTE_themes/tanigawa-sawa-db/index.html\nPASS HTML_ROUTE_themes/okutama-sawa-db/index.html\nPASS HTML_ROUTE_themes/tanzawa-sawa-db/index.html\nPASS DETAIL_COUNT_EIGHT\nPASS DETAIL_ID_SYN-TGW-001\nPASS DETAIL_ID_SYN-TGW-002\nPASS DETAIL_ID_SYN-TNZ-002\nPASS DETAIL_ID_SYN-TNZ-001\nPASS DETAIL_ID_SYN-TNZ-004\nPASS DETAIL_ID_SYN-TNZ-003\nPASS DETAIL_ID_SYN-OKU-002\nPASS DETAIL_ID_SYN-OKU-001\nPASS HOME_LANG_JA\nPASS HOME_A_HYBRID\nPASS PRIVATE_CANARY_IN_PRIVATE\nPASS CANARY_ABSENT_FROM_ASTRO_PUBLIC\nPASS PRIVATE_FILE_NAME_ABSENT\nPASS MEMBERS_NO_DIR_IN_PUBLIC\nPASS P3A_STATIC_PARITY_app.js\nPASS P3A_STATIC_PARITY_styles.css\nPASS P3A_STATIC_PARITY_demo-data.js\nPASS P3A_STATIC_PARITY_data-validation.js\nPASS P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-001.html\nPASS P3A_STATIC_PARITY_themes/tanigawa-sawa-db/records/SYN-TGW-002.html\nPASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-002.html\nPASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-001.html\nPASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-004.html\nPASS P3A_STATIC_PARITY_themes/tanzawa-sawa-db/records/SYN-TNZ-003.html\nPASS P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-002.html\nPASS P3A_STATIC_PARITY_themes/okutama-sawa-db/records/SYN-OKU-001.html\nPASS SYNTHETIC_FORMAT_html\nPASS SYNTHETIC_FORMAT_pdf\nPASS SYNTHETIC_FORMAT_pptx\nPASS SYNTHETIC_FORMAT_xlsx\nPASS PAGEFIND_ACTUAL_INDEX_EXISTS\nPASS MUTATION_CANARY_BYTE_SCAN_DETECTS_INJECTION\n{\n  \"status\": \"COMPLETE\",\n  \"total\": 42,\n  \"PASS\": 42,\n  \"FAIL\": 0,\n  \"required_pagefind\": true,\n  \"pagefind_actual_status\": \"INDEX_FOUND\",\n  \"dist\": \"/workspace/portal-public/astro_candidate/dist\",\n  \"dist_total_bytes\": 694892,\n  \"pagefind_file_count\": 26,\n  \"source_p3_a_sha256\": \"bc17d7d10b60433754732598a0d2b781eadb337da7b4a80dd8613c79a81c3a23\",\n  \"notes\": [\n    \"This is a Producer check, not independent F verification.\",\n    \"Japanese query accuracy and native browser URL/Back require browser probe evidence.\"\n  ]\n}\n",
+  "stderr": ""
+}

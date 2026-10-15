@@ -1,0 +1,26 @@
+{
+  "task_id": "P3-B1-REMEDIATION-20261015-01",
+  "role": "A Producer",
+  "started_jst": "2026-10-15T15:59:17.859823+09:00",
+  "base_commit": "9465776708df22deb379ccd06e7fd884cb566623",
+  "source_sha256": "a7146a29e8d25a82f1eade189971b29ebb9f653c2f5bd59a730d9bbe01f389d9",
+  "owner_decisions": {
+    "search": "Pagefindの限定是正を優先する（推奨）",
+    "scope": "A是正・Evidence完備・初回Freeze後、別セッションの独立Fレビュー1回まで進める（推奨）"
+  },
+  "estimates_management_hours": {
+    "remediation": [
+      2,
+      4
+    ],
+    "evidence": [
+      1,
+      2
+    ],
+    "independent_F": [
+      1,
+      2
+    ]
+  },
+  "scope": "Synthetic local B1 only. G4 STOP, B2 and production excluded. Separate working checkout."
+}

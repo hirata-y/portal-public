@@ -1,0 +1,10 @@
+convert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.pptx as a Impress document -> /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf using filter : impress_pdf_Export
+convert /workspace/portal-public/astro_candidate/dist/fixtures/synthetic_format.xlsx as a Calc document -> /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf using filter : calc_pdf_Export
+Overwriting: /workspace/portal-public/evidence/vendor_actual/formats/office_pdf/synthetic_format.pdf
+
+STDERR:
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+
+EXIT: 0

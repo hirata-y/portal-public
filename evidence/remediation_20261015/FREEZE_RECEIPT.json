@@ -1,0 +1,11 @@
+{
+  "created_jst": "2026-10-15T16:18:36.077893+09:00",
+  "archive": "/workspace/portal-b1-remediation/artifacts/P3_B1_CANDIDATE_v0.3.0_20261015_FREEZE1.zip",
+  "sha256": "7a1af9f2cc3734db4837d138c779e06e0f3553e677d0ea1df501f2e807426f75",
+  "bytes": 5403706,
+  "payload_files": 398,
+  "entries": 399,
+  "archive_readback": "PASS",
+  "official_freeze": true,
+  "normal_freeze_number": 1
+}
